@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jiujiang Maitong | Solar & Commercial Kitchen Solutions</title>
+
+    <link rel="icon" href="imagess/favicon.png" type="image/x-icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="kitchen.css">
+</head>
+
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-inner">
+
+            <a href="index.html" class="brand">
+                <div class="brand-mark">
+                    <span>J</span>
+                </div>
+                <div class="brand-text">
+                    <strong>Jiujiang Maitong</strong>
+                    <span>Solar & Kitchen Solutions</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+
+                <!-- Products Dropdown -->
+                <div class="nav-dropdown">
+                    <a href="products.html" class="dropdown-toggle">
+                        Products <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="solar.html">
+                            <i class="fa-solid fa-solar-panel"></i>
+                            <div>
+                                <strong>Solar Equipments</strong>
+                                <span>Inverters, Panels & Batteries</span>
+                            </div>
+                        </a>
+                        <a href="kitchen.html" class="active">
+                            <i class="fa-solid fa-utensils"></i>
+                            <div>
+                                <strong>Kitchen Equipments</strong>
+                                <span>Ice Machines & Dishwashers</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+               <a href="index.html#brands">Brands</a>
+                <a href="index.html#catalogue">Catalogue</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="hidden-mobile">
+                    <button class="btn-primary">Request Quote</button>
+                </a>
+
+                <button class="btn-icon mobile-only" id="mobile-menu-open" aria-label="Open Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+        <!-- ===================== HERO SECTION ===================== -->
+        <section class="hero" id="kitchen-hero" style="min-height: 800px;">
+            <div class="hero-bg-slides">
+                <div class="hero-slide active">
+                    <img src="imagess/Kitchen hero Banner.png" alt="Commercial Kitchen Equipment Supplier"
+                        >
+                </div>
+            </div>
+            <!-- Gradient Overlay matching your style guide -->
+            <div class="hero-overlay"
+                style="background: linear-gradient(to right, rgba(17, 24, 39, 0.96) 25%, rgba(17, 24, 39, 0.85) 45%, rgba(17, 24, 39, 0.4) 75%, rgba(17, 24, 39, 0.1) 100%);">
+            </div>
+
+            <div class="container hero-content">
+                <div class="hero-eyebrow">
+                    <div class="eyebrow-line"></div>
+                    <span class="label-caps" style="color: var(--accent) !important;">COMMERCIAL KITCHEN
+                        EQUIPMENT</span>
+                </div>
+
+                <h1 class="hero-title" style="color: #fff;">
+                    World-Class<br>
+                    <span class="accent-text">Ice Machines & Dishwashers</span>
+                </h1>
+
+                <p class="hero-desc" style="color: var(--text-light); opacity: 0.9;">
+                    Discover premium commercial kitchen equipment from globally trusted brands —
+                    <strong>Manitowoc</strong> ice machines and <strong>Hobart</strong> dishwashers — plus
+                    our reliable in-house brand <strong>Bingeedi</strong> for cost-effective excellence
+                    across hotels, restaurants, and food service businesses.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#kitchen-products">
+                        <button class="btn-primary">View Products</button>
+                    </a>
+                    <a href="#kitchen-catalogue">
+                        <button class="btn-outline"
+                            style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.35);">Download
+                            Catalogue</button>
+                    </a>
+                </div>
+
+                <div class="hero-mini-stats">
+                    <div
+                        style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+                        <strong>3</strong>
+                        <span style="color: #cbd5e1;">Premium Brands</span>
+                    </div>
+                    <div
+                        style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+                        <strong>100%</strong>
+                        <span style="color: #cbd5e1;">Genuine Supply</span>
+                    </div>
+                    <div
+                        style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
+                        <strong>Ready</strong>
+                        <span style="color: #cbd5e1;">Local Stock</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===================== ABOUT SECTION ===================== -->
+        <section class="about-section" id="kitchen-about">
+            <div class="container">
+                <div class="about-shell">
+
+                    <!-- Left: Content Column -->
+                    <div class="about-left">
+                        <div class="about-badge">ABOUT OUR KITCHEN DIVISION</div>
+                        <h2 class="about-title">
+                            Powering Commercial Kitchens with <span>Reliable Equipment</span>
+                        </h2>
+
+                        <p class="about-lead">
+                            Our Commercial Kitchen Equipment division supplies premium ice machines and dishwashers
+                            that meet the demanding needs of hotels, restaurants, cafes, and food service operators
+                            across Southeast Asia. We combine world-renowned brands with our own trusted Bingeedi line
+                            to offer solutions for every budget and scale.
+                        </p>
+
+                        <div class="about-feature-list">
+                            <!-- Feature 1 -->
+                            <div class="about-feature-card">
+                                <div class="about-feature-icon">
+                                    <i class="fa-solid fa-snowflake"></i>
+                                </div>
+                                <div>
+                                    <h4>High-Performance Ice Machines</h4>
+                                    <p>Reliable, energy-efficient ice production systems designed to perform flawlessly
+                                        in high-demand environments.</p>
+                                </div>
+                            </div>
+
+                            <!-- Feature 2 -->
+                            <div class="about-feature-card">
+                                <div class="about-feature-icon">
+                                    <i class="fa-solid fa-soap"></i>
+                                </div>
+                                <div>
+                                    <h4>Heavy-Duty Dishwashers</h4>
+                                    <p>Sanitizing warewashers built for maximum volume, quick cycles, and extreme
+                                        operating longevity.</p>
+                                </div>
+                            </div>
+
+                            <!-- Feature 3 -->
+                            <div class="about-feature-card">
+                                <div class="about-feature-icon">
+                                    <i class="fa-solid fa-headset"></i>
+                                </div>
+                                <div>
+                                    <h4>Local After-Sales Support</h4>
+                                    <p>Authorized access to genuine replacement parts, preventative maintenance, and
+                                        support teams across 6 countries.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 36px;">
+                            <a href="#kitchen-products">
+                                <button class="btn-primary">Explore Products</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Styled Image Visual (Fixed alignment bug) -->
+                    <div class="about-right">
+                        <div class="about-image-card">
+                            <img src="imagess/kitchen-about-main.jpg" alt="Commercial Food Service Setup"
+                                onerror="this.src='https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?q=80&w=1000'">
+                            <div class="about-floating-box">
+                                <strong>Authorized Distributor</strong>
+                                <span>Distributing globally renowned brands alongside our certified, self-owned
+                                    lines.</span>
+                            </div>
+                        </div>
+
+                        <div class="about-stats-grid">
+                            <div class="about-stat-item">
+                                <strong>100%</strong>
+                                <span>Genuine Supply</span>
+                            </div>
+                            <div class="about-stat-item accent-box">
+                                <strong>6</strong>
+                                <span>SEA Countries Supported</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===================== PRODUCTS SECTION ===================== -->
+        <section class="products-section" id="kitchen-products"
+            style="background: var(--surface-low); border-top: 1px solid var(--surface-border);">
+            <div class="container">
+
+                <div class="products-header">
+                    <div>
+                        <div class="hero-eyebrow">
+                            <div class="eyebrow-line"></div>
+                            <span class="label-caps">OUR PRODUCT RANGE</span>
+                        </div>
+                        <h2>Premium Kitchen Equipment from <span class="accent-text">Trusted Brands</span></h2>
+                        <div class="header-line"></div>
+                    </div>
+                </div>
+
+                <div class="products-grid">
+
+                    <!-- Manitowoc Ice Machines -->
+                    <div class="product-card">
+                        <div class="product-top-bar">
+                            <span class="label-caps" style="font-size: 10px; color: var(--accent);">Premium Brand</span>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="product-body">
+                            <img src="imagess/Manitowoc Ice Machines 1.jpg" alt="Manitowoc Ice Machine">
+                            <h4>Manitowoc Ice Machines</h4>
+                            <span class="product-model">Modular Cube & Flaker Systems</span>
+                            <p style="color: var(--text-soft); font-size: 13.5px; line-height: 1.6; margin-top: 10px;">
+                                Industry-leading commercial ice machines trusted by hotels, restaurants, and bars
+                                worldwide for consistent ice production and durability.
+                            </p>
+                        </div>
+                        <div class="product-footer">
+                            <div class="stock-row" style="margin-bottom: 14px;">
+                                <span>Brand: Manitowoc</span>
+                                <span class="stock-ready">In Stock</span>
+                            </div>
+                            <!-- <a href="contact.html?product=manitowoc" class="btn-primary full-width"
+                                style="text-align: center; display: block;">Request Quote</a> -->
+                        </div>
+                    </div>
+
+                    <!-- Hobart Dishwashers -->
+                    <div class="product-card">
+                        <div class="product-top-bar">
+                            <span class="label-caps" style="font-size: 10px; color: var(--accent);">Premium Brand</span>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="product-body">
+                            <img src="imagess/Hobart Dishwashers 1.webp" alt="Hobart Dishwasher">
+                            <h4>Hobart Dishwashers</h4>
+                            <span class="product-model">Commercial Warewashing Systems</span>
+                            <p style="color: var(--text-soft); font-size: 13.5px; line-height: 1.6; margin-top: 10px;">
+                                Premium commercial dishwashers known for hygiene, speed, and reliability — the global
+                                standard in professional warewashing.
+                            </p>
+                        </div>
+                        <div class="product-footer">
+                            <div class="stock-row" style="margin-bottom: 14px;">
+                                <span>Brand: Hobart</span>
+                                <span class="stock-ready">In Stock</span>
+                            </div>
+                            <!-- <a href="contact.html?product=hobart" class="btn-primary full-width"
+                                style="text-align: center; display: block;">Request Quote</a> -->
+                        </div>
+                    </div>
+
+                    <!-- Bingeedi Ice Machines -->
+                    <div class="product-card">
+                        <div class="product-top-bar">
+                            <span class="label-caps" style="font-size: 10px; color: var(--success);">Self-Owned
+                                Brand</span>
+                            <span class="dot" style="background: var(--success);"></span>
+                        </div>
+                        <div class="product-body">
+                            <img src="imagess/Bingeedi Dishwashers 2.webp" alt="Bingeedi Ice Machine">
+                            <h4>Bingeedi Ice Machines</h4>
+                            <span class="product-model">BD Commercial Series</span>
+                            <p style="color: var(--text-soft); font-size: 13.5px; line-height: 1.6; margin-top: 10px;">
+                                Our own trusted in-house brand offering reliable, cost-effective ice machines engineered
+                                for small to mid-sized commercial kitchens.
+                            </p>
+                        </div>
+                        <div class="product-footer">
+                            <div class="stock-row" style="margin-bottom: 14px;">
+                                <span>Brand: Bingeedi</span>
+                                <span class="stock-ready" style="color: var(--success);">Best Value</span>
+                            </div>
+                            <!-- <a href="contact.html?product=bingeedi-ice" class="btn-primary full-width"
+                                style="text-align: center; display: block;">Request Quote</a> -->
+                        </div>
+                    </div>
+
+                    <!-- Bingeedi Dishwashers -->
+                    <div class="product-card">
+                        <div class="product-top-bar">
+                            <span class="label-caps" style="font-size: 10px; color: var(--success);">Self-Owned
+                                Brand</span>
+                            <span class="dot" style="background: var(--success);"></span>
+                        </div>
+                        <div class="product-body">
+                            <img src="imagess/Bingeedi Dishwashers 1.jpg" alt="Bingeedi Dishwasher">
+                            <h4>Bingeedi Dishwashers</h4>
+                            <span class="product-model">BD Warewasher Series</span>
+                            <p style="color: var(--text-soft); font-size: 13.5px; line-height: 1.6; margin-top: 10px;">
+                                Efficient and affordable commercial dishwashers designed for restaurants, cafes, and
+                                food services looking for quality at the right price.
+                            </p>
+                        </div>
+                        <div class="product-footer">
+                            <div class="stock-row" style="margin-bottom: 14px;">
+                                <span>Brand: Bingeedi</span>
+                                <span class="stock-ready" style="color: var(--success);">Best Value</span>
+                            </div>
+                            <!-- <a href="contact.html?product=bingeedi-dishwasher" class="btn-primary full-width"
+                                style="text-align: center; display: block;">Request Quote</a> -->
+                        </div>
+                    </div>
+
+                    <!-- Cold Room Storage -->
+                    <div class="product-card">
+                        <div class="product-top-bar">
+                            <span class="label-caps" style="font-size:10px;color:var(--accent);">COLD</span>
+                            <span class="dot"></span>
+                        </div>
+
+                        <div class="product-body">
+                            <img src="imagess/Cold Room 2.webp" alt="Cold Room Storage">
+
+                            <h4>Cold Room Storage</h4>
+                            <span class="product-model">Industrial Cooling</span>
+
+                            <p style="color:var(--text-soft);font-size:13.5px;line-height:1.6;margin-top:10px;">
+                                Reliable commercial cold room storage solutions designed for food preservation,
+                                restaurants, hotels, supermarkets, and industrial kitchens.
+                            </p>
+                        </div>
+
+                        <div class="product-footer">
+                            <div class="stock-row" style="margin-bottom:14px;">
+                                <span>Cold Storage</span>
+                                <span class="stock-ready">Available</span>
+                            </div>
+
+                            <!-- <a href="contact.html?product=cold-room" class="btn-primary full-width"
+                                style="text-align:center;display:block;">
+                                Request Quote
+                            </a> -->
+                        </div>
+                    </div>
+
+                    <!-- Commercial Dishwasher -->
+                    <div class="product-card">
+                        <div class="product-top-bar">
+                            <span class="label-caps" style="font-size:10px;color:var(--accent);">WASH</span>
+                            <span class="dot"></span>
+                        </div>
+
+                        <div class="product-body">
+                            <img src="assets/images/dish-washer.jpeg" alt="Commercial Dishwasher">
+
+                            <h4>Commercial Dishwasher</h4>
+                            <span class="product-model">High Efficiency Wash</span>
+
+                            <p style="color:var(--text-soft);font-size:13.5px;line-height:1.6;margin-top:10px;">
+                                High-efficiency commercial dishwashers delivering fast cleaning,
+                                excellent hygiene, and dependable daily performance.
+                            </p>
+                        </div>
+
+                        <div class="product-footer">
+                            <div class="stock-row" style="margin-bottom:14px;">
+                                <span>Wash Equipment</span>
+                                <span class="stock-ready">Available</span>
+                            </div>
+
+                            <!-- <a href="contact.html?product=commercial-dishwasher" class="btn-primary full-width"
+                                style="text-align:center;display:block;">
+                                Request Quote
+                            </a> -->
+                        </div>
+                    </div>
+
+                    <!-- Hood Type Dishwasher -->
+                    <div class="product-card">
+                        <div class="product-top-bar">
+                            <span class="label-caps" style="font-size:10px;color:var(--accent);">WASH</span>
+                            <span class="dot"></span>
+                        </div>
+
+                        <div class="product-body">
+                            <img src="assets/images/dish-washing-machine.jpeg" alt="Hood Type Dishwasher">
+
+                            <h4>Hood-Type Dishwasher</h4>
+                            <span class="product-model">Heavy Duty Series</span>
+
+                            <p style="color:var(--text-soft);font-size:13.5px;line-height:1.6;margin-top:10px;">
+                                Heavy-duty hood type dishwashers engineered for restaurants,
+                                hotels, and commercial kitchens with high washing volumes.
+                            </p>
+                        </div>
+
+                        <div class="product-footer">
+                            <div class="stock-row" style="margin-bottom:14px;">
+                                <span>Heavy Duty</span>
+                                <span class="stock-ready">Available</span>
+                            </div>
+
+                            <!-- <a href="contact.html?product=hood-type-dishwasher" class="btn-primary full-width"
+                                style="text-align:center;display:block;">
+                                Request Quote
+                            </a> -->
+                        </div>
+                    </div>
+
+                    <!-- Industrial Gas Heater -->
+                    <div class="product-card">
+                        <div class="product-top-bar">
+                            <span class="label-caps" style="font-size:10px;color:var(--accent);">HEAT</span>
+                            <span class="dot"></span>
+                        </div>
+
+                        <div class="product-body">
+                            <img src="assets/images/gas-heater.jpeg" alt="Industrial Gas Heater">
+
+                            <h4>Industrial Gas Heater</h4>
+                            <span class="product-model">Direct Firing Unit</span>
+
+                            <p style="color:var(--text-soft);font-size:13.5px;line-height:1.6;margin-top:10px;">
+                                Industrial gas heating systems offering reliable heat output
+                                for commercial food preparation and processing facilities.
+                            </p>
+                        </div>
+
+                        <div class="product-footer">
+                            <div class="stock-row" style="margin-bottom:14px;">
+                                <span>Heating System</span>
+                                <span class="stock-ready">Available</span>
+                            </div>
+
+                            <!-- <a href="contact.html?product=gas-heater" class="btn-primary full-width"
+                                style="text-align:center;display:block;">
+                                Request Quote
+                            </a> -->
+                        </div>
+                    </div>
+
+                    <!-- Ice Cube Machine -->
+                    <div class="product-card">
+                        <div class="product-top-bar">
+                            <span class="label-caps" style="font-size:10px;color:var(--accent);">ICE</span>
+                            <span class="dot"></span>
+                        </div>
+
+                        <div class="product-body">
+                            <img src="assets/images/ice-cubes.png" alt="Ice Cube Machine">
+
+                            <h4>Ice Cube Machine</h4>
+                            <span class="product-model">Solid Cube System</span>
+
+                            <p style="color:var(--text-soft);font-size:13.5px;line-height:1.6;margin-top:10px;">
+                                Commercial ice cube machines producing crystal-clear cubes for
+                                restaurants, cafés, hotels, and beverage businesses.
+                            </p>
+                        </div>
+
+                        <div class="product-footer">
+                            <div class="stock-row" style="margin-bottom:14px;">
+                                <span>Ice Equipment</span>
+                                <span class="stock-ready">Available</span>
+                            </div>
+
+                            <!-- <a href="contact.html?product=ice-cube-machine" class="btn-primary full-width"
+                                style="text-align:center;display:block;">
+                                Request Quote
+                            </a> -->
+                        </div>
+                    </div>
+
+                    <!-- Ice Flake Machine -->
+                    <div class="product-card">
+                        <div class="product-top-bar">
+                            <span class="label-caps" style="font-size:10px;color:var(--accent);">ICE</span>
+                            <span class="dot"></span>
+                        </div>
+
+                        <div class="product-body">
+                            <img src="assets/images/ice-flakes.png" alt="Ice Flake Machine">
+
+                            <h4>Ice Flake Machine</h4>
+                            <span class="product-model">Preservation Cooling</span>
+
+                            <p style="color:var(--text-soft);font-size:13.5px;line-height:1.6;margin-top:10px;">
+                                Flake ice machines ideal for seafood preservation,
+                                supermarkets, medical facilities, and food processing.
+                            </p>
+                        </div>
+
+                        <div class="product-footer">
+                            <div class="stock-row" style="margin-bottom:14px;">
+                                <span>Ice Equipment</span>
+                                <span class="stock-ready">Available</span>
+                            </div>
+
+                            <!-- <a href="contact.html?product=ice-flake-machine" class="btn-primary full-width"
+                                style="text-align:center;display:block;">
+                                Request Quote
+                            </a> -->
+                        </div>
+                    </div>
+
+                    <!-- Multi-Group Espresso Machine -->
+                    <div class="product-card">
+                        <div class="product-top-bar">
+                            <span class="label-caps" style="font-size:10px;color:var(--accent);">COFFEE</span>
+                            <span class="dot"></span>
+                        </div>
+
+                        <div class="product-body">
+                            <img src="imagess/Multi-Group Espresso.webp" alt="Multi Group Espresso Machine">
+
+                            <h4>Multi-Group Espresso</h4>
+                            <span class="product-model">Barista Grade Station</span>
+
+                            <p style="color:var(--text-soft);font-size:13.5px;line-height:1.6;margin-top:10px;">
+                                Professional espresso machines built for cafés, hotels,
+                                restaurants, and premium coffee service environments.
+                            </p>
+                        </div>
+
+                        <div class="product-footer">
+                            <div class="stock-row" style="margin-bottom:14px;">
+                                <span>Coffee Equipment</span>
+                                <span class="stock-ready">Available</span>
+                            </div>
+
+                            <!-- <a href="contact.html?product=espresso-machine" class="btn-primary full-width"
+                                style="text-align:center;display:block;">
+                                Request Quote
+                            </a> -->
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ===================== CATALOGUE SECTION ===================== -->
+        <section class="catalogue-section" id="kitchen-catalogue">
+
+            <div class="container">
+
+                <div class="catalogue-header">
+                    <div class="hero-eyebrow" style="justify-content: center;">
+                        <div class="eyebrow-line"></div>
+                        <span class="label-caps">DOWNLOAD CATALOGUES</span>
+                        <div class="eyebrow-line"></div>
+                    </div>
+                    <h2>Explore Our Complete <span class="accent-text">Kitchen Catalogues</span></h2>
+                    <p class="catalogue-subtext">Download detailed brochures with specifications, layouts, capacities,
+                        and dimensional guidelines.</p>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="catalogue-grid catalogue-grid-8 catalogue-kitchen-grid">
+
+                    <!-- ================= KITCHEN CATALOGUES (DIVISION 2) ================= -->
+
+                    <!-- 4. Kitchen Main Catalogue -->
+                    <div class="catalogue-card light reveal" style="border-top: 4px solid #0284c7;">
+                        <div class="catalogue-icon-wrap">
+                            <div class="catalogue-icon"
+                                style="background:#f0f9ff; color:#0284c7; box-shadow: inset 0 0 0 1px rgba(2,132,199,0.15);">
+                                <i class="fa-solid fa-kitchen-set"></i>
+                            </div>
+                            <span class="cat-tag"
+                                style="color:#0284c7; border-color:rgba(2,132,199,0.2);">KITCHEN</span>
+                        </div>
+                        <div class="cat-content">
+                            <h3>Main Kitchen Catalogue</h3>
+                            <p>Complete range of commercial dishwashers, ice machines, and premium F&B equipment.</p>
+                        </div>
+                        <div class="catalogue-meta">
+                            <div class="meta-item"><span class="meta-label">Category</span><strong>F&B
+                                    Equipment</strong></div>
+                            <div class="meta-item"><span class="meta-label">Content</span><strong>Full Range</strong>
+                            </div>
+                        </div>
+                        <div class="cat-actions">
+                            <button type="button" class="btn-primary cat-view" data-file="pdfs/Catalog.pdf"
+                                data-title="Main Kitchen Catalogue"
+                                style="background:#0284c7; box-shadow: 0 12px 28px rgba(2, 132, 199, 0.18);">
+                                <i class="fa-solid fa-eye"></i> View
+                            </button>
+                            <a href="pdfs/Catalog.pdf" download class="btn-outline cat-download"
+                                style="color:#0284c7; border-color:#bae6fd;">
+                                <i class="fa-solid fa-download"></i> Save
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 5. Kitchen 2025 Catalogue -->
+                    <div class="catalogue-card light reveal" style="border-top: 4px solid #0284c7;">
+                        <div class="catalogue-icon-wrap">
+                            <div class="catalogue-icon"
+                                style="background:#f0f9ff; color:#0284c7; box-shadow: inset 0 0 0 1px rgba(2,132,199,0.15);">
+                                <i class="fa-solid fa-fire-burner"></i>
+                            </div>
+                            <span class="cat-tag" style="color:#0284c7; border-color:rgba(2,132,199,0.2);">NEW
+                                2025</span>
+                        </div>
+                        <div class="cat-content">
+                            <h3>2025 New Catalogue</h3>
+                            <p>Latest kitchen equipment models, upgraded dishwashers, and new product launches.</p>
+                        </div>
+                        <div class="catalogue-meta">
+                            <div class="meta-item"><span class="meta-label">Category</span><strong>F&B
+                                    Equipment</strong></div>
+                            <div class="meta-item"><span class="meta-label">Edition</span><strong>2025 Series</strong>
+                            </div>
+                        </div>
+                        <div class="cat-actions">
+                            <button type="button" class="btn-primary cat-view" data-file="pdfs/2025_Catalog.pdf"
+                                data-title="2025 New Kitchen Catalogue"
+                                style="background:#0284c7; box-shadow: 0 12px 28px rgba(2, 132, 199, 0.18);">
+                                <i class="fa-solid fa-eye"></i> View
+                            </button>
+                            <a href="pdfs/2025_Catalog.pdf" download class="btn-outline cat-download"
+                                style="color:#0284c7; border-color:#bae6fd;">
+                                <i class="fa-solid fa-download"></i> Save
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+
+            <!-- PDF Modal -->
+            <div id="pdfModal" class="pdf-modal">
+                <div class="pdf-modal-overlay"></div>
+                <div class="pdf-modal-box">
+                    <div class="pdf-modal-header">
+                        <h4 id="pdfTitle">Catalogue Preview</h4>
+                        <div class="pdf-header-actions">
+                            <a id="pdfNewTab" href="#" target="_blank" rel="noopener" class="pdf-action-btn"
+                                title="Open in new tab">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                            <a id="pdfDownload" href="#" download class="pdf-action-btn" title="Download">
+                                <i class="fa-solid fa-download"></i>
+                            </a>
+                            <button id="pdfClose" class="pdf-action-btn pdf-close-btn" title="Close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="pdf-modal-body" id="pdfBody">
+                        <div class="pdf-loading" id="pdfLoading">
+                            <i class="fa-solid fa-spinner fa-spin"></i>
+                            <span>Loading PDF...</span>
+                        </div>
+                        <!-- PDF will be injected here by JS -->
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <!-- ===================== REVIEWS SECTION ===================== -->
+        <section class="products-section" id="kitchen-reviews"
+            style="background: var(--surface-low); border-top: 1px solid var(--surface-border);">
+            <div class="container">
+
+                <div class="catalogue-header">
+                    <div class="hero-eyebrow" style="justify-content: center;">
+                        <div class="eyebrow-line"></div>
+                        <span class="label-caps">CLIENT TESTIMONIALS</span>
+                        <div class="eyebrow-line"></div>
+                    </div>
+                    <h2>Trusted by <span class="accent-text">Restaurants & Hotels</span></h2>
+                    <p class="catalogue-subtext">Hear what our regional commercial kitchen operators say about our
+                        systems and service.</p>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="products-grid">
+
+                    <!-- Review 1 -->
+                    <div class="product-card" style="padding: 32px; background: #fff; border-radius: 20px;">
+                        <div style="color: var(--accent); margin-bottom: 16px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p
+                            style="color: var(--text-soft); font-size: 14.5px; line-height: 1.7; font-style: italic; margin-bottom: 24px;">
+                            "The Manitowoc ice machine we got from Jiujiang Maitong has been running flawlessly for over
+                            a year. The team's after-sales support is excellent — quick response on every query."
+                        </p>
+                        <div
+                            style="display: flex; align-items: center; gap: 14px; border-top: 1px solid #edf2f7; padding-top: 20px;">
+                            <div
+                                style="width: 48px; height: 48px; border-radius: 50%; background: var(--accent-soft); display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--accent);">
+                                AF</div>
+                            <div>
+                                <strong style="display: block; font-size: 14.5px; color: var(--primary);">Ahmad
+                                    Faizal</strong>
+                                <span style="display: block; font-size: 12px; color: var(--text-soft);">Hotel Operations
+                                    Manager, KL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="product-card" style="padding: 32px; background: #fff; border-radius: 20px;">
+                        <div style="color: var(--accent); margin-bottom: 16px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p
+                            style="color: var(--text-soft); font-size: 14.5px; line-height: 1.7; font-style: italic; margin-bottom: 24px;">
+                            "Our Hobart dishwasher handles 500+ plates per service without any issues. Reliable
+                            supplier, genuine products, and they delivered exactly on time. Highly recommended!"
+                        </p>
+                        <div
+                            style="display: flex; align-items: center; gap: 14px; border-top: 1px solid #edf2f7; padding-top: 20px;">
+                            <div
+                                style="width: 48px; height: 48px; border-radius: 50%; background: var(--accent-soft); display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--accent);">
+                                LM</div>
+                            <div>
+                                <strong style="display: block; font-size: 14.5px; color: var(--primary);">Lim Wei
+                                    Ming</strong>
+                                <span style="display: block; font-size: 12px; color: var(--text-soft);">Restaurant
+                                    Owner, Johor Bahru</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="product-card" style="padding: 32px; background: #fff; border-radius: 20px;">
+                        <div style="color: var(--accent); margin-bottom: 16px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p
+                            style="color: var(--text-soft); font-size: 14.5px; line-height: 1.7; font-style: italic; margin-bottom: 24px;">
+                            "Bingeedi ice machine offered great value for our cafe. Affordable, efficient, and the team
+                            helped us choose the right model for our space. Will definitely buy again."
+                        </p>
+                        <div
+                            style="display: flex; align-items: center; gap: 14px; border-top: 1px solid #edf2f7; padding-top: 20px;">
+                            <div
+                                style="width: 48px; height: 48px; border-radius: 50%; background: var(--accent-soft); display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--accent);">
+                                SN</div>
+                            <div>
+                                <strong style="display: block; font-size: 14.5px; color: var(--primary);">Siti
+                                    Nurhaliza</strong>
+                                <span style="display: block; font-size: 12px; color: var(--text-soft);">Cafe Owner,
+                                    Penang</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand-block">
+                    <a href="#home" class="footer-brand">
+                        <div class="footer-brand-mark">G</div>
+                        <div class="footer-brand-text">
+                            <strong>Green Creatman Maitong</strong>
+                            <span>Solar & Commercial Kitchen Solutions</span>
+                        </div>
+                    </a>
+
+                    <p class="footer-desc">
+                        We supply genuine solar inverters, premium solar panels, and world-class commercial
+                        kitchen equipment — including ice machines and dishwashers — for residential, commercial,
+                        and industrial applications across Southeast Asia.
+                    </p>
+                </div>
+
+                <div class="footer-cta-box">
+                    <h4>Need Product Support?</h4>
+                    <p>Talk to us for solar or kitchen equipment recommendations and quotation support.</p>
+                    <a href="#contact"><button class="btn-primary">Contact Us</button></a>
+                </div>
+            </div>
+
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h6>Quick Links</h6>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="#catalogue">Catalogue</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h6>Solar & Energy</h6>
+                    <ul>
+                        <li><a href="solar-products.html">Solar Inverters</a></li>
+                        <li><a href="solar-products.html">Solar Panels</a></li>
+                        <li><a href="solar-products.html">Battery Storage</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h6>Kitchen Equipment</h6>
+                    <ul>
+                        <li><a href="kitchen-products.html">Ice Machines</a></li>
+                        <li><a href="kitchen-products.html">Dishwashers</a></li>
+                        <li><a href="kitchen-products.html">Bingeedi Series</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h6>Our Brands</h6>
+                    <ul>
+                        <li><a href="#brands">Deye / Goodwe / Ginlong</a></li>
+                        <li><a href="#brands">Aiko / LONGi / Jinko / Trina</a></li>
+                        <li><a href="#brands">Manitowoc / Hobart / Bingeedi</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h6>Contact</h6>
+                    <ul class="footer-contact-list">
+                        <li><i class="fa-solid fa-phone"></i><a href="tel:+60109647547">010-9647547</a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a
+                                href="mailto:greencreatman@gmail.com">greencreatman@gmail.com</a></li>
+                        <li><i class="fa-solid fa-location-dot"></i><span>Johor Bahru, Malaysia</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Green Creatman Maitong. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-solid fa-globe"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== MOBILE MENU ===================== -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="logo">Green Creatman Maitong</div>
+            <button id="mobile-menu-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+
+            <!-- Mobile Products Dropdown -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-toggle" id="mobile-products-toggle">
+                    Products <i class="fa-solid fa-chevron-down mobile-dropdown-arrow"></i>
+                </button>
+                <div class="mobile-dropdown-menu" id="mobile-products-menu">
+                    <a href="solar.html">
+                        <i class="fa-solid fa-solar-panel"></i> Solar Equipments
+                    </a>
+                    <a href="kitchen.html">
+                        <i class="fa-solid fa-utensils"></i> Kitchen Equipments
+                    </a>
+                </div>
+            </div>
+
+            <a href="#brands">Brands</a>
+            <a href="#catalogue">Catalogue</a>
+            <a href="contact.html">Contact</a>
+            <a href="#contact"><button class="btn-primary full-width mobile-quote-btn">Request Quote</button></a>
+        </nav>
+    </div>
+
+
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("hmYerv8ef0f3rjJTF");
+        })();
+    </script>
+
+    <!-- Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
