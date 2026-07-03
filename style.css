@@ -1,11 +1,14 @@
 /* ============================================================
    GREEN ASTRONAUT (GA SOLAR) — MAIN STYLESHEET
+   NAVY BLUE THEME UPDATE
    ============================================================ */
 :root {
     --primary: #111827;
-    --accent: #FF7100;
-    --accent-soft: #fff2e8;
-    --accent-border: #ffd8bd;
+
+    /* NEW NAVY BLUE ACCENT */
+    --accent: #134C99;
+    --accent-soft: #EDF3FC;
+    --accent-border: #B8CFEE;
 
     --blue: #0284c7;
     --blue-soft: #e0f2fe;
@@ -1550,7 +1553,7 @@ a {
 .commitment-section {
     position: relative;
     padding: 90px 0;
-    background: linear-gradient(135deg, #fffdf9 0%, #fff6ec 55%, #fffdf9 100%);
+    background: linear-gradient(135deg, var(--accent-border) 0%, #fff6ec 55%, #fffdf9 100%);
     overflow: hidden;
 }
 
@@ -2338,11 +2341,11 @@ a {
    ============================================================ */
 .why-section {
     padding: 110px 0;
-    background: linear-gradient(180deg,
-            #fffdfb 0%,
-            #fff8f2 40%,
-            #fff5ec 100%);
-    position: relative;
+   background: linear-gradient(180deg,
+            #ffffff 0%,
+            #fcfdff 40%,
+            #f8fafc 75%,
+            #f1f5f9 100%);
     overflow: hidden;
 }
 
@@ -5036,15 +5039,24 @@ a {
 /* ============================================================
    FAQ SECTION — WARM EARTHY TONE
    ============================================================ */
+/* UPDATED FAQ SECTION TO MATCH NAVY BLUE THEME */
 .faq-section {
     position: relative;
     padding: 120px 0;
     background: linear-gradient(180deg,
-            #fdf9f5 0%,
-            #f9f4ef 40%,
-            #f5eee6 75%,
-            #f2e9df 100%);
+            #ffffff 0%,
+            #fcfdff 40%,
+            #f8fafc 75%,
+            #f1f5f9 100%);
     overflow: hidden;
+}
+
+.faq-glow-1 {
+    background: radial-gradient(circle, rgba(22, 93, 255, 0.09), transparent 70%);
+}
+
+.faq-glow-2 {
+    background: radial-gradient(circle, rgba(82, 136, 255, 0.06), transparent 70%);
 }
 
 /* Background elements */
@@ -5140,7 +5152,7 @@ a {
 
 .faq-title-accent {
     display: block;
-    background: linear-gradient(135deg, #FF7100, #ff9a3c);
+    background: linear-gradient(135deg, var(--accent), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -5235,7 +5247,7 @@ a {
     align-items: center;
     gap: 8px;
     padding: 10px 20px;
-    background: linear-gradient(135deg, #FF7100, #ff9a3c);
+    background: linear-gradient(135deg, var(--accent), #ff9a3c);
     color: #ffffff;
     font-size: 13px;
     font-weight: 700;
@@ -5302,12 +5314,12 @@ a {
     align-items: center;
     justify-content: center;
     font-size: 16px;
-    color: #FF7100;
+    color: var(--accent);
     transition: all 0.3s ease;
 }
 
 .faq-item.active .faq-q-icon {
-    background: linear-gradient(135deg, #FF7100, #ff9a3c);
+    background: linear-gradient(135deg, var(--accent), var(--accent));
     color: #ffffff;
     box-shadow: 0 4px 16px rgba(255, 113, 0, 0.28);
 }
@@ -5525,13 +5537,13 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    color: #FF7100;
+    color: var(--accent);
 }
 
 .team-title {
     font-size: clamp(28px, 3.5vw, 44px);
     font-weight: 900;
-    color: #111827;
+    color: var();
     line-height: 1.15;
     letter-spacing: -0.03em;
     margin-bottom: 16px;
@@ -5539,10 +5551,10 @@ a {
 
 .team-title-accent {
     display: block;
-    background: linear-gradient(135deg, #FF7100, #ffaa44);
-    -webkit-background-clip: text;
+    color: var(--accent);
+    /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
+    background-clip: text; */
 }
 
 .team-subtitle {
@@ -5692,7 +5704,7 @@ a {
 .team-card-role {
     font-size: 11px;
     font-weight: 700;
-    color: #FF7100;
+    color: var(--accent);
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
@@ -5707,7 +5719,7 @@ a {
     align-items: center;
     justify-content: center;
     font-size: 16px;
-    color: #FF7100;
+    color: var(--accent);
     transition: all 0.3s ease;
 }
 
@@ -5745,7 +5757,7 @@ a {
     background: rgba(255, 113, 0, 0.08);
     border: 1px solid rgba(255, 113, 0, 0.2);
     border-radius: 12px;
-    color: #FF7100;
+    color: var(--accent);
     font-size: 14px;
     font-weight: 700;
     text-decoration: none;
