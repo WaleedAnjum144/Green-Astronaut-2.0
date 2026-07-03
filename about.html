@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Green Creatman Maitong | Solar Energy Solutions</title>
+    <title>Green Astronaut (GA Solar) | Wholesale Solar Supply Malaysia</title>
 
     <link rel="icon" href="imagess/favicon.png" type="image/x-icon">
 
@@ -15,7 +15,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <!-- Swiper -->
+    <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Custom CSS -->
@@ -25,49 +25,108 @@
 
 <body>
 
+    <!-- 1. SOCIAL SIDEBAR (Stays outside everything) -->
+    <div class="social-sidebar">
+        <a href="https://www.facebook.com/profile.php?id=61586630224230" class="social-icon facebook" target="_blank"><i
+                class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/+60109315899" target="_blank" class="social-icon whatsapp"><i
+                class="fab fa-whatsapp"></i></a>
+        <a href="mailto:info@solarpv.asia" target="_blank" class="social-icon email"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <!-- Topbar Start -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <!-- Left Side: Contact & Info -->
+            <div class="top-bar-content left">
+                <div class="top-item">
+                    <i class="fa fa-map-marker-alt"></i>
+                    <a href="https://maps.app.goo.gl/CiF9th9P6h3xGeJG7">No 16, Jalan Kempas Utama 1/1 Taman Kempas
+                        Utama, 81300 Johor Bahru
+                    </a>
+                </div>
+                <div class="top-item">
+                    <i class="far fa-clock"></i>
+                    <span>Mon - Fri : 09.00 AM - 09.00 PM</span>
+                </div>
+            </div>
+
+            <!-- Right Side: Phone & Socials -->
+            <div class="top-bar-content right">
+                <div class="top-item">
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:+0122389653">+0122389653</a>
+                </div>
+                <div class="top-socials">
+                    <a href="https://www.facebook.com/profile.php?id=61586630224230" target="_blank"
+                        aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/solarpvasia/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+
+
     <!-- ===================== NAVBAR ===================== -->
     <header class="navbar" id="navbar">
         <div class="container nav-inner">
 
-            <a href="#home" class="brand">
-                <div class="brand-mark">
-                    <span>G</span>
-                </div>
-                <div class="brand-text">
-                    <strong>Green Creatman Maitong</strong>
-                    <span>Solar Energy Solutions</span>
-                </div>
+            <a href="index.html" class="brand">
+                <img src="imagess/GA Logo.png" alt="Green Astronaut Logo" class="brand-logo">
             </a>
+
+
 
             <nav class="nav-links" id="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html" class="active">About</a>
 
-                <!-- Products Dropdown -->
                 <div class="nav-dropdown">
                     <a href="products.html" class="dropdown-toggle">
                         Products <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
                     </a>
                     <div class="dropdown-menu">
-                        <a href="solar.html">
-                            <i class="fa-solid fa-solar-panel"></i>
+                        <a href="#products" data-filter-link="panels">
+                            <i class="fa-solid fa-solar-panel" style="color:#FF7100;"></i>
                             <div>
-                                <strong>Solar Equipments</strong>
-                                <span>Inverters, Panels & Batteries</span>
+                                <strong>Solar Panels</strong>
+                                <span>LONGi • Trina • Jinko</span>
                             </div>
                         </a>
-                        <a href="kitchen.html">
-                            <i class="fa-solid fa-utensils"></i>
+                        <a href="#products" data-filter-link="inverters">
+                            <i class="fa-solid fa-plug-circle-bolt" style="color:#0284c7;"></i>
                             <div>
-                                <strong>Kitchen Equipments</strong>
-                                <span>Ice Machines & Dishwashers</span>
+                                <strong>Inverters</strong>
+                                <span>Deye • GoodWe • Solis</span>
+                            </div>
+                        </a>
+                        <a href="#products" data-filter-link="batteries">
+                            <i class="fa-solid fa-battery-full" style="color:#16a34a;"></i>
+                            <div>
+                                <strong>Battery Storage</strong>
+                                <span>SolaX • JA Energy • Sunwe • JD Energy</span>
+                            </div>
+                        </a>
+                        <a href="#products" data-filter-link="mounting">
+                            <i class="fa-solid fa-screwdriver-wrench" style="color:#7c3aed;"></i>
+                            <div>
+                                <strong>Mounting & Controllers</strong>
+                                <span>Structures • Rails • Controllers</span>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <a href="index.html#brands">Brands</a>
-                <a href="index.html#catalogue">Catalogue</a>
+                <a href="#brands">Brands</a>
+                <a href="#network">Network</a>
+                <a href="#projects">Projects</a>
                 <a href="contact.html">Contact</a>
             </nav>
 
@@ -75,15 +134,12 @@
                 <a href="#contact" class="hidden-mobile">
                     <button class="btn-primary">Request Quote</button>
                 </a>
-
                 <button class="btn-icon mobile-only" id="mobile-menu-open" aria-label="Open Menu">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
-
         </div>
     </header>
-
 
     <main>
         <!-- ===================== ABOUT PAGE HERO ===================== -->
@@ -91,58 +147,43 @@
 
             <div class="hero-bg-slides">
                 <div class="hero-slide active">
-                    <img src="imagess/Solar and kitchen products img.png" alt="Solar and energy solutions">
+                    <img src="imagess/solar hero banner.png" alt="GA Solar wholesale solar supply">
                 </div>
-
-                <!-- <div class="hero-slide">
-                    <img src="assets/images/hero slider 2.png" alt="Solar products and inverter systems">
-                </div>
-
-                <div class="hero-slide">
-                    <img src="assets/images/hero slider 3.png" alt="Battery storage and commercial equipment">
-                </div> -->
-
                 <div class="hero-overlay"></div>
             </div>
 
             <div class="container hero-content about-hero-content">
+
                 <div class="hero-eyebrow">
                     <div class="eyebrow-line"></div>
-                    <span class="label-caps">ABOUT JIUJIANG MAITONG</span>
+                    <span class="label-caps">ABOUT GREEN ASTRONAUT</span>
                 </div>
 
                 <h1 class="hero-title">
-                    Your Trusted Supplier for<br>
-                    <span class="accent-text">Solar Energy <span style="color:#111827 ;">&</span> Commercial Kitchen
-                        Equipment</span>.
+                    Malaysia-Based Supplier of<br class="br-lg">
+                    <span class="accent-text">Top-Tier China Solar Products</span>
                 </h1>
 
                 <p class="hero-desc">
-                    Bridging Southeast Asia to world-class manufacturing. We supply 100% genuine
-                    <strong>Solar Systems</strong> (Deye, LONGi, Jinko, Trina) and
-                    <strong>Pro-Kitchen Equipment</strong> (Hobart, Manitowoc, Bingeedi),
-                    secured by localized after-sales support.
+                    GA Solar supplies genuine solar panels, inverters, battery storage and mounting
+                    solutions for residential, commercial and industrial projects across Malaysia and
+                    Southeast Asia.
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#company-profile">
-                        <button class="btn-primary">Our Company</button>
-                    </a>
-
-                    <a href="#after-sales">
-                        <button class="btn-outline">After-Sales Support</button>
-                    </a>
+                    <a href="#company-profile" class="btn-primary">Company Profile</a>
+                    <a href="#contact" class="btn-outline">Request Quote</a>
                 </div>
 
                 <div class="hero-mini-stats">
                     <div>
-                        <strong>9+</strong>
-                        <span>Global Brands</span>
+                        <strong>2,600+</strong>
+                        <span>Partners</span>
                     </div>
 
                     <div>
-                        <strong>2</strong>
-                        <span>Core Divisions</span>
+                        <strong>3,800</strong>
+                        <span>Technical Teams</span>
                     </div>
 
                     <div>
@@ -152,86 +193,347 @@
 
                     <div>
                         <strong>100%</strong>
-                        <span>Genuine Supply</span>
+                        <span>Genuine Brands</span>
                     </div>
                 </div>
-            </div>
 
-            <!-- <div class="hero-dots">
-                <button class="hero-dot active" data-slide="0"></button>
-                <button class="hero-dot" data-slide="1"></button>
-                <button class="hero-dot" data-slide="2"></button>
-            </div> -->
+            </div>
 
         </section>
 
 
-        <!-- ===================== COMPANY PROFILE ===================== -->
-        <section class="about-profile-section" id="company-profile">
-            <div class="container">
+        <!-- ===================== ABOUT ===================== -->
+        <section class="about-section" id="about">
+            <div class="container about-shell">
+                <div class="about-left">
+                    <div class="about-badge">About GA Solar</div>
+                    <h2 class="about-title">
+                        Malaysia's Trusted Supplier of
+                        <span>Top-Tier China Solar Products</span>
+                    </h2>
 
-                <div class="section-center-header">
-                    <span class="label-caps">COMPANY PROFILE</span>
-                    <h2>Who We Are</h2>
-                    <p>
-                        A trusted authorized distributor connecting customers with reliable solar products,
-                        commercial kitchen equipment, localized technical support and long-term service assurance.
+                    <p class="about-lead">
+                        <strong>GA Solar Company</strong> is a Malaysia-based solar supply company specializing
+                        in the distribution of top-tier solar products sourced from leading manufacturers in China.
+                        We provide reliable product supply, technical support, warranty assistance, and project
+                        solutions for residential and commercial solar markets throughout Malaysia.
                     </p>
+
+                    <div class="about-feature-list">
+                        <div class="about-feature-card reveal">
+                            <div class="about-feature-icon"><i class="fa-solid fa-solar-panel"></i></div>
+                            <div>
+                                <h4>Solar Panels & Inverters</h4>
+                                <p>LONGi, Trina, Jinko & Aiko panels with top brand inverters in Malaysia —
+                                    Deye, GoodWe, Solis, Growatt, Sungrow, SAJ, Hopewind & Huawei.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature-card reveal">
+                            <div class="about-feature-icon icon-green"><i class="fa-solid fa-battery-full"></i></div>
+                            <div>
+                                <h4>Battery Storage — Top Brands of China</h4>
+                                <p>SolaX Power, JA Energy, Sunwe & JD Energy — China's leading energy storage
+                                    brands for safe, reliable backup power.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature-card reveal">
+                            <div class="about-feature-icon icon-purple"><i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+                            <div>
+                                <h4>Mounting Structures & Controllers</h4>
+                                <p>Complete mounting systems, roof rails and solar charge controllers —
+                                    everything for a full installation package.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="profile-language-grid">
-
-                    <!-- English -->
-                    <div class="profile-card english-card">
-                        <div class="profile-card-top">
-                            <span>English Version</span>
-                            <i class="fa-solid fa-language"></i>
+                <div class="about-right">
+                    <div class="about-image-card reveal">
+                        <img src="imagess/solar hero banner.png" alt="GA Solar - wholesale solar supply">
+                        <div class="about-floating-box">
+                            <strong>Zero Worries</strong>
+                            <span>Local Malaysia warehouse, warranty support & technical training.</span>
                         </div>
-
-                        <h3>Jiujiang Maitong Import and Export Trading Co., Ltd.</h3>
-
-                        <p>
-                            Jiujiang Maitong Import and Export Trading Co., Ltd. is an authorized distributor of many
-                            top-tier brands, with two core business divisions: New Energy & Solar Products and
-                            Commercial Kitchen Equipment.
-                        </p>
-
-                        <p>
-                            Purchasing from us allows clients to obtain genuine top-brand products directly. We have
-                            local subsidiaries named Green Astronaut Sdn Bhd in six Southeast Asian countries:
-                            Malaysia, Singapore, Indonesia, Thailand, Vietnam, and the Philippines.
-                        </p>
-
-                        <p>
-                            These local subsidiaries support maintenance, after-sales service, spare parts supply,
-                            equipment commissioning, troubleshooting and technical training.
-                        </p>
                     </div>
 
-                    <!-- Chinese -->
-                    <div class="profile-card chinese-card">
-                        <div class="profile-card-top">
-                            <span>中文版</span>
-                            <i class="fa-solid fa-earth-asia"></i>
+                    <div class="about-stats-grid">
+                        <div class="about-stat-item"><strong>2,600+</strong><span>Partners</span></div>
+                        <div class="about-stat-item"><strong>3,800</strong><span>Technical Teams</span></div>
+                        <div class="about-stat-item accent-box" style="grid-column: span 2;">
+                            <strong>MY • SG • ID • TH • VN • PH</strong>
+                            <span>Regional Sales & After-Sales Network</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===================== OUR NETWORK — SEA COUNTRY SVG MAP ===================== -->
+        <section class="network-section" id="network">
+            <div class="container">
+
+                <div class="network-grid sea-network-grid">
+
+                    <!-- LEFT CONTENT -->
+                    <div class="network-left">
+
+                        <div class="network-badge">
+                            <i class="fa-solid fa-globe-asia"></i>
+                            <span>OUR REGIONAL NETWORK</span>
                         </div>
 
-                        <h3>九江迈通贸易进出口有限公司</h3>
+                        <h2 class="network-title">
+                            Supplying Solar Products Across
+                            <span>Southeast Asia</span>
+                        </h2>
 
-                        <p>
-                            我司九江迈通贸易进出口有限公司是多家行业一线品牌授权代理商，主营两大板块产品：
-                            新能源光伏产品及商用厨具设备。
+                        <p class="network-desc">
+                            Green Astronaut supplies premium China solar products across Malaysia and Southeast Asia
+                            with reliable local sales, technical support, after-sales service, and partner assistance.
                         </p>
 
-                        <p>
-                            客户选择我们采购，既能拿到原厂一线正品货源，搭配马来西亚、新加坡、印尼、
-                            泰国、越南、菲律宾六国本地 Green Astronaut Sdn Bhd 子公司提供售后维保、
-                            原装配件供应。
-                        </p>
+                        <div class="network-support-pills">
+                            <span><i class="fa-solid fa-warehouse"></i> Local Warehouse</span>
+                            <span><i class="fa-solid fa-headset"></i> After-Sales Support</span>
+                            <span><i class="fa-solid fa-screwdriver-wrench"></i> Technical Service</span>
+                        </div>
 
-                        <p>
-                            同时我们每半年至一年为客户开展设备调试、维修保养专业培训，一站式解决采购
-                            与后期使用所有问题。
-                        </p>
+                        <!-- STATS -->
+                        <div class="network-stats-card improved-network-stats">
+                            <div class="network-stat-row">
+                                <div class="stat-icon">
+                                    <i class="fa-solid fa-handshake"></i>
+                                </div>
+                                <div>
+                                    <strong class="counter" data-target="2600">0</strong><em>+</em>
+                                    <span>Partners</span>
+                                </div>
+                            </div>
+
+                            <div class="network-stat-row">
+                                <div class="stat-icon blue-icon">
+                                    <i class="fa-solid fa-users-gear"></i>
+                                </div>
+                                <div>
+                                    <strong class="counter" data-target="3800">0</strong>
+                                    <span>Technical Service Teams</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ACTIVE COUNTRY INFO -->
+                        <div class="active-country-panel">
+
+                            <div class="country-info active" data-country="malaysia">
+                                <div class="country-flag">🇲🇾</div>
+                                <div>
+                                    <h4>Malaysia</h4>
+                                    <p>Main local market with warehouse support, project supply, installer partners,
+                                        warranty assistance, and after-sales service.</p>
+                                </div>
+                            </div>
+
+                            <div class="country-info" data-country="singapore">
+                                <div class="country-flag">🇸🇬</div>
+                                <div>
+                                    <h4>Singapore</h4>
+                                    <p>Regional project supply support, commercial solar product sourcing, and technical
+                                        coordination for premium customers.</p>
+                                </div>
+                            </div>
+
+                            <div class="country-info" data-country="indonesia">
+                                <div class="country-flag">🇮🇩</div>
+                                <div>
+                                    <h4>Indonesia</h4>
+                                    <p>Solar product distribution network for residential, commercial, and industrial
+                                        renewable energy projects.</p>
+                                </div>
+                            </div>
+
+                            <div class="country-info" data-country="thailand">
+                                <div class="country-flag">🇹🇭</div>
+                                <div>
+                                    <h4>Thailand</h4>
+                                    <p>Regional partner support for solar panels, inverters, batteries, mounting
+                                        systems,
+                                        and after-sales coordination.</p>
+                                </div>
+                            </div>
+
+                            <div class="country-info" data-country="vietnam">
+                                <div class="country-flag">🇻🇳</div>
+                                <div>
+                                    <h4>Vietnam</h4>
+                                    <p>Solar equipment supply network for growing renewable energy demand in residential
+                                        and commercial sectors.</p>
+                                </div>
+                            </div>
+
+                            <div class="country-info" data-country="philippines">
+                                <div class="country-flag">🇵🇭</div>
+                                <div>
+                                    <h4>Philippines</h4>
+                                    <p>Dealer support, solar product supply, technical assistance, and after-sales
+                                        service
+                                        coverage for island-based markets.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- COUNTRY CHIPS -->
+                        <div class="sea-country-chips">
+
+                            <button type="button" class="sea-country-chip active" data-country="malaysia">
+                                <span>🇲🇾</span> Malaysia
+                            </button>
+
+                            <button type="button" class="sea-country-chip" data-country="singapore">
+                                <span>🇸🇬</span> Singapore
+                            </button>
+
+                            <button type="button" class="sea-country-chip" data-country="indonesia">
+                                <span>🇮🇩</span> Indonesia
+                            </button>
+
+                            <button type="button" class="sea-country-chip" data-country="thailand">
+                                <span>🇹🇭</span> Thailand
+                            </button>
+
+                            <button type="button" class="sea-country-chip" data-country="vietnam">
+                                <span>🇻🇳</span> Vietnam
+                            </button>
+
+                            <button type="button" class="sea-country-chip" data-country="philippines">
+                                <span>🇵🇭</span> Philippines
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT MAP -->
+                    <div class="sea-map-wrapper">
+
+                        <div class="sea-map-card">
+
+                            <svg class="sea-map-svg" viewBox="0 0 800 620" xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="xMidYMid meet">
+
+                                <!-- Decorative lines -->
+                                <path class="sea-route" d="M250 355 C300 280, 345 190, 350 100" />
+                                <path class="sea-route" d="M250 355 C400 300, 560 230, 700 170" />
+                                <path class="sea-route" d="M250 355 C360 470, 520 530, 650 485" />
+
+                                <!-- THAILAND -->
+                                <g class="sea-country" id="sea-thailand" data-country="thailand" tabindex="0"
+                                    role="button" aria-label="Thailand">
+                                    <path d="M195,55 C210,40 240,42 255,55 C270,60 280,75 275,95
+                                C290,105 295,125 285,140 C295,150 298,170 288,185
+                                C282,200 268,205 255,200 C250,215 240,222 230,218
+                                L228,240 C226,265 224,290 220,315 L212,345
+                                C208,360 200,362 194,350 L190,320
+                                C193,295 196,270 198,245 L200,220
+                                C188,215 180,202 184,188 C175,175 176,158 186,148
+                                C178,135 180,115 192,105 C186,88 188,68 195,55 Z" />
+                                </g>
+
+                                <!-- VIETNAM -->
+                                <g class="sea-country" id="sea-vietnam" data-country="vietnam" tabindex="0"
+                                    role="button" aria-label="Vietnam">
+                                    <path d="M330,40 C345,32 362,36 370,50 C380,60 378,78 368,88
+                                C376,100 380,118 374,132 C380,148 386,166 392,182
+                                C400,200 408,218 412,238 C416,258 414,280 404,296
+                                C394,312 378,322 362,324 C352,326 344,318 348,308
+                                C360,300 370,290 376,276 C382,262 380,246 374,232
+                                C366,214 356,198 348,180 C340,163 334,146 330,128
+                                C322,116 318,100 324,86 C318,72 320,52 330,40 Z" />
+                                </g>
+
+                                <!-- PHILIPPINES -->
+                                <g class="sea-country" id="sea-philippines" data-country="philippines" tabindex="0"
+                                    role="button" aria-label="Philippines">
+                                    <path d="M672,70 C686,60 704,62 714,76 C722,88 720,106 710,118
+                                C716,130 714,146 704,154 C694,162 680,160 672,150
+                                C664,138 662,120 666,104 C662,90 664,78 672,70 Z" />
+                                    <circle cx="700" cy="180" r="10" />
+                                    <circle cx="727" cy="197" r="9" />
+                                    <circle cx="704" cy="213" r="9" />
+                                    <path d="M690,238 C706,228 726,230 738,242 C748,254 748,272 738,284
+                                C728,296 710,300 696,292 C684,284 678,268 682,254
+                                C684,247 686,242 690,238 Z" />
+                                </g>
+
+                                <!-- MALAYSIA -->
+                                <g class="sea-country active" id="sea-malaysia" data-country="malaysia" tabindex="0"
+                                    role="button" aria-label="Malaysia">
+                                    <!-- Peninsular Malaysia -->
+                                    <path d="M212,352 C222,346 236,348 244,358 C252,368 256,382 258,396
+                                C260,412 262,428 258,442 C254,452 244,458 234,454
+                                C224,450 216,440 212,428 C208,414 206,398 206,384
+                                C205,372 206,360 212,352 Z" />
+                                    <!-- East Malaysia -->
+                                    <path d="M440,392 C470,372 510,360 550,362 C580,364 606,376 618,396
+                                C610,404 596,406 584,402 C570,410 552,412 538,408
+                                C520,414 500,416 484,412 C466,416 448,410 440,392 Z" />
+                                </g>
+
+                                <!-- SINGAPORE -->
+                                <g class="sea-country" id="sea-singapore" data-country="singapore" tabindex="0"
+                                    role="button" aria-label="Singapore">
+                                    <circle cx="252" cy="468" r="10" />
+                                </g>
+
+                                <!-- INDONESIA -->
+                                <g class="sea-country" id="sea-indonesia" data-country="indonesia" tabindex="0"
+                                    role="button" aria-label="Indonesia">
+                                    <!-- Sumatra -->
+                                    <path d="M148,392 C160,382 174,386 184,398 C198,414 212,432 224,450
+                                C236,468 246,488 250,508 C252,522 246,534 234,536
+                                C222,538 212,528 204,516 C190,496 176,476 164,454
+                                C154,436 144,414 148,392 Z" />
+                                    <!-- Java -->
+                                    <path d="M262,540 C290,532 322,530 352,534 C382,538 410,540 436,548
+                                C444,552 442,562 432,564 C402,568 370,566 340,562
+                                C312,558 284,556 262,552 C254,550 254,543 262,540 Z" />
+                                    <!-- Kalimantan -->
+                                    <path d="M446,416 C470,420 494,422 518,420 C542,418 566,414 588,418
+                                C602,422 610,436 606,452 C602,470 590,486 574,496
+                                C556,506 534,510 514,506 C494,502 476,492 462,478
+                                C450,464 442,440 446,416 Z" />
+                                    <!-- Sulawesi -->
+                                    <path d="M628,440 C640,432 654,436 660,448 C666,460 662,474 668,486
+                                C674,498 686,504 684,516 C682,528 668,530 658,522
+                                C650,516 646,504 640,494 C632,502 626,514 616,518
+                                C606,520 600,510 606,500 C612,488 620,478 624,464
+                                C625,456 624,447 628,440 Z" />
+                                </g>
+
+                            </svg>
+
+                            <!-- Tooltips -->
+                            <div class="sea-tooltip malaysia active" data-country="malaysia">🇲🇾 Malaysia</div>
+                            <div class="sea-tooltip singapore" data-country="singapore">🇸🇬 Singapore</div>
+                            <div class="sea-tooltip indonesia" data-country="indonesia">🇮🇩 Indonesia</div>
+                            <div class="sea-tooltip thailand" data-country="thailand">🇹🇭 Thailand</div>
+                            <div class="sea-tooltip vietnam" data-country="vietnam">🇻🇳 Vietnam</div>
+                            <div class="sea-tooltip philippines" data-country="philippines">🇵🇭 Philippines</div>
+
+                        </div>
+
+                        <div class="sea-map-caption">
+                            <div>
+                                <strong>6 Countries Network</strong>
+                                <span>Malaysia • Singapore • Indonesia • Thailand • Vietnam • Philippines</span>
+                            </div>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
                     </div>
 
                 </div>
@@ -239,154 +541,211 @@
             </div>
         </section>
 
+        <!-- ===================== PARTNERSHIP COMMITMENT ===================== -->
+        <section class="partnership-commit-section" id="partnership-commit">
+            <!-- Decorative background -->
+            <div class="partnership-commit-bg-glow partnership-commit-glow-1"></div>
+            <div class="partnership-commit-bg-glow partnership-commit-glow-2"></div>
 
-        <!-- ===================== BUSINESS DIVISIONS ===================== -->
-        <section class="business-division-section">
             <div class="container">
+                <div class="partnership-commit-wrapper">
 
-                <div class="section-center-header">
-                    <span class="label-caps">OUR BUSINESS DIVISIONS</span>
-                    <h2>Two Core Product Categories</h2>
-                    <p>
-                        We focus on professional-grade solar energy products and commercial kitchen equipment,
-                        supplying trusted brands with reliable after-sales support.
-                    </p>
-                </div>
-
-                <div class="division-grid">
-
-                    <!-- Solar Division -->
-                    <div class="division-card solar-card">
-                        <div class="division-icon">
-                            <i class="fa-solid fa-solar-panel"></i>
+                    <!-- Image Side -->
+                    <div class="partnership-commit-img-box">
+                        <div class="partnership-commit-img-container">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=600&fit=crop"
+                                alt="Solar partnership and collaboration" class="partnership-commit-img">
+                            <div class="partnership-commit-img-overlay"></div>
+                            <div class="partnership-commit-badge">
+                                <i class="fa-solid fa-star"></i>
+                                <span>Trusted by 500+ Partners</span>
+                            </div>
                         </div>
 
-                        <span class="division-label">Division 01</span>
-
-                        <h3>New Energy & Solar Products</h3>
-
-                        <p>
-                            We supply high-quality solar products for residential, commercial and industrial projects,
-                            including inverters and photovoltaic modules from recognized global brands.
-                        </p>
-
-                        <div class="brand-list-wrap">
-                            <div class="brand-list">
-                                <h4>Inverters</h4>
-                                <ul>
-                                    <li>Deye</li>
-                                    <li>GoodWe</li>
-                                    <li>Ginlong</li>
-                                </ul>
+                        <!-- Statistics -->
+                        <div class="partnership-commit-statistics">
+                            <div class="partnership-commit-stat">
+                                <span class="partnership-commit-stat-number">500+</span>
+                                <span class="partnership-commit-stat-label">Active Partners</span>
                             </div>
-
-                            <div class="brand-list">
-                                <h4>Solar Panels</h4>
-                                <ul>
-                                    <li>Aiko</li>
-                                    <li>LONGi</li>
-                                    <li>Jinko</li>
-                                    <li>Trina</li>
-                                </ul>
+                            <div class="partnership-commit-stat">
+                                <span class="partnership-commit-stat-number">15+</span>
+                                <span class="partnership-commit-stat-label">Years Experience</span>
+                            </div>
+                            <div class="partnership-commit-stat">
+                                <span class="partnership-commit-stat-number">99%</span>
+                                <span class="partnership-commit-stat-label">Satisfaction Rate</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Kitchen Division -->
-                    <div class="division-card kitchen-card">
-                        <div class="division-icon">
-                            <i class="fa-solid fa-kitchen-set"></i>
+                    <!-- Content Side -->
+                    <div class="partnership-commit-content-box">
+                        <div class="partnership-commit-header">
+                            <span class="partnership-commit-label">
+                                <i class="fa-solid fa-lightbulb"></i> Our Commitment
+                            </span>
+                            <h2 class="partnership-commit-heading">
+                                Growing Together Through
+                                <span class="partnership-commit-highlight">Trusted Partnerships</span>
+                            </h2>
                         </div>
 
-                        <span class="division-label">Division 02</span>
-
-                        <h3>Commercial Kitchen Equipment</h3>
-
-                        <p>
-                            We provide reliable commercial kitchen solutions, including premium international brands
-                            and our own secondary brand for ice machines and dishwashers.
+                        <p class="partnership-commit-desc">
+                            We specialize in the wholesale supply of high-quality solar photovoltaic (PV)
+                            systems and welcome partnerships across all industries. Whether you own a retail
+                            store, have business connections, or are looking to expand your product offerings,
+                            we are ready to work with you to grow together.
                         </p>
 
-                        <div class="brand-list-wrap">
-                            <div class="brand-list">
-                                <h4>Premium Brands</h4>
-                                <ul>
-                                    <li>Manitowoc Ice Machines</li>
-                                    <li>Hobart Dishwashers</li>
-                                </ul>
+                        <!-- Feature Points -->
+                        <div class="partnership-commit-features">
+                            <div class="partnership-commit-feature-item">
+                                <div class="partnership-commit-feature-icon">
+                                    <i class="fa-solid fa-box-open"></i>
+                                </div>
+                                <div class="partnership-commit-feature-text">
+                                    <h4>Wholesale PV Supply</h4>
+                                    <p>Competitive pricing on bulk orders</p>
+                                </div>
                             </div>
 
-                            <div class="brand-list">
-                                <h4>Self-Owned Brand</h4>
-                                <ul>
-                                    <li>Bingeedi Ice Machines</li>
-                                    <li>Bingeedi Dishwashers</li>
-                                </ul>
+                            <div class="partnership-commit-feature-item">
+                                <div class="partnership-commit-feature-icon">
+                                    <i class="fa-solid fa-handshake"></i>
+                                </div>
+                                <div class="partnership-commit-feature-text">
+                                    <h4>Open to All Industries</h4>
+                                    <p>Flexible partnerships across sectors</p>
+                                </div>
+                            </div>
+
+                            <div class="partnership-commit-feature-item">
+                                <div class="partnership-commit-feature-icon">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </div>
+                                <div class="partnership-commit-feature-text">
+                                    <h4>Long-Term Growth</h4>
+                                    <p>Sustainable business relationships</p>
+                                </div>
                             </div>
                         </div>
+
+
+
+                        <!-- Call to Action -->
+                        <div class="partnership-commit-actions">
+                            <a href="tel:+0122389653" class="partnership-commit-btn partnership-commit-btn-primary">
+                                <span>Partner With Us Today</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="index.html" class="partnership-commit-btn partnership-commit-btn-secondary">
+                                <span>Learn More</span>
+                            </a>
+                        </div>
+                        <span class="partnership-commit-note">
+                            <i class="fa-solid fa-shield-check"></i>
+                            Free consultation • No obligations • Quick response
+                        </span>
                     </div>
 
                 </div>
-
             </div>
         </section>
 
 
         <!-- ===================== AFTER SALES SUPPORT ===================== -->
         <section class="after-sales-section" id="after-sales">
+            <div class="after-sales-bg-glow after-sales-glow-1"></div>
+            <div class="after-sales-bg-glow after-sales-glow-2"></div>
+
             <div class="container after-sales-shell">
 
-                <div class="after-sales-left">
+                <!-- LEFT CONTENT -->
+                <div class="after-sales-left reveal">
                     <div class="about-badge">Localized Support</div>
 
                     <h2 class="about-title">
-                        Southeast Asia After-Sales
-                        <span>Service Network</span>.
+                        Reliable After-Sales Support
+                        <span>Across Southeast Asia</span>
                     </h2>
 
                     <p class="about-lead">
-                        Our customers are supported by <b>Green Astronaut Sdn Bhd</b> local subsidiaries in six
-                        Southeast
-                        Asian countries. This allows faster maintenance response, spare parts supply and technical
-                        support without requiring customers to source products or parts independently from China.
+                        Green Astronaut supports customers with local technical assistance, warranty guidance,
+                        maintenance coordination and spare parts support across key Southeast Asian markets.
+                        Our goal is simple — faster response, smoother service and long-term confidence after purchase.
                     </p>
 
+                    <div class="after-sales-points">
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Local technical support</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Warranty assistance</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Spare parts coordination</span>
+                        </div>
+                    </div>
+
                     <div class="country-grid">
-                        <div><i class="fa-solid fa-location-dot"></i> Malaysia</div>
-                        <div><i class="fa-solid fa-location-dot"></i> Singapore</div>
-                        <div><i class="fa-solid fa-location-dot"></i> Indonesia</div>
-                        <div><i class="fa-solid fa-location-dot"></i> Thailand</div>
-                        <div><i class="fa-solid fa-location-dot"></i> Vietnam</div>
-                        <div><i class="fa-solid fa-location-dot"></i> Philippines</div>
+                        <div><span>🇲🇾</span> Malaysia</div>
+                        <div><span>🇸🇬</span> Singapore</div>
+                        <div><span>🇮🇩</span> Indonesia</div>
+                        <div><span>🇹🇭</span> Thailand</div>
+                        <div><span>🇻🇳</span> Vietnam</div>
+                        <div><span>🇵🇭</span> Philippines</div>
                     </div>
                 </div>
 
+                <!-- RIGHT CARDS -->
                 <div class="after-sales-right">
-                    <div class="support-card">
-                        <div class="support-icon">
-                            <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                    <div class="support-card reveal">
+                        <div class="support-card-top">
+                            <div class="support-icon">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+                            <span>01</span>
                         </div>
                         <h3>Maintenance Support</h3>
-                        <p>Localized service teams help customers with equipment maintenance and after-sales handling.
+                        <p>
+                            Local service coordination for solar products, troubleshooting assistance and
+                            after-sales handling for project partners and customers.
                         </p>
                     </div>
 
-                    <div class="support-card">
-                        <div class="support-icon">
-                            <i class="fa-solid fa-box-open"></i>
+                    <div class="support-card reveal">
+                        <div class="support-card-top">
+                            <div class="support-icon">
+                                <i class="fa-solid fa-box-open"></i>
+                            </div>
+                            <span>02</span>
                         </div>
-                        <h3>Original Spare Parts</h3>
-                        <p>Replacement spare parts can be supplied quickly when equipment requires servicing.</p>
+                        <h3>Spare Parts Assistance</h3>
+                        <p>
+                            Faster spare parts arrangement and product replacement support through our
+                            regional supply and service network.
+                        </p>
                     </div>
 
-                    <div class="support-card">
-                        <div class="support-icon">
-                            <i class="fa-solid fa-user-gear"></i>
+                    <div class="support-card reveal">
+                        <div class="support-card-top">
+                            <div class="support-icon">
+                                <i class="fa-solid fa-user-gear"></i>
+                            </div>
+                            <span>03</span>
                         </div>
                         <h3>Technical Training</h3>
-                        <p>Professional training is organized every six months or yearly for commissioning and
-                            maintenance.</p>
+                        <p>
+                            Product training and technical guidance for dealers, installers and project teams
+                            to ensure better installation and long-term operation.
+                        </p>
                     </div>
+
                 </div>
 
             </div>
@@ -394,89 +753,229 @@
 
 
         <!-- ===================== WHY CUSTOMERS CHOOSE US ===================== -->
-        <section class="why-about-section">
+        <section class="why-about-section" id="why-choose-us">
+
+            <div class="why-about-bg">
+                <div class="why-about-glow why-about-glow-1"></div>
+                <div class="why-about-glow why-about-glow-2"></div>
+                <div class="why-about-pattern"></div>
+            </div>
+
             <div class="container">
 
-                <div class="section-center-header">
-                    <span class="label-caps">WHY CHOOSE US</span>
-                    <h2>One-Stop Procurement & Long-Term Support</h2>
-                    <p>
-                        From genuine brand supply to localized technical support, we help customers reduce procurement
-                        risk
-                        and improve long-term operational confidence.
+                <div class="section-header center">
+                    <span class="label-caps">WHY CHOOSE GA SOLAR</span>
+                    <h2>One-Stop Solar Procurement & Long-Term Support</h2>
+                    <p class="section-subtext">
+                        We help dealers, installers and project partners source genuine solar products with
+                        reliable local support, technical guidance and regional after-sales assistance.
                     </p>
+                    <div class="header-line"></div>
                 </div>
 
                 <div class="why-about-grid">
 
-                    <div class="why-about-card">
-                        <div class="why-about-num">01</div>
-                        <h3>Authorized Brand Supply</h3>
+                    <!-- Card 1 -->
+                    <div class="why-about-card reveal">
+                        <div class="why-about-card-head">
+                            <div class="why-about-icon">
+                                <i class="fa-solid fa-certificate"></i>
+                            </div>
+                            <span class="why-about-num">01</span>
+                        </div>
+
+                        <h3>Genuine Brand Supply</h3>
                         <p>
-                            Clients can obtain genuine products from top-tier brands through an authorized distributor
-                            channel.
+                            Access top-tier solar products from trusted manufacturers including panels,
+                            inverters, batteries, mounting systems and controllers.
                         </p>
                     </div>
 
-                    <div class="why-about-card">
-                        <div class="why-about-num">02</div>
+                    <!-- Card 2 -->
+                    <div class="why-about-card reveal">
+                        <div class="why-about-card-head">
+                            <div class="why-about-icon">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <span class="why-about-num">02</span>
+                        </div>
+
                         <h3>Localized After-Sales</h3>
                         <p>
-                            Six-country Southeast Asia support network helps customers access service and spare parts
-                            faster.
+                            Our Southeast Asia network helps customers receive faster support, warranty
+                            assistance and service coordination after purchase.
                         </p>
                     </div>
 
-                    <div class="why-about-card">
-                        <div class="why-about-num">03</div>
-                        <h3>Training & Maintenance</h3>
+                    <!-- Card 3 -->
+                    <div class="why-about-card reveal">
+                        <div class="why-about-card-head">
+                            <div class="why-about-icon">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                            </div>
+                            <span class="why-about-num">03</span>
+                        </div>
+
+                        <h3>Technical Training</h3>
                         <p>
-                            We provide technical training covering commissioning, troubleshooting and preventive
-                            maintenance.
+                            We provide product guidance and training support for dealers, installers and
+                            technical teams to improve installation confidence.
                         </p>
                     </div>
 
-                    <div class="why-about-card">
-                        <div class="why-about-num">04</div>
-                        <h3>Lower Procurement Hassle</h3>
+                    <!-- Card 4 -->
+                    <div class="why-about-card reveal">
+                        <div class="why-about-card-head">
+                            <div class="why-about-icon">
+                                <i class="fa-solid fa-boxes-stacked"></i>
+                            </div>
+                            <span class="why-about-num">04</span>
+                        </div>
+
+                        <h3>Simpler Procurement</h3>
                         <p>
-                            Customers do not need to independently travel to China for sourcing, replacement parts or
-                            support.
+                            Reduce sourcing hassle with one reliable supplier for complete solar product
+                            packages, quotation support and project-based recommendations.
                         </p>
                     </div>
 
                 </div>
 
-            </div>
-        </section>
-
-
-        <!-- ===================== ABOUT CTA ===================== -->
-        <section class="about-cta-section">
-            <div class="container">
-                <div class="about-cta-box">
+                <div class="why-about-bottom reveal">
                     <div>
-                        <span class="label-caps">START YOUR PROJECT</span>
-                        <h2>Need Solar Products or Commercial Equipment?</h2>
-                        <p>
-                            Contact us to discuss product supply, brand availability, technical requirements,
-                            spare parts or after-sales service support.
-                        </p>
+                        <strong>Built for Dealers, Installers & Project Partners</strong>
+                        <span>Wholesale supply • Technical support • Regional network</span>
                     </div>
 
-                    <div class="about-cta-actions">
-                        <a href="contact.html">
-                            <button class="btn-primary">Contact Us</button>
-                        </a>
-
-                        <a href="products.html">
-                            <button class="btn-outline">View Products</button>
-                        </a>
-                    </div>
+                    <a href="#contact" class="why-about-btn">
+                        <span>Work With Us</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
                 </div>
+
             </div>
         </section>
 
+
+        <!-- ===================== CLIENT TESTIMONIALS ===================== -->
+        <section class="solar-testimonial-section" id="testimonials">
+            <!-- Decorative background glows -->
+            <div class="solar-testimonial-bg-glow solar-testimonial-glow-1"></div>
+            <div class="solar-testimonial-bg-glow solar-testimonial-glow-2"></div>
+
+            <div class="container">
+
+                <!-- Section Header -->
+                <div class="solar-testimonial-header">
+                    <span class="solar-testimonial-label">
+                        <i class="fa-solid fa-comment-dots"></i> Client Testimonials
+                    </span>
+                    <h2 class="solar-testimonial-title">
+                        What Our Partners
+                        <span class="solar-testimonial-highlight">Say About Us</span>
+                    </h2>
+                    <p class="solar-testimonial-desc">
+                        Don't just take our word for it. Here's what businesses across various industries
+                        have to say about their experience partnering with us for solar PV systems.
+                    </p>
+                </div>
+
+                <!-- Testimonial Cards Grid -->
+                <div class="solar-testimonial-grid">
+
+                    <!-- Card 1 -->
+                    <div class="solar-testimonial-card">
+                        <div class="solar-testimonial-quote-icon">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <div class="solar-testimonial-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="solar-testimonial-text">
+                            "Switching to their wholesale PV systems was a game-changer for our retail business. The
+                            quality is unmatched, and the margins have allowed us to scale faster than we expected.
+                            Their support team is incredibly responsive."
+                        </p>
+                        <div class="solar-testimonial-divider"></div>
+                        <div class="solar-testimonial-author">
+                            <img src="https://i.pravatar.cc/100?img=12" alt="Michael Reynolds"
+                                class="solar-testimonial-avatar">
+                            <div class="solar-testimonial-author-info">
+                                <h4>Michael Reynolds</h4>
+                                <span>CEO, GreenTech Retail</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="solar-testimonial-card">
+                        <div class="solar-testimonial-quote-icon">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <div class="solar-testimonial-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="solar-testimonial-text">
+                            "As a contractor, I need reliable suppliers who deliver on time. This team has never missed
+                            a deadline. The PV panels are top-tier, and the pricing allows me to win more bids. Truly a
+                            long-term growth partner."
+                        </p>
+                        <div class="solar-testimonial-divider"></div>
+                        <div class="solar-testimonial-author">
+                            <img src="https://i.pravatar.cc/100?img=33" alt="Sarah Jenkins"
+                                class="solar-testimonial-avatar">
+                            <div class="solar-testimonial-author-info">
+                                <h4>Sarah Jenkins</h4>
+                                <span>Operations Director, BuildRight Corp</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="solar-testimonial-card">
+                        <div class="solar-testimonial-quote-icon">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <div class="solar-testimonial-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="solar-testimonial-text">
+                            "We were new to the solar industry, but their dedicated partner support guided us through
+                            everything. From marketing materials to technical specs, they set us up for success. Our
+                            solar division is now our most profitable."
+                        </p>
+                        <div class="solar-testimonial-divider"></div>
+                        <div class="solar-testimonial-author">
+                            <img src="https://i.pravatar.cc/100?img=45" alt="David Chen"
+                                class="solar-testimonial-avatar">
+                            <div class="solar-testimonial-author-info">
+                                <h4>David Chen</h4>
+                                <span>Founder, Apex Innovations</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Bottom Rating Summary -->
+                <div class="solar-testimonial-footer">
+                    <div class="solar-testimonial-footer-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>4.9/5 Average Rating</h4>
+                    <p>Based on feedback from <strong>500+ active wholesale partners</strong></p>
+                </div>
+
+            </div>
+        </section>
 
     </main>
 
@@ -493,23 +992,23 @@
             <div class="footer-top">
                 <div class="footer-brand-block">
                     <a href="#home" class="footer-brand">
-                        <div class="footer-brand-mark">G</div>
+                        <!-- Replace the text div with your image -->
+                        <img src="imagess/GA Logo.png" alt="Green Astronaut Logo" class="footer-logo">
+
                         <div class="footer-brand-text">
-                            <strong>Green Creatman Maitong</strong>
-                            <span>Solar & Commercial Kitchen Solutions</span>
+                            <strong>Green Astronaut</strong>
+                            <span>GA Solar • Renewable Energy</span>
                         </div>
                     </a>
-
                     <p class="footer-desc">
-                        We supply genuine solar inverters, premium solar panels, and world-class commercial
-                        kitchen equipment — including ice machines and dishwashers — for residential, commercial,
-                        and industrial applications across Southeast Asia.
+                        Malaysia-based solar supply company distributing top-tier China solar products —
+                        panels, inverters, battery storage, mounting structures and controllers — for
+                        residential, commercial and industrial projects across Southeast Asia.
                     </p>
                 </div>
-
                 <div class="footer-cta-box">
-                    <h4>Need Product Support?</h4>
-                    <p>Talk to us for solar or kitchen equipment recommendations and quotation support.</p>
+                    <h4>Need Wholesale Pricing?</h4>
+                    <p>Talk to us for solar product recommendations, dealer partnership and quotation support.</p>
                     <a href="#contact"><button class="btn-primary">Contact Us</button></a>
                 </div>
             </div>
@@ -518,54 +1017,51 @@
                 <div class="footer-col">
                     <h6>Quick Links</h6>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="#catalogue">Catalogue</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-col">
-                    <h6>Solar & Energy</h6>
+                    <h6>Products</h6>
                     <ul>
-                        <li><a href="solar-products.html">Solar Inverters</a></li>
-                        <li><a href="solar-products.html">Solar Panels</a></li>
-                        <li><a href="solar-products.html">Battery Storage</a></li>
+                        <li><a href="#products">Solar Panels</a></li>
+                        <li><a href="#products">Inverters</a></li>
+                        <li><a href="#products">Battery Storage</a></li>
+                        <li><a href="#products">Mounting & Controllers</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-col">
-                    <h6>Kitchen Equipment</h6>
+                    <h6>Panel Brands</h6>
                     <ul>
-                        <li><a href="kitchen-products.html">Ice Machines</a></li>
-                        <li><a href="kitchen-products.html">Dishwashers</a></li>
-                        <li><a href="kitchen-products.html">Bingeedi Series</a></li>
+                        <li><a href="#brands">LONGi / Trina</a></li>
+                        <li><a href="#brands">Jinko </a></li>
                     </ul>
                 </div>
-
                 <div class="footer-col">
-                    <h6>Our Brands</h6>
+                    <h6>Battery Brands</h6>
                     <ul>
-                        <li><a href="#brands">Deye / Goodwe / Ginlong</a></li>
-                        <li><a href="#brands">Aiko / LONGi / Jinko / Trina</a></li>
-                        <li><a href="#brands">Manitowoc / Hobart / Bingeedi</a></li>
+                        <li><a href="#brands">SolaX / JA Energy</a></li>
+                        <li><a href="#brands">Sunwe / JD Energy</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-col">
                     <h6>Contact</h6>
                     <ul class="footer-contact-list">
-                        <li><i class="fa-solid fa-phone"></i><a href="tel:+60109647547">010-9647547</a></li>
+                        <li><i class="fa-solid fa-phone"></i><a href="tel:+0122389653">+0122389653</a></li>
                         <li><i class="fa-solid fa-envelope"></i><a
                                 href="mailto:greencreatman@gmail.com">greencreatman@gmail.com</a></li>
-                        <li><i class="fa-solid fa-location-dot"></i><span>Johor Bahru, Malaysia</span></li>
+                        <li><i class="fa-solid fa-location-dot"></i><span>No 16, Jalan Kempas Utama 1/1 Taman Kempas
+                                Utama, 81300 Johor Bahru
+                            </span></li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>© 2026 Green Creatman Maitong. All rights reserved.</p>
+                <p>© 2026 Green Astronaut Sdn. Bhd. (GA Solar). All rights reserved.</p>
                 <div class="footer-socials">
                     <a href="#"><i class="fa-solid fa-globe"></i></a>
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -575,50 +1071,50 @@
         </div>
     </footer>
 
+
     <!-- ===================== MOBILE MENU ===================== -->
     <div class="mobile-menu" id="mobile-menu">
         <div class="mobile-menu-header">
-            <div class="logo">Green Creatman Maitong</div>
+            <a href="#home" class="mobile-brand">
+                <img src="imagess/GA Logo.png" alt="Green Astronaut Logo" class="mobile-logo">
+            </a>
             <button id="mobile-menu-close"><i class="fa-solid fa-xmark"></i></button>
         </div>
         <nav class="mobile-nav">
-            <a href="index.html">Home</a>
-            <a href="about.html" class="active">About</a>
-
-            <!-- Mobile Products Dropdown -->
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
             <div class="mobile-dropdown">
                 <button class="mobile-dropdown-toggle" id="mobile-products-toggle">
                     Products <i class="fa-solid fa-chevron-down mobile-dropdown-arrow"></i>
                 </button>
                 <div class="mobile-dropdown-menu" id="mobile-products-menu">
-                    <a href="solar.html">
-                        <i class="fa-solid fa-solar-panel"></i> Solar Equipments
-                    </a>
-                    <a href="kitchen.html">
-                        <i class="fa-solid fa-utensils"></i> Kitchen Equipments
-                    </a>
+                    <a href="#products"><i class="fa-solid fa-solar-panel" style="color:#FF7100;"></i> Solar Panels</a>
+                    <a href="#products"><i class="fa-solid fa-plug-circle-bolt" style="color:#0284c7;"></i>
+                        Inverters</a>
+                    <a href="#products"><i class="fa-solid fa-battery-full" style="color:#16a34a;"></i> Battery
+                        Storage</a>
+                    <a href="#products"><i class="fa-solid fa-screwdriver-wrench" style="color:#7c3aed;"></i> Mounting &
+                        Controllers</a>
                 </div>
             </div>
             <a href="#brands">Brands</a>
-            <a href="#catalogue">Catalogue</a>
-            <a href="contact.html">Contact</a>
+            <a href="#network">Network</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
             <a href="#contact"><button class="btn-primary full-width mobile-quote-btn">Request Quote</button></a>
         </nav>
     </div>
 
 
-
     <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function () {
-            emailjs.init("hmYerv8ef0f3rjJTF");
-        })();
+        (function () { emailjs.init("hmYerv8ef0f3rjJTF"); })();
     </script>
 
     <!-- Swiper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
     <!-- Custom JS -->
     <script src="script.js"></script>

@@ -20,6 +20,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
+
 </head>
 
 <body>
@@ -31,8 +32,7 @@
         <a href="https://wa.me/+60109315899" target="_blank" class="social-icon whatsapp"><i
                 class="fab fa-whatsapp"></i></a>
         <a href="mailto:info@solarpv.asia" target="_blank" class="social-icon email"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.instagram.com/solarpvasia/" target="_blank" class="social-icon instagram"><i
-                class="fab fa-instagram"></i></a>
+
     </div>
 
     <!-- Topbar Start -->
@@ -79,7 +79,7 @@
     <header class="navbar" id="navbar">
         <div class="container nav-inner">
 
-            <a href="#home" class="brand">
+            <a href="index.html" class="brand">
                 <img src="imagess/GA Logo.png" alt="Green Astronaut Logo" class="brand-logo">
             </a>
 
@@ -87,10 +87,10 @@
 
             <nav class="nav-links" id="nav-links">
                 <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
+                <a href="about.html">About</a>
 
                 <div class="nav-dropdown">
-                    <a href="#products" class="dropdown-toggle">
+                    <a href="products.html" class="dropdown-toggle">
                         Products <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
                     </a>
                     <div class="dropdown-menu">
@@ -128,7 +128,7 @@
                 <a href="#brands">Brands</a>
                 <a href="#network">Network</a>
                 <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="contact.html">Contact</a>
             </nav>
 
             <div class="nav-actions">
@@ -281,34 +281,39 @@
 
         <!-- ===================== PRODUCTS ===================== -->
         <section class="products-section" id="products">
+
+            <!-- Floating background shapes -->
+            <div class="products-bg-shapes">
+                <div class="bg-shape shape-1"></div>
+                <div class="bg-shape shape-2"></div>
+                <div class="bg-shape shape-3"></div>
+                <div class="bg-shape shape-4"></div>
+            </div>
+
             <div class="container">
 
                 <div class="section-header center">
-                    <span class="label-caps">PRODUCT RANGE</span>
-                    <h2>Our Solar Products & Categories</h2>
-                    <p class="section-subtext">
-                        Four complete product categories from the top brands of China — everything you need for
-                        residential, commercial, and industrial solar projects.
-                    </p>
+                    <span class="label-caps">🔆 PRODUCT RANGE</span>
+                    <h2>Our Solar Products</h2>
                     <div class="header-line"></div>
                 </div>
 
                 <!-- Category Filter Tabs -->
                 <div class="filter-tabs" id="filterTabs">
                     <button class="filter-tab active" data-filter="all">
-                        <i class="fa-solid fa-grip"></i> All Products
+                        <i class="fa-solid fa-grip"></i> All
                     </button>
                     <button class="filter-tab tab-orange" data-filter="panels">
-                        <i class="fa-solid fa-solar-panel"></i> Solar Panels
+                        <i class="fa-solid fa-solar-panel"></i> Panels
                     </button>
                     <button class="filter-tab tab-blue" data-filter="inverters">
                         <i class="fa-solid fa-plug-circle-bolt"></i> Inverters
                     </button>
                     <button class="filter-tab tab-green" data-filter="batteries">
-                        <i class="fa-solid fa-battery-full"></i> Battery Storage
+                        <i class="fa-solid fa-battery-full"></i> Batteries
                     </button>
                     <button class="filter-tab tab-purple" data-filter="mounting">
-                        <i class="fa-solid fa-screwdriver-wrench"></i> Mounting & Controllers
+                        <i class="fa-solid fa-screwdriver-wrench"></i> Mounting
                     </button>
                 </div>
 
@@ -317,212 +322,374 @@
 
                     <!-- ============ SOLAR PANELS ============ -->
                     <div class="product-card reveal" data-category="panels">
-                        <div class="product-top-bar bar-orange">
-                            <span class="label-caps">SOLAR PANEL</span>
-                            <div class="dot"></div>
+                        <div class="card-color-strip strip-orange"></div>
+                        <div class="card-glow glow-orange"></div>
+                        <div class="product-badge badge-orange">
+                            <i class="fa-solid fa-solar-panel"></i> Panel
                         </div>
                         <div class="product-body">
-                            <img src="Product Images/longi-hi-mo-7-solar-panel-product-1.png"
-                                alt="LONGi Hi-MO 7 Solar Panel">
+                            <div class="product-img-wrap img-bg-orange">
+                                <img src="Product Images/longi-hi-mo-7-solar-panel-product-1.png"
+                                    alt="LONGi Hi-MO 7 Solar Panel">
+                            </div>
                             <h4>LONGi Hi-MO Series</h4>
-                            <p class="product-model">Premium High-Efficiency Module</p>
+                            <span class="product-tag tag-orange">⚡ Premium Module</span>
                         </div>
-                        <div class="product-footer">
-                            <div class="stock-row"><span>Brand</span><span class="stock-ready">LONGi Solar</span></div>
-                        </div>
-                    </div>
-
-                    <div class="product-card reveal" data-category="panels">
-                        <div class="product-top-bar bar-orange">
-                            <span class="label-caps">SOLAR PANEL</span>
-                            <div class="dot"></div>
-                        </div>
-                        <div class="product-body">
-                            <img src="Product Images/trina-solar-vertex-s-n-type-solar-panel-1.webp"
-                                alt="Trina Vertex S Solar Panel">
-                            <h4>Trina Vertex S N-Type</h4>
-                            <p class="product-model">High Efficiency N-Type Module</p>
-                        </div>
-                        <div class="product-footer">
-                            <div class="stock-row"><span>Brand</span><span class="stock-ready">Trina Solar</span></div>
+                        <div class="product-footer footer-orange">
+                            <div class="brand-chip chip-orange">
+                                <div class="brand-dot dot-orange"></div>
+                                LONGi Solar
+                            </div>
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
 
                     <div class="product-card reveal" data-category="panels">
-                        <div class="product-top-bar bar-orange">
-                            <span class="label-caps">SOLAR PANEL</span>
-                            <div class="dot"></div>
+                        <div class="card-color-strip strip-orange"></div>
+                        <div class="card-glow glow-orange"></div>
+                        <div class="product-badge badge-orange">
+                            <i class="fa-solid fa-solar-panel"></i> Panel
                         </div>
                         <div class="product-body">
-                            <img src="Product Images/jinko-tiger-neo-n-type-solar-panel-1.png"
-                                alt="Jinko Tiger Neo Solar Panel">
-                            <h4>Jinko Tiger Neo N-Type</h4>
-                            <p class="product-model">Reliable Energy Generation</p>
+                            <div class="product-img-wrap img-bg-orange">
+                                <img src="Product Images/trina-solar-vertex-s-n-type-solar-panel-1.webp"
+                                    alt="Trina Vertex S Solar Panel">
+                            </div>
+                            <h4>Trina Vertex S</h4>
+                            <span class="product-tag tag-orange">⚡ N-Type Module</span>
                         </div>
-                        <div class="product-footer">
-                            <div class="stock-row"><span>Brand</span><span class="stock-ready">Jinko Solar</span></div>
+                        <div class="product-footer footer-orange">
+                            <div class="brand-chip chip-orange">
+                                <div class="brand-dot dot-orange"></div>
+                                Trina Solar
+                            </div>
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
 
-
+                    <div class="product-card reveal" data-category="panels">
+                        <div class="card-color-strip strip-orange"></div>
+                        <div class="card-glow glow-orange"></div>
+                        <div class="product-badge badge-orange">
+                            <i class="fa-solid fa-solar-panel"></i> Panel
+                        </div>
+                        <div class="product-body">
+                            <div class="product-img-wrap img-bg-orange">
+                                <img src="Product Images/jinko-tiger-neo-n-type-solar-panel-1.png"
+                                    alt="Jinko Tiger Neo Solar Panel">
+                            </div>
+                            <h4>Jinko Tiger Neo</h4>
+                            <span class="product-tag tag-orange">⚡ N-Type Module</span>
+                        </div>
+                        <div class="product-footer footer-orange">
+                            <div class="brand-chip chip-orange">
+                                <div class="brand-dot dot-orange"></div>
+                                Jinko Solar
+                            </div>
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- ============ INVERTERS ============ -->
                     <div class="product-card reveal" data-category="inverters">
-                        <div class="product-top-bar bar-blue">
-                            <span class="label-caps">INVERTER</span>
-                            <div class="dot"></div>
+                        <div class="card-color-strip strip-blue"></div>
+                        <div class="card-glow glow-blue"></div>
+                        <div class="product-badge badge-blue">
+                            <i class="fa-solid fa-plug-circle-bolt"></i> Inverter
                         </div>
                         <div class="product-body">
-                            <img src="Product Images/deye-goodwe-solis-solar-hybrid-inverter--1.webp"
-                                alt="Deye Hybrid Inverter">
-                            <h4>Deye Hybrid Inverter</h4>
-                            <p class="product-model">Warranty up to 15 Years</p>
+                            <div class="product-img-wrap img-bg-blue">
+                                <img src="Product Images/deye-goodwe-solis-solar-hybrid-inverter--1.webp"
+                                    alt="Deye Hybrid Inverter">
+                            </div>
+                            <h4>Deye Hybrid</h4>
+                            <span class="product-tag tag-blue">🛡️ 15 Year Warranty</span>
                         </div>
-                        <div class="product-footer">
-                            <div class="stock-row"><span>Brand</span><span class="stock-ready">Deye</span></div>
+                        <div class="product-footer footer-blue">
+                            <div class="brand-chip chip-blue">
+                                <div class="brand-dot dot-blue"></div>
+                                Deye
+                            </div>
+                            <div class="rating-stars stars-blue">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
 
                     <div class="product-card reveal" data-category="inverters">
-                        <div class="product-top-bar bar-blue">
-                            <span class="label-caps">INVERTER</span>
-                            <div class="dot"></div>
+                        <div class="card-color-strip strip-blue"></div>
+                        <div class="card-glow glow-blue"></div>
+                        <div class="product-badge badge-blue">
+                            <i class="fa-solid fa-plug-circle-bolt"></i> Inverter
                         </div>
                         <div class="product-body">
-                            <img src="Product Images/deye-goodwe-solis-solar-hybrid-inverter--2.jpg"
-                                alt="GoodWe Inverter">
+                            <div class="product-img-wrap img-bg-blue">
+                                <img src="Product Images/deye-goodwe-solis-solar-hybrid-inverter--2.jpg"
+                                    alt="GoodWe Inverter">
+                            </div>
                             <h4>GoodWe Inverter</h4>
-                            <p class="product-model">Residential / Commercial Grade</p>
+                            <span class="product-tag tag-blue">🏭 Commercial Grade</span>
                         </div>
-                        <div class="product-footer">
-                            <div class="stock-row"><span>Brand</span><span class="stock-ready">GoodWe</span></div>
+                        <div class="product-footer footer-blue">
+                            <div class="brand-chip chip-blue">
+                                <div class="brand-dot dot-blue"></div>
+                                GoodWe
+                            </div>
+                            <div class="rating-stars stars-blue">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
 
                     <div class="product-card reveal" data-category="inverters">
-                        <div class="product-top-bar bar-blue">
-                            <span class="label-caps">INVERTER</span>
-                            <div class="dot"></div>
+                        <div class="card-color-strip strip-blue"></div>
+                        <div class="card-glow glow-blue"></div>
+                        <div class="product-badge badge-blue">
+                            <i class="fa-solid fa-plug-circle-bolt"></i> Inverter
                         </div>
                         <div class="product-body">
-                            <img src="Product Images/solis-s6-hybrid-solar-inverter-product-p-2.jpg"
-                                alt="Solis S6 Inverter">
+                            <div class="product-img-wrap img-bg-blue">
+                                <img src="Product Images/solis-s6-hybrid-solar-inverter-product-p-2.jpg"
+                                    alt="Solis S6 Inverter">
+                            </div>
                             <h4>Solis S6 Hybrid</h4>
-                            <p class="product-model">Smart Hybrid Solution</p>
+                            <span class="product-tag tag-blue">🔌 Smart Hybrid</span>
                         </div>
-                        <div class="product-footer">
-                            <div class="stock-row"><span>Brand</span><span class="stock-ready">Solis</span></div>
+                        <div class="product-footer footer-blue">
+                            <div class="brand-chip chip-blue">
+                                <div class="brand-dot dot-blue"></div>
+                                Solis
+                            </div>
+                            <div class="rating-stars stars-blue">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
                         </div>
                     </div>
-
-
-
-
 
                     <!-- ============ BATTERIES ============ -->
                     <div class="product-card reveal" data-category="batteries">
-                        <div class="product-top-bar bar-green">
-                            <span class="label-caps">BATTERY</span>
-                            <div class="dot"></div>
+                        <div class="card-color-strip strip-green"></div>
+                        <div class="card-glow glow-green"></div>
+                        <div class="product-badge badge-green">
+                            <i class="fa-solid fa-battery-full"></i> Battery
                         </div>
                         <div class="product-body">
-                            <img src="Products Images/SolaX Power.webp" alt="SolaX Battery">
-                            <h4>SolaX Power Battery</h4>
-                            <p class="product-model">Top China Storage Brand</p>
+                            <div class="product-img-wrap img-bg-green">
+                                <img src="Products Images/SolaX Power.webp" alt="SolaX Battery">
+                            </div>
+                            <h4>SolaX Power</h4>
+                            <span class="product-tag tag-green">🔋 Top Storage</span>
                         </div>
-                        <div class="product-footer">
-                            <div class="stock-row"><span>Brand</span><span class="stock-ready">SolaX Power</span></div>
+                        <div class="product-footer footer-green">
+                            <div class="brand-chip chip-green">
+                                <div class="brand-dot dot-green"></div>
+                                SolaX Power
+                            </div>
+                            <div class="rating-stars stars-green">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
 
                     <div class="product-card reveal" data-category="batteries">
-                        <div class="product-top-bar bar-green">
-                            <span class="label-caps">BATTERY</span>
-                            <div class="dot"></div>
+                        <div class="card-color-strip strip-green"></div>
+                        <div class="card-glow glow-green"></div>
+                        <div class="product-badge badge-green">
+                            <i class="fa-solid fa-battery-full"></i> Battery
                         </div>
                         <div class="product-body">
-                            <img src="Products Images/JA Energy Storage.jpg" alt="JA Energy Storage">
+                            <div class="product-img-wrap img-bg-green">
+                                <img src="Products Images/JA Energy Storage.jpg" alt="JA Energy Storage">
+                            </div>
                             <h4>JA Energy Storage</h4>
-                            <p class="product-model">Top China Storage Brand</p>
+                            <span class="product-tag tag-green">🔋 Top Storage</span>
                         </div>
-                        <div class="product-footer">
-                            <div class="stock-row"><span>Brand</span><span class="stock-ready">JA Energy</span></div>
+                        <div class="product-footer footer-green">
+                            <div class="brand-chip chip-green">
+                                <div class="brand-dot dot-green"></div>
+                                JA Energy
+                            </div>
+                            <div class="rating-stars stars-green">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
 
                     <div class="product-card reveal" data-category="batteries">
-                        <div class="product-top-bar bar-green">
-                            <span class="label-caps">BATTERY</span>
-                            <div class="dot"></div>
+                        <div class="card-color-strip strip-green"></div>
+                        <div class="card-glow glow-green"></div>
+                        <div class="product-badge badge-green">
+                            <i class="fa-solid fa-battery-full"></i> Battery
                         </div>
                         <div class="product-body">
-                            <img src="Products Images/Sunwe Battery.webp" alt="Sunwe Battery">
+                            <div class="product-img-wrap img-bg-green">
+                                <img src="Products Images/Sunwe Battery.webp" alt="Sunwe Battery">
+                            </div>
                             <h4>Sunwe Battery</h4>
-                            <p class="product-model">Go Solar Together</p>
+                            <span class="product-tag tag-green">☀️ Go Solar</span>
                         </div>
-                        <div class="product-footer">
-                            <div class="stock-row"><span>Brand</span><span class="stock-ready">Sunwe</span></div>
+                        <div class="product-footer footer-green">
+                            <div class="brand-chip chip-green">
+                                <div class="brand-dot dot-green"></div>
+                                Sunwe
+                            </div>
+                            <div class="rating-stars stars-green">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
                         </div>
                     </div>
 
                     <div class="product-card reveal" data-category="batteries">
-                        <div class="product-top-bar bar-green">
-                            <span class="label-caps">BATTERY</span>
-                            <div class="dot"></div>
+                        <div class="card-color-strip strip-green"></div>
+                        <div class="card-glow glow-green"></div>
+                        <div class="product-badge badge-green">
+                            <i class="fa-solid fa-battery-full"></i> Battery
                         </div>
                         <div class="product-body">
-                            <img src="Products Images/JD Energy Battery.png" alt="JD Energy Battery">
-                            <h4>JD Energy Battery</h4>
-                            <p class="product-model">Top China Storage Brand</p>
+                            <div class="product-img-wrap img-bg-green">
+                                <img src="Products Images/JD Energy Battery.png" alt="JD Energy Battery">
+                            </div>
+                            <h4>JD Energy</h4>
+                            <span class="product-tag tag-green">🔋 Top Storage</span>
                         </div>
-                        <div class="product-footer">
-                            <div class="stock-row"><span>Brand</span><span class="stock-ready">JD Energy</span></div>
+                        <div class="product-footer footer-green">
+                            <div class="brand-chip chip-green">
+                                <div class="brand-dot dot-green"></div>
+                                JD Energy
+                            </div>
+                            <div class="rating-stars stars-green">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
 
                     <!-- ============ MOUNTING & CONTROLLERS ============ -->
                     <div class="product-card reveal" data-category="mounting">
-                        <div class="product-top-bar bar-purple">
-                            <span class="label-caps">MOUNTING</span>
-                            <div class="dot"></div>
+                        <div class="card-color-strip strip-purple"></div>
+                        <div class="card-glow glow-purple"></div>
+                        <div class="product-badge badge-purple">
+                            <i class="fa-solid fa-screwdriver-wrench"></i> Mounting
                         </div>
                         <div class="product-body">
-                            <img src="Products Images/Mounting Structure.jpg" alt="Mounting Structure">
+                            <div class="product-img-wrap img-bg-purple">
+                                <img src="Products Images/Mounting Structure.jpg" alt="Mounting Structure">
+                            </div>
                             <h4>Mounting Structure</h4>
-                            <p class="product-model">Roof & Ground Systems</p>
+                            <span class="product-tag tag-purple">🏠 Roof & Ground</span>
                         </div>
-                        <div class="product-footer">
-                            <div class="stock-row"><span>Category</span><span class="stock-ready">Mounting</span></div>
+                        <div class="product-footer footer-purple">
+                            <div class="brand-chip chip-purple">
+                                <div class="brand-dot dot-purple"></div>
+                                Mounting
+                            </div>
+                            <div class="rating-stars stars-purple">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
 
                     <div class="product-card reveal" data-category="mounting">
-                        <div class="product-top-bar bar-purple">
-                            <span class="label-caps">MOUNTING</span>
-                            <div class="dot"></div>
+                        <div class="card-color-strip strip-purple"></div>
+                        <div class="card-glow glow-purple"></div>
+                        <div class="product-badge badge-purple">
+                            <i class="fa-solid fa-screwdriver-wrench"></i> Mounting
                         </div>
                         <div class="product-body">
-                            <img src="Products Images/Solar Roof Rails.webp" alt="Solar Roof Rails">
+                            <div class="product-img-wrap img-bg-purple">
+                                <img src="Products Images/Solar Roof Rails.webp" alt="Solar Roof Rails">
+                            </div>
                             <h4>Solar Roof Rails</h4>
-                            <p class="product-model">Aluminium Rail System</p>
+                            <span class="product-tag tag-purple">🔩 Aluminium Rails</span>
                         </div>
-                        <div class="product-footer">
-                            <div class="stock-row"><span>Category</span><span class="stock-ready">Mounting</span></div>
+                        <div class="product-footer footer-purple">
+                            <div class="brand-chip chip-purple">
+                                <div class="brand-dot dot-purple"></div>
+                                Rails
+                            </div>
+                            <div class="rating-stars stars-purple">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
                         </div>
                     </div>
 
                     <div class="product-card reveal" data-category="mounting">
-                        <div class="product-top-bar bar-purple">
-                            <span class="label-caps">CONTROLLER</span>
-                            <div class="dot"></div>
+                        <div class="card-color-strip strip-purple"></div>
+                        <div class="card-glow glow-purple"></div>
+                        <div class="product-badge badge-purple">
+                            <i class="fa-solid fa-microchip"></i> Controller
                         </div>
                         <div class="product-body">
-                            <img src="Products Images/Solar Charge Controller.avif" alt="Solar Charge Controller">
-                            <h4>Solar Charge Controller</h4>
-                            <p class="product-model">MPPT Smart Control</p>
+                            <div class="product-img-wrap img-bg-purple">
+                                <img src="Products Images/Solar Charge Controller.avif" alt="Solar Charge Controller">
+                            </div>
+                            <h4>Charge Controller</h4>
+                            <span class="product-tag tag-purple">🧠 MPPT Smart</span>
                         </div>
-                        <div class="product-footer">
-                            <div class="stock-row"><span>Category</span><span class="stock-ready">Controller</span>
+                        <div class="product-footer footer-purple">
+                            <div class="brand-chip chip-purple">
+                                <div class="brand-dot dot-purple"></div>
+                                Controller
+                            </div>
+                            <div class="rating-stars stars-purple">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                             </div>
                         </div>
                     </div>
@@ -531,135 +698,311 @@
             </div>
         </section>
 
-        <!-- ===================== OUR COMMITMENT ===================== -->
-        <section class="commitment-section" id="commitment">
+
+        <!-- ===================== PARTNERSHIP COMMITMENT ===================== -->
+        <section class="partnership-commit-section" id="partnership-commit">
             <!-- Decorative background -->
-            <div class="commitment-bg-glow commitment-glow-1"></div>
-            <div class="commitment-bg-glow commitment-glow-2"></div>
+            <div class="partnership-commit-bg-glow partnership-commit-glow-1"></div>
+            <div class="partnership-commit-bg-glow partnership-commit-glow-2"></div>
 
             <div class="container">
-                <div class="commitment-inner">
+                <div class="partnership-commit-wrapper">
 
-                    <!-- Icon Side -->
-                    <div class="commitment-icon-box">
-                        <div class="commitment-icon">
-                            <i class="fa-solid fa-handshake-angle"></i>
+                    <!-- Image Side -->
+                    <div class="partnership-commit-img-box">
+                        <div class="partnership-commit-img-container">
+                            <img src="imagess/trusted partner.webp" alt="Solar partnership and collaboration"
+                                class="partnership-commit-img">
+                            <div class="partnership-commit-img-overlay"></div>
+                            <div class="partnership-commit-badge">
+                                <i class="fa-solid fa-star"></i>
+                                <span>Trusted by 500+ Partners</span>
+                            </div>
                         </div>
-                        <div class="commitment-icon-ring"></div>
+
+                        <!-- Statistics -->
+                        <div class="partnership-commit-statistics">
+                            <div class="partnership-commit-stat">
+                                <span class="partnership-commit-stat-number">500+</span>
+                                <span class="partnership-commit-stat-label">Active Partners</span>
+                            </div>
+                            <div class="partnership-commit-stat">
+                                <span class="partnership-commit-stat-number">15+</span>
+                                <span class="partnership-commit-stat-label">Years Experience</span>
+                            </div>
+                            <div class="partnership-commit-stat">
+                                <span class="partnership-commit-stat-number">99%</span>
+                                <span class="partnership-commit-stat-label">Satisfaction Rate</span>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Content Side -->
-                    <div class="commitment-content">
-                        <span class="commitment-label">Our Commitment</span>
-                        <h2 class="commitment-title">
-                            Growing Together Through
-                            <span class="commitment-title-accent">Trusted Partnerships</span>
-                        </h2>
-                        <p class="commitment-text">
+                    <div class="partnership-commit-content-box">
+                        <div class="partnership-commit-header">
+                            <span class="partnership-commit-label">
+                                <i class="fa-solid fa-lightbulb"></i> Our Commitment
+                            </span>
+                            <h2 class="partnership-commit-heading">
+                                Growing Together Through
+                                <span class="partnership-commit-highlight">Trusted Partnerships</span>
+                            </h2>
+                        </div>
+
+                        <p class="partnership-commit-desc">
                             We specialize in the wholesale supply of high-quality solar photovoltaic (PV)
                             systems and welcome partnerships across all industries. Whether you own a retail
                             store, have business connections, or are looking to expand your product offerings,
                             we are ready to work with you to grow together.
                         </p>
 
-                        <!-- Highlights -->
-                        <div class="commitment-points">
-                            <div class="commitment-point">
-                                <i class="fa-solid fa-circle-check"></i>
-                                <span>Wholesale PV System Supply</span>
+                        <!-- Feature Points -->
+                        <div class="partnership-commit-features">
+                            <div class="partnership-commit-feature-item">
+                                <div class="partnership-commit-feature-icon">
+                                    <i class="fa-solid fa-box-open"></i>
+                                </div>
+                                <div class="partnership-commit-feature-text">
+                                    <h4>Wholesale PV Supply</h4>
+                                    <p>Competitive pricing on bulk orders</p>
+                                </div>
                             </div>
-                            <div class="commitment-point">
-                                <i class="fa-solid fa-circle-check"></i>
-                                <span>Open to All Industries</span>
+
+                            <div class="partnership-commit-feature-item">
+                                <div class="partnership-commit-feature-icon">
+                                    <i class="fa-solid fa-handshake"></i>
+                                </div>
+                                <div class="partnership-commit-feature-text">
+                                    <h4>Open to All Industries</h4>
+                                    <p>Flexible partnerships across sectors</p>
+                                </div>
                             </div>
-                            <div class="commitment-point">
-                                <i class="fa-solid fa-circle-check"></i>
-                                <span>Long-Term Growth Partners</span>
+
+                            <div class="partnership-commit-feature-item">
+                                <div class="partnership-commit-feature-icon">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </div>
+                                <div class="partnership-commit-feature-text">
+                                    <h4>Long-Term Growth</h4>
+                                    <p>Sustainable business relationships</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- CTA Side -->
-                    <div class="commitment-cta">
-                        <a href="tel:+0122389653" class="commitment-btn">
-                            <span>Partner With Us</span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                        <span class="commitment-cta-note">Free consultation • No obligations</span>
+
+
+                        <!-- Call to Action -->
+                        <div class="partnership-commit-actions">
+                            <a href="tel:+0122389653" class="partnership-commit-btn partnership-commit-btn-primary">
+                                <span>Partner With Us Today</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="index.html" class="partnership-commit-btn partnership-commit-btn-secondary">
+                                <span>Learn More</span>
+                            </a>
+                        </div>
+                        <span class="partnership-commit-note">
+                            <i class="fa-solid fa-shield-check"></i>
+                            Free consultation • No obligations • Quick response
+                        </span>
                     </div>
 
                 </div>
             </div>
         </section>
+
+
+
+
 
 
         <!-- ===================== OUR BRANDS ===================== -->
         <section class="brands-section" id="brands">
             <div class="container">
                 <div class="section-header center">
-                    <span class="label-caps">TOP BRANDS</span>
-                    <h2>Our Network Brands</h2>
+                    <span class="label-caps">🌟 TRUSTED PARTNERS</span>
+                    <h2>Authorized Brand Network</h2>
                     <p class="section-subtext">
-                        By purchasing from GA Solar, clients obtain genuine top-brand products directly —
-                        backed by our local Malaysia warehouse and regional after-sales network.
+                        Genuine top-tier solar brands — direct from manufacturers to our Malaysia warehouse.
                     </p>
                     <div class="header-line"></div>
                 </div>
 
-                <div class="brands-grid">
+                <div class="brands-showcase">
 
-                    <!-- PANELS -->
-                    <div class="brand-group group-orange reveal">
-                        <div class="brand-group-head">
-                            <span class="brand-group-badge badge-orange">Solar Panels</span>
-                            <h3>Panel Brands</h3>
-                            <p>World-leading high-efficiency solar module manufacturers.</p>
+                    <!-- ============ SOLAR PANELS ============ -->
+                    <div class="brand-category card-orange" data-aos="fade-up">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fa-solid fa-solar-panel"></i>
+                            </div>
+                            <div class="category-title">
+                                <span class="badge-orange">Solar Panels</span>
+                                <h3>Tier-1 Panel Manufacturers</h3>
+                            </div>
                         </div>
-                        <div class="brand-logo-wall">
-                            <div class="brand-logo-item"><span>LONGi</span><small>Solar</small></div>
-                            <div class="brand-logo-item"><span>Trina</span><small>Solar</small></div>
-                            <div class="brand-logo-item"><span>JinKO</span><small>Solar</small></div>
 
+                        <div class="logos-grid">
+                            <div class="logo-card" title="LONGi Solar">
+                                <div class="logo-wrap">
+                                    <!-- Update the src path to your actual logo location -->
+                                    <img src="imagess/Brands logo/Longi Solar.png" alt="LONGi Solar"
+                                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                    <div class="logo-fallback" style="display:none; color:#c8102e;">LONGi</div>
+                                </div>
+                                <div class="logo-glow orange-glow"></div>
+                            </div>
+
+                            <div class="logo-card" title="Trina Solar">
+                                <div class="logo-wrap">
+                                    <img src="imagess/Brands logo/Trina Solar.webp" alt="Trina Solar"
+                                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                    <div class="logo-fallback" style="display:none; color:#e31837;">Trina</div>
+                                </div>
+                                <div class="logo-glow orange-glow"></div>
+                            </div>
+
+                            <div class="logo-card" title="Jinko Solar">
+                                <div class="logo-wrap">
+                                    <img src="imagess/Brands logo/Jinko Solar.webp" alt="Jinko Solar"
+                                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                    <div class="logo-fallback" style="display:none; color:#00a651;">Jinko</div>
+                                </div>
+                                <div class="logo-glow orange-glow"></div>
+                            </div>
+
+                            <div class="logo-card" title="AIKO Solar">
+                                <div class="logo-wrap">
+                                    <img src="imagess/Brands logo/Aiko solar.webp" alt="AIKO"
+                                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                    <div class="logo-fallback" style="display:none; color:#ff6b00;">AIKO</div>
+                                </div>
+                                <div class="logo-glow orange-glow"></div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- INVERTERS -->
-                    <div class="brand-group group-blue reveal">
-                        <div class="brand-group-head">
-                            <span class="brand-group-badge badge-blue">Inverters</span>
-                            <h3>Inverter Brands</h3>
-                            <p>Top brand inverters in Malaysia — warranty up to 15 years.</p>
+                    <!-- ============ INVERTERS ============ -->
+                    <div class="brand-category card-blue" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fa-solid fa-plug-circle-bolt"></i>
+                            </div>
+                            <div class="category-title">
+                                <span class="badge-blue">Inverters</span>
+                                <h3>Top Inverter Brands</h3>
+                            </div>
                         </div>
-                        <div class="brand-logo-wall">
-                            <div class="brand-logo-item"><span>Deye</span><small>Inverter</small></div>
-                            <div class="brand-logo-item"><span>GOODWE</span><small>Smart Energy</small></div>
-                            <div class="brand-logo-item"><span>Solis</span><small>Inverter</small></div>
-                            <!-- <div class="brand-logo-item"><span>Growatt</span><small>Inverter</small></div>
-                            <div class="brand-logo-item"><span>SUNGROW</span><small>Clean Power</small></div>
-                            <div class="brand-logo-item"><span>SAJ</span><small>Inverter</small></div>
-                            <div class="brand-logo-item"><span>Hopewind</span><small>Inverter</small></div>
-                            <div class="brand-logo-item"><span>HUAWEI</span><small>Smart PV</small></div> -->
+
+                        <div class="logos-grid col-3-layout">
+                            <div class="logo-card" title="Deye">
+                                <div class="logo-wrap">
+                                    <img src="imagess/Brands logo/Deye Solar.png" alt="Deye"
+                                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                    <div class="logo-fallback" style="display:none; color:#0056b3;">Deye</div>
+                                </div>
+                                <div class="logo-glow blue-glow"></div>
+                            </div>
+
+                            <div class="logo-card" title="GoodWe">
+                                <div class="logo-wrap">
+                                    <img src="imagess/Brands logo/goodwe Solar.webp" alt="GoodWe"
+                                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                    <div class="logo-fallback" style="display:none; color:#e60012;">GOODWE</div>
+                                </div>
+                                <div class="logo-glow blue-glow"></div>
+                            </div>
+
+                            <div class="logo-card" title="Solis">
+                                <div class="logo-wrap">
+                                    <img src="imagess/Brands logo/solis solar.png" alt="Solis"
+                                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                    <div class="logo-fallback" style="display:none; color:#ff6600;">Solis</div>
+                                </div>
+                                <div class="logo-glow blue-glow"></div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- BATTERIES -->
-                    <div class="brand-group group-green reveal">
-                        <div class="brand-group-head">
-                            <span class="brand-group-badge badge-green">Battery Storage</span>
-                            <h3>Battery Brands</h3>
-                            <p>The top energy storage brands of China for reliable backup power.</p>
+                    <!-- ============ BATTERY STORAGE ============ -->
+                    <div class="brand-category card-green" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fa-solid fa-battery-full"></i>
+                            </div>
+                            <div class="category-title">
+                                <span class="badge-green">Battery Storage</span>
+                                <h3>Energy Storage Leaders</h3>
+                            </div>
                         </div>
-                        <div class="brand-logo-wall">
-                            <div class="brand-logo-item"><span>SOLAX</span><small>Power</small></div>
-                            <div class="brand-logo-item"><span>JA</span><small>Energy Storage</small></div>
-                            <div class="brand-logo-item"><span>SUNWE</span><small>Go Solar Together</small></div>
-                            <div class="brand-logo-item"><span>JD</span><small>Energy</small></div>
+
+                        <div class="logos-grid">
+                            <div class="logo-card" title="SolaX Power">
+                                <div class="logo-wrap">
+                                    <img src="imagess/Brands logo/solax solar.webp" alt="SolaX Power"
+                                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                    <div class="logo-fallback" style="display:none; color:#00a9ce;">SOLAX</div>
+                                </div>
+                                <div class="logo-glow green-glow"></div>
+                            </div>
+
+                            <div class="logo-card" title="JA Energy">
+                                <div class="logo-wrap">
+                                    <img src="imagess/Brands logo/JA solar.png" alt="JA Energy"
+                                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                    <div class="logo-fallback" style="display:none; color:#003366;">JA</div>
+                                </div>
+                                <div class="logo-glow green-glow"></div>
+                            </div>
+
+                            <div class="logo-card" title="Sunwe">
+                                <div class="logo-wrap">
+                                    <img src="imagess/Brands logo/sunwe solar.png" alt="Sunwe"
+                                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                    <div class="logo-fallback" style="display:none; color:#00b04f;">SUNWE</div>
+                                </div>
+                                <div class="logo-glow green-glow"></div>
+                            </div>
+
+                            <div class="logo-card" title="JD Energy">
+                                <div class="logo-wrap">
+                                    <img src="imagess/Brands logo/JD energy.jpg" alt="JD Energy"
+                                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                    <div class="logo-fallback" style="display:none; color:#c41230;">JD</div>
+                                </div>
+                                <div class="logo-glow green-glow"></div>
+                            </div>
                         </div>
                     </div>
 
                 </div>
+
+                <!-- Trust Badges Row -->
+                <div class="trust-bar">
+                    <div class="trust-item">
+                        <div class="trust-icon-box orange-box">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <span>Official Distributor</span>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon-box blue-box">
+                            <i class="fa-solid fa-warehouse"></i>
+                        </div>
+                        <span>Local Malaysia Stock</span>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon-box green-box">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <span>Technical Support</span>
+                    </div>
+                </div>
             </div>
         </section>
+
+
+
 
         <!-- ===================== DYNAMIC PARTNERSHIP SLIDER ===================== -->
         <section class="partnership-hero" id="partnership">
@@ -739,6 +1082,9 @@
             </div>
         </section>
 
+
+
+
         <!-- ============================================================
      ADVANTAGE SECTION
      ============================================================ -->
@@ -747,9 +1093,13 @@
             <div class="adv-bg-elements">
                 <div class="adv-glow adv-glow-1"></div>
                 <div class="adv-glow adv-glow-2"></div>
+                <div class="adv-glow adv-glow-3"></div>
                 <div class="adv-grid-pattern"></div>
                 <div class="adv-float-ring adv-ring-1"></div>
                 <div class="adv-float-ring adv-ring-2"></div>
+                <div class="adv-particle adv-particle-1"></div>
+                <div class="adv-particle adv-particle-2"></div>
+                <div class="adv-particle adv-particle-3"></div>
             </div>
 
             <div class="container">
@@ -774,9 +1124,12 @@
                     <!-- Card 1 -->
                     <div class="adv-card">
                         <div class="adv-card-glow"></div>
-                        <div class="adv-card-number">01</div>
-                        <div class="adv-card-icon">
-                            <i class="fa fa-globe"></i>
+                        <div class="adv-card-shine"></div>
+                        <div class="adv-card-top">
+                            <div class="adv-card-icon">
+                                <i class="fa fa-globe"></i>
+                            </div>
+                            <div class="adv-card-number">01</div>
                         </div>
                         <h3 class="adv-card-title">Global Sourcing</h3>
                         <p class="adv-card-text">
@@ -785,19 +1138,25 @@
                         </p>
                         <div class="adv-card-footer">
                             <div class="adv-card-stat">
-                                <strong>100+</strong>
+                                <strong>100<span class="adv-plus">+</span></strong>
                                 <span>Manufacturers</span>
                             </div>
-                            <div class="adv-card-line"></div>
+                            <div class="adv-card-arrow">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Card 2 -->
                     <div class="adv-card adv-card-featured">
+                        <div class="adv-card-badge-ribbon">Most Popular</div>
                         <div class="adv-card-glow"></div>
-                        <div class="adv-card-number">02</div>
-                        <div class="adv-card-icon">
-                            <i class="fa fa-bolt"></i>
+                        <div class="adv-card-shine"></div>
+                        <div class="adv-card-top">
+                            <div class="adv-card-icon">
+                                <i class="fa fa-bolt"></i>
+                            </div>
+                            <div class="adv-card-number">02</div>
                         </div>
                         <h3 class="adv-card-title">High Efficiency</h3>
                         <p class="adv-card-text">
@@ -806,19 +1165,24 @@
                         </p>
                         <div class="adv-card-footer">
                             <div class="adv-card-stat">
-                                <strong>98%</strong>
+                                <strong>98<span class="adv-plus">%</span></strong>
                                 <span>Efficiency Rate</span>
                             </div>
-                            <div class="adv-card-line"></div>
+                            <div class="adv-card-arrow">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Card 3 -->
                     <div class="adv-card">
                         <div class="adv-card-glow"></div>
-                        <div class="adv-card-number">03</div>
-                        <div class="adv-card-icon">
-                            <i class="fa fa-handshake"></i>
+                        <div class="adv-card-shine"></div>
+                        <div class="adv-card-top">
+                            <div class="adv-card-icon">
+                                <i class="fa fa-handshake"></i>
+                            </div>
+                            <div class="adv-card-number">03</div>
                         </div>
                         <h3 class="adv-card-title">Expert Consultation</h3>
                         <p class="adv-card-text">
@@ -827,10 +1191,12 @@
                         </p>
                         <div class="adv-card-footer">
                             <div class="adv-card-stat">
-                                <strong>25+</strong>
+                                <strong>25<span class="adv-plus">+</span></strong>
                                 <span>Countries Served</span>
                             </div>
-                            <div class="adv-card-line"></div>
+                            <div class="adv-card-arrow">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -843,53 +1209,128 @@
         <!-- ===================== WHY CHOOSE US ===================== -->
         <section class="why-section" id="why-us">
             <div class="why-bg-pattern"></div>
+            <div class="why-bg-glow why-glow-1"></div>
+            <div class="why-bg-glow why-glow-2"></div>
+
             <div class="container">
                 <div class="section-header center">
-                    <span class="label-caps">WHY PARTNER WITH US?</span>
+                    <span class="label-caps">🤝 WHY PARTNER WITH US?</span>
                     <h2>The GA Solar Advantage</h2>
+                    <p class="section-subtext">
+                        Ten powerful reasons why businesses across Malaysia trust GA Solar.
+                    </p>
                     <div class="header-line"></div>
                 </div>
 
                 <div class="why-grid">
                     <div class="why-item reveal">
-                        <i class="fa-solid fa-medal"></i>
-                        <span>Top-Tier China Solar Brands</span>
+                        <div class="why-icon-box">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+                        <div class="why-content">
+                            <h4>Top-Tier China Brands</h4>
+                            <p>Only genuine Tier-1 solar products</p>
+                        </div>
+                        <div class="why-number">01</div>
                     </div>
+
                     <div class="why-item reveal">
-                        <i class="fa-solid fa-tags"></i>
-                        <span>Competitive Wholesale Pricing</span>
+                        <div class="why-icon-box">
+                            <i class="fa-solid fa-tags"></i>
+                        </div>
+                        <div class="why-content">
+                            <h4>Wholesale Pricing</h4>
+                            <p>Competitive rates for maximum profit</p>
+                        </div>
+                        <div class="why-number">02</div>
                     </div>
+
                     <div class="why-item reveal">
-                        <i class="fa-solid fa-warehouse"></i>
-                        <span>Local Malaysia Warehouse</span>
+                        <div class="why-icon-box">
+                            <i class="fa-solid fa-warehouse"></i>
+                        </div>
+                        <div class="why-content">
+                            <h4>Local Malaysia Warehouse</h4>
+                            <p>Fast delivery, stock always ready</p>
+                        </div>
+                        <div class="why-number">03</div>
                     </div>
+
                     <div class="why-item reveal">
-                        <i class="fa-solid fa-shield-halved"></i>
-                        <span>Product Warranty Support</span>
+                        <div class="why-icon-box">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="why-content">
+                            <h4>Warranty Support</h4>
+                            <p>Full product warranty assistance</p>
+                        </div>
+                        <div class="why-number">04</div>
                     </div>
+
                     <div class="why-item reveal">
-                        <i class="fa-solid fa-chalkboard-user"></i>
-                        <span>Technical Training</span>
+                        <div class="why-icon-box">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                        </div>
+                        <div class="why-content">
+                            <h4>Technical Training</h4>
+                            <p>Expert guidance for your team</p>
+                        </div>
+                        <div class="why-number">05</div>
                     </div>
+
                     <div class="why-item reveal">
-                        <i class="fa-solid fa-file-invoice-dollar"></i>
-                        <span>Fast Quotation</span>
+                        <div class="why-icon-box">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <div class="why-content">
+                            <h4>Fast Quotation</h4>
+                            <p>Quick response, quick deals</p>
+                        </div>
+                        <div class="why-number">06</div>
                     </div>
+
                     <div class="why-item reveal">
-                        <i class="fa-solid fa-handshake"></i>
-                        <span>High Commission — PPA Power Purchase Agreement</span>
+                        <div class="why-icon-box">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <div class="why-content">
+                            <h4>High Commission — PPA</h4>
+                            <p>Power Purchase Agreement rewards</p>
+                        </div>
+                        <div class="why-number">07</div>
                     </div>
+
                     <div class="why-item reveal">
-                        <i class="fa-solid fa-users"></i>
-                        <span>High Commission for Sales / Dealer Business Partners</span>
+                        <div class="why-icon-box">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div class="why-content">
+                            <h4>Dealer Commission</h4>
+                            <p>Big rewards for sales partners</p>
+                        </div>
+                        <div class="why-number">08</div>
                     </div>
+
                     <div class="why-item reveal">
-                        <i class="fa-solid fa-credit-card"></i>
-                        <span>60-Month Credit Card Installment Plan</span>
+                        <div class="why-icon-box">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+                        <div class="why-content">
+                            <h4>60-Month Installment</h4>
+                            <p>Flexible credit card payment plan</p>
+                        </div>
+                        <div class="why-number">09</div>
                     </div>
+
                     <div class="why-item reveal">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <span>Government Project Undertaking & EPCC Application</span>
+                        <div class="why-icon-box">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                        <div class="why-content">
+                            <h4>Government & EPCC</h4>
+                            <p>Project undertaking & applications</p>
+                        </div>
+                        <div class="why-number">10</div>
                     </div>
                 </div>
             </div>
@@ -1336,132 +1777,205 @@
 
             </div>
         </section>
+
+        
         <!-- ===================== PROJECTS SLIDER ===================== -->
-        <section class="projects-section" id="projects">
-            <div class="container">
-                <div class="section-header center">
-                    <span class="label-caps">OUR PROJECTS</span>
-                    <h2>Completed Solar Projects</h2>
-                    <p class="section-subtext">
-                        From residential rooftops to large commercial and industrial installations —
-                        explore our project portfolio across Malaysia.
-                    </p>
-                    <div class="header-line"></div>
-                </div>
-
-                <div class="projects-slider-container">
-                    <div class="swiper projectsSwiper">
-                        <div class="swiper-wrapper">
-
-                            <!-- Project 1 -->
-                            <div class="swiper-slide">
-                                <div class="project-card">
-                                    <div class="project-img">
-                                        <img src="projects/projects 1.avif" alt="Commercial rooftop solar - Selangor">
-                                        <span class="project-tag tag-commercial">Commercial</span>
-                                    </div>
-                                    <div class="project-body">
-                                        <h4>Factory Rooftop Solar System</h4>
-                                        <div class="project-meta">
-                                            <div><i class="fa-solid fa-location-dot"></i> Selangor, Malaysia</div>
-                                            <div><i class="fa-solid fa-bolt"></i> 500 kWp Capacity</div>
-                                            <div><i class="fa-solid fa-calendar"></i> Completed 2024</div>
-                                        </div>
-                                        <p>Full EPCC rooftop installation with Deye inverters and LONGi Hi-MO panels
-                                            for a manufacturing facility.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Project 2 -->
-                            <div class="swiper-slide">
-                                <div class="project-card">
-                                    <div class="project-img">
-                                        <img src="projects/project 2.jpg" alt="Residential solar - Johor Bahru">
-                                        <span class="project-tag tag-residential">Residential</span>
-                                    </div>
-                                    <div class="project-body">
-                                        <h4>Residential Hybrid Solar + Battery</h4>
-                                        <div class="project-meta">
-                                            <div><i class="fa-solid fa-location-dot"></i> Johor Bahru, Malaysia</div>
-                                            <div><i class="fa-solid fa-bolt"></i> 12 kWp + 15 kWh Storage</div>
-                                            <div><i class="fa-solid fa-calendar"></i> Completed 2024</div>
-                                        </div>
-                                        <p>Hybrid system with SolaX battery storage providing full backup power
-                                            for a luxury residence.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Project 3 -->
-                            <div class="swiper-slide">
-                                <div class="project-card">
-                                    <div class="project-img">
-                                        <img src="projects/project 3.jpg" alt="Industrial solar - Pahang">
-                                        <span class="project-tag tag-industrial">Industrial</span>
-                                    </div>
-                                    <div class="project-body">
-                                        <h4>Industrial Warehouse Installation</h4>
-                                        <div class="project-meta">
-                                            <div><i class="fa-solid fa-location-dot"></i> Pahang, Malaysia</div>
-                                            <div><i class="fa-solid fa-bolt"></i> 1.2 MWp Capacity</div>
-                                            <div><i class="fa-solid fa-calendar"></i> Completed 2023</div>
-                                        </div>
-                                        <p>Large-scale rooftop system with Sungrow string inverters and Trina
-                                            Vertex modules under a PPA agreement.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Project 4 -->
-                            <div class="swiper-slide">
-                                <div class="project-card">
-                                    <div class="project-img">
-                                        <img src="projects/project 4.jpg" alt="Commercial solar - Penang">
-                                        <span class="project-tag tag-commercial">Commercial</span>
-                                    </div>
-                                    <div class="project-body">
-                                        <h4>Shopping Mall Solar Carpark</h4>
-                                        <div class="project-meta">
-                                            <div><i class="fa-solid fa-location-dot"></i> Penang, Malaysia</div>
-                                            <div><i class="fa-solid fa-bolt"></i> 350 kWp Capacity</div>
-                                            <div><i class="fa-solid fa-calendar"></i> Completed 2023</div>
-                                        </div>
-                                        <p>Custom mounting structure carpark canopy system with Huawei smart
-                                            PV inverters.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Project 5 -->
-                            <div class="swiper-slide">
-                                <div class="project-card">
-                                    <div class="project-img">
-                                        <img src="projects/project 5.jpg" alt="Government solar project">
-                                        <span class="project-tag tag-government">Government</span>
-                                    </div>
-                                    <div class="project-body">
-                                        <h4>Government Building Solar Project</h4>
-                                        <div class="project-meta">
-                                            <div><i class="fa-solid fa-location-dot"></i> Kuala Lumpur, Malaysia</div>
-                                            <div><i class="fa-solid fa-bolt"></i> 200 kWp Capacity</div>
-                                            <div><i class="fa-solid fa-calendar"></i> Completed 2024</div>
-                                        </div>
-                                        <p>EPCC application and full installation for a government facility with
-                                            GoodWe inverters and Jinko panels.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="swiper-pagination projects-pagination"></div>
-                        <div class="swiper-button-next projects-next"></div>
-                        <div class="swiper-button-prev projects-prev"></div>
-                    </div>
-                </div>
+<section class="projects-section" id="projects">
+    <div class="projects-container-fluid">
+        
+        <!-- Standard Centered Header on Light Backdrop -->
+        <div class="container">
+            <div class="section-header center">
+                <span class="label-caps">📁 ENGINEERING PORTFOLIO</span>
+                <h2>Completed Solar Projects</h2>
+                <p class="section-subtext">
+                    Explore our utility-scale, industrial, and residential solar deployments delivering high-yield performance across Malaysia.
+                </p>
+                <div class="header-line"></div>
             </div>
-        </section>
+        </div>
+
+        <!-- Full-Width Slider Container -->
+        <div class="projects-slider-wrapper">
+            <div class="swiper projectsSwiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1: Commercial Rooftop -->
+                    <div class="swiper-slide">
+                        <div class="project-split-layout">
+                            <!-- Visual Side (55% Width) -->
+                            <div class="project-visual">
+                                <img src="projects/projects 1.avif" alt="Commercial rooftop solar - Selangor">
+                                <div class="project-floating-badge badge-commercial">
+                                    <span class="pulse-ring"></span> Commercial
+                                </div>
+                            </div>
+                            <!-- Information Side (45% Width) -->
+                            <div class="project-details">
+                                <span class="project-serial">CASE STUDY 01</span>
+                                <h3>Factory Rooftop Solar System</h3>
+                                
+                                <p class="project-desc">
+                                    Complete turn-key engineering, procurement, construction, and commissioning (EPCC) rooftop installation optimized for maximum industrial energy self-consumption.
+                                </p>
+
+                                <div class="project-metrics-grid">
+                                    <div class="metric-block">
+                                        <div class="metric-icon-box orange-box"><i class="fa-solid fa-bolt"></i></div>
+                                        <div class="metric-info">
+                                            <span class="m-val">500 kWp</span>
+                                            <span class="m-lbl">Active Capacity</span>
+                                        </div>
+                                    </div>
+                                    <div class="metric-block">
+                                        <div class="metric-icon-box blue-box"><i class="fa-solid fa-location-dot"></i></div>
+                                        <div class="metric-info">
+                                            <span class="m-val">Selangor</span>
+                                            <span class="m-lbl">State Region</span>
+                                        </div>
+                                    </div>
+                                    <div class="metric-block">
+                                        <div class="metric-icon-box green-box"><i class="fa-solid fa-calendar"></i></div>
+                                        <div class="metric-info">
+                                            <span class="m-val">2024</span>
+                                            <span class="m-lbl">Year Completed</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-hardware-row">
+                                    <span class="hardware-label">Deployed Hardware:</span>
+                                    <div class="hardware-badges">
+                                        <span class="hw-badge">LONGi Solar Panels</span>
+                                        <span class="hw-badge">Deye Hybrid Inverters</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Residential Hybrid -->
+                    <div class="swiper-slide">
+                        <div class="project-split-layout">
+                            <!-- Visual Side -->
+                            <div class="project-visual">
+                                <img src="projects/project 2.jpg" alt="Residential solar - Johor Bahru">
+                                <div class="project-floating-badge badge-residential">
+                                    <span class="pulse-ring"></span> Residential
+                                </div>
+                            </div>
+                            <!-- Information Side -->
+                            <div class="project-details">
+                                <span class="project-serial">CASE STUDY 02</span>
+                                <h3>Luxury Residential Hybrid Storage</h3>
+                                
+                                <p class="project-desc">
+                                    Premium residential off-grid and grid-tie hybrid system providing absolute blackout protection and smart home energy management structures.
+                                </p>
+
+                                <div class="project-metrics-grid">
+                                    <div class="metric-block">
+                                        <div class="metric-icon-box orange-box"><i class="fa-solid fa-bolt"></i></div>
+                                        <div class="metric-info">
+                                            <span class="m-val">12 kWp + 15 kWh</span>
+                                            <span class="m-lbl">Capacity & Storage</span>
+                                        </div>
+                                    </div>
+                                    <div class="metric-block">
+                                        <div class="metric-icon-box blue-box"><i class="fa-solid fa-location-dot"></i></div>
+                                        <div class="metric-info">
+                                            <span class="m-val">Johor Bahru</span>
+                                            <span class="m-lbl">State Region</span>
+                                        </div>
+                                    </div>
+                                    <div class="metric-block">
+                                        <div class="metric-icon-box green-box"><i class="fa-solid fa-calendar"></i></div>
+                                        <div class="metric-info">
+                                            <span class="m-val">2024</span>
+                                            <span class="m-lbl">Year Completed</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-hardware-row">
+                                    <span class="hardware-label">Deployed Hardware:</span>
+                                    <div class="hardware-badges">
+                                        <span class="hw-badge">SolaX Power Battery</span>
+                                        <span class="hw-badge">Smart EMS Controller</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: Industrial Rooftop -->
+                    <div class="swiper-slide">
+                        <div class="project-split-layout">
+                            <!-- Visual Side -->
+                            <div class="project-visual">
+                                <img src="projects/project 3.jpg" alt="Industrial solar - Pahang">
+                                <div class="project-floating-badge badge-industrial">
+                                    <span class="pulse-ring"></span> Industrial
+                                </div>
+                            </div>
+                            <!-- Information Side -->
+                            <div class="project-details">
+                                <span class="project-serial">CASE STUDY 03</span>
+                                <h3>Industrial Warehouse Megawatt Array</h3>
+                                
+                                <p class="project-desc">
+                                    Large-scale factory roof mounting deployment executing direct carbon footprint reductions, operating under a high-return PPA development agreement.
+                                </p>
+
+                                <div class="project-metrics-grid">
+                                    <div class="metric-block">
+                                        <div class="metric-icon-box orange-box"><i class="fa-solid fa-bolt"></i></div>
+                                        <div class="metric-info">
+                                            <span class="m-val">1.2 MWp</span>
+                                            <span class="m-lbl">Active Capacity</span>
+                                        </div>
+                                    </div>
+                                    <div class="metric-block">
+                                        <div class="metric-icon-box blue-box"><i class="fa-solid fa-location-dot"></i></div>
+                                        <div class="metric-info">
+                                            <span class="m-val">Pahang</span>
+                                            <span class="m-lbl">State Region</span>
+                                        </div>
+                                    </div>
+                                    <div class="metric-block">
+                                        <div class="metric-icon-box green-box"><i class="fa-solid fa-calendar"></i></div>
+                                        <div class="metric-info">
+                                            <span class="m-val">2023</span>
+                                            <span class="m-lbl">Year Completed</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-hardware-row">
+                                    <span class="hardware-label">Deployed Hardware:</span>
+                                    <div class="hardware-badges">
+                                        <span class="hw-badge">Trina Vertex Modules</span>
+                                        <span class="hw-badge">Solis Hybrid Inverters</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Custom Navigation Controllers -->
+                <div class="projects-slider-controls">
+                    <div class="swiper-button-prev projects-prev"></div>
+                    <div class="projects-pagination"></div>
+                    <div class="swiper-button-next projects-next"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
 
         <!-- ============================================================
      TEAM SECTION
@@ -1797,7 +2311,7 @@
             </div>
         </section>
 
-        <a href="https://wa.link/qtgfou" class="whatsapp-btn" target="_blank">
+        <a href="https://wa.link/7uze12" class="whatsapp-btn" target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
             Need Solar Help?
         </a>

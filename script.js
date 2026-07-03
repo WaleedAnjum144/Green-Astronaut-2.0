@@ -264,8 +264,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 prevEl: '.projects-prev',
             },
             breakpoints: {
-                640: { slidesPerView: 2, spaceBetween: 24 },
-                992: { slidesPerView: 3, spaceBetween: 24 }
+                640: { slidesPerView: 1, spaceBetween: 24 },
+                992: { slidesPerView: 2, spaceBetween: 24 }
             }
         });
     }
@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     /* ============================================================
        8. PARTNERSHIP HERO SLIDER — Dynamic Content Switch
-       (FIXED: was nested in a second DOMContentLoaded → never ran)
+       (Images matched to each partnership title)
     ============================================================ */
     (function initPartnershipSlider() {
         const heroSection = document.querySelector('.partnership-hero');
@@ -281,39 +281,44 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const slidesData = [
             {
+                // 01 — Solar Industry Wholesale (Solar PV panels / warehouse supply)
                 number: "01",
                 title: "Solar Industry<br>Wholesale Partnership",
                 desc: "We are a direct wholesale supplier of complete solar photovoltaic (PV) systems, providing competitive pricing and reliable long-term supply for installers and contractors.",
-                circle1: "https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=1000&auto=format&fit=crop",
-                circle2: "https://images.unsplash.com/photo-1592833159057-65a2845730bd?q=80&w=1000&auto=format&fit=crop"
+                circle1: "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1000&auto=format&fit=crop", // Solar panel farm
+                circle2: "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=1000&auto=format&fit=crop"  // Solar warehouse / installation
             },
             {
+                // 02 — Business Referral (handshake / business deal / profit)
                 number: "02",
                 title: "Business Referral<br>Partnership",
                 desc: "We welcome referrals from individuals and businesses with solar project opportunities. Our partners benefit from competitive wholesale pricing and attractive profit-sharing.",
-                circle1: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1000&auto=format&fit=crop",
-                circle2: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1000&auto=format&fit=crop"
+                circle1: "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1000&auto=format&fit=crop", // Business handshake
+                circle2: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1000&auto=format&fit=crop"  // Business meeting / profit charts
             },
             {
+                // 03 — Strategic Alliance & Future Growth (corporate / large scale solar)
                 number: "03",
                 title: "Strategic Alliance<br>& Future Growth",
                 desc: "This category is reserved for future strategic partnership opportunities, customized for large-scale corporate and institutional solar energy collaborations.",
-                circle1: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop",
-                circle2: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1000&auto=format&fit=crop"
+                circle1: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=1000&auto=format&fit=crop", // Large solar power plant
+                circle2: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop"  // Corporate skyscrapers / growth
             },
             {
+                // 04 — Real Estate & Construction (rooftop solar / building)
                 number: "04",
                 title: "Real Estate &<br>Construction Partnership",
                 desc: "We work with property developers, construction companies, and builders to supply and support residential, commercial, and industrial solar PV projects.",
-                circle1: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1000&auto=format&fit=crop",
-                circle2: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1000&auto=format&fit=crop"
+                circle1: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop", // Modern house / real estate
+                circle2: "https://images.unsplash.com/photo-1590274853856-f22d5ee3d228?q=80&w=1000&auto=format&fit=crop"  // Rooftop solar on home
             },
             {
+                // 05 — Hardware & Electrical Store (electrical shop / hardware / retail)
                 number: "05",
                 title: "Hardware & Electrical Store Partnership",
                 desc: "Hardware stores, electrical retailers, and building material suppliers are welcome to become our sales partners. We offer attractive profit margins and full support.",
-                circle1: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1000&auto=format&fit=crop",
-                circle2: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1000&auto=format&fit=crop"
+                circle1: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1000&auto=format&fit=crop", // Electrician / electrical tools
+                circle2: "https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?q=80&w=1000&auto=format&fit=crop"  // Hardware store shelves
             }
         ];
 
@@ -326,15 +331,15 @@ document.addEventListener('DOMContentLoaded', function () {
         const totalSlides = slidesData.length;
 
         // DOM Elements — scoped to this section only
-        const titleEl   = heroSection.querySelector('#phTitle');
-        const descEl    = heroSection.querySelector('#phDesc');
-        const numberEl  = heroSection.querySelector('#phNumber');
+        const titleEl = heroSection.querySelector('#phTitle');
+        const descEl = heroSection.querySelector('#phDesc');
+        const numberEl = heroSection.querySelector('#phNumber');
         const currentEl = heroSection.querySelector('#phCurrent');
         const circle1El = heroSection.querySelector('#phCircle1');
         const circle2El = heroSection.querySelector('#phCircle2');
         const bgElements = heroSection.querySelectorAll('.ph-bg');
-        const prevBtn   = heroSection.querySelector('.ph-prev');
-        const nextBtn   = heroSection.querySelector('.ph-next');
+        const prevBtn = heroSection.querySelector('.ph-prev');
+        const nextBtn = heroSection.querySelector('.ph-next');
 
         if (!titleEl || !descEl || !prevBtn || !nextBtn) return;
 
@@ -463,11 +468,11 @@ document.addEventListener('DOMContentLoaded', function () {
     ============================================================ */
     (function initImageFallback() {
         const demoByCategory = {
-            panels:    'https://placehold.co/400x300/fff2e8/FF7100?text=Solar+Panel',
+            panels: 'https://placehold.co/400x300/fff2e8/FF7100?text=Solar+Panel',
             inverters: 'https://placehold.co/400x300/e0f2fe/0284c7?text=Inverter',
             batteries: 'https://placehold.co/400x300/dcfce7/16a34a?text=Battery',
-            mounting:  'https://placehold.co/400x300/f3e8ff/7c3aed?text=Mounting',
-            default:   'https://placehold.co/400x300/f8fafc/94a3b8?text=Product'
+            mounting: 'https://placehold.co/400x300/f3e8ff/7c3aed?text=Mounting',
+            default: 'https://placehold.co/400x300/f8fafc/94a3b8?text=Product'
         };
         const SITE_FALLBACK = 'https://placehold.co/800x500/e2e8f0/64748b?text=GA+Solar';
 
