@@ -2087,7 +2087,7 @@ a {
     font-weight: 800;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--accent, #FF7100);
+    color: #FF7100;
     margin-bottom: 20px;
 }
 
