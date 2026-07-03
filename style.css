@@ -293,7 +293,7 @@ a {
 }
 
 .top-item i {
-    color: var(--accent);
+    color: #FF7100;
     /* Your Orange/Brand color */
     font-size: 14px;
 }
@@ -319,7 +319,7 @@ a {
 }
 
 .top-socials a {
-    color: #9ca3af;
+    color: #FF7100;
     font-size: 14px;
     transition: all 0.3s ease;
     display: flex;
