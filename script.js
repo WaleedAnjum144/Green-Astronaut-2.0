@@ -595,3 +595,51 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
+
+
+/* ===================== TIMELINE SCROLL ANIMATION ===================== */
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    const timeline = document.getElementById('historyTimeline');
+    const progressBar = document.getElementById('timelineProgress');
+    const items = document.querySelectorAll('.history-item');
+
+    if (!timeline || !progressBar || items.length === 0) return;
+
+    function updateTimeline() {
+        const timelineRect = timeline.getBoundingClientRect();
+        const timelineTop = timelineRect.top;
+        const timelineHeight = timelineRect.height;
+
+        // Calculate viewport trigger point (center of screen)
+        const triggerPoint = window.innerHeight * 0.6;
+
+        // Calculate how much of the timeline has been scrolled past
+        const scrolledPast = triggerPoint - timelineTop;
+        const scrollPercentage = Math.max(0, Math.min(scrolledPast / timelineHeight, 1));
+
+        // Update the progress bar height
+        progressBar.style.height = (scrollPercentage * 100) + '%';
+
+        // Activate each item when it reaches the trigger point
+        items.forEach(function (item) {
+            const itemRect = item.getBoundingClientRect();
+            const itemTop = itemRect.top;
+
+            if (itemTop < triggerPoint) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+    }
+
+    // Run on scroll
+    window.addEventListener('scroll', updateTimeline, { passive: true });
+
+    // Run once on page load
+    updateTimeline();
+
+});
