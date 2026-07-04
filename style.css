@@ -1693,7 +1693,7 @@ a {
 /* Colorful image background wrapper */
 .product-img-wrap {
     width: 100%;
-    height: 200px;
+    height: 400px;
     border-radius: 18px;
     display: flex;
     align-items: center;
@@ -3929,6 +3929,7 @@ a {
     width: 100%;
     margin-top: 40px;
     position: relative;
+    padding: 0px 15px;
 }
 
 /* Force Swiper slides to render smoothly */
@@ -5236,6 +5237,7 @@ a {
 .footer-brand {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     text-decoration: none;
 }
 
@@ -5261,7 +5263,7 @@ a {
 
 .footer-brand-text span {
     font-size: 11px;
-    color: #ffb277;
+    color: #16a34a;
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
