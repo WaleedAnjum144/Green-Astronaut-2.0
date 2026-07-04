@@ -142,56 +142,63 @@
     </header>
 
     <main>
-        <!-- ===================== ABOUT PAGE HERO ===================== -->
-        <section class="hero about-page-hero" id="about-hero">
 
-            <div class="hero-bg-slides">
-                <div class="hero-slide active">
-                    <img src="imagess/solar hero banner.png" alt="GA Solar wholesale solar supply">
-                </div>
-                <div class="hero-overlay"></div>
+
+        <!-- ===================== ABOUT PAGE HERO ===================== -->
+        <section class="page-hero">
+
+            <div class="page-hero-bg">
+                <img src="imagess/About hero banner.png" alt="About GA Solar">
             </div>
 
-            <div class="container hero-content about-hero-content">
+            <div class="container page-hero-content">
 
-                <div class="hero-eyebrow">
-                    <div class="eyebrow-line"></div>
-                    <span class="label-caps">ABOUT GREEN ASTRONAUT</span>
-                </div>
+                <!-- Breadcrumb -->
+                <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="sep">›</span>
+                    <span class="current">About Us</span>
+                </nav>
 
-                <h1 class="hero-title">
-                    Malaysia-Based Supplier of<br class="br-lg">
-                    <span class="accent-text">Top-Tier China Solar Products</span>
+                <!-- Title -->
+                <h1 class="page-hero-title">
+                    About <span>GA Solar</span>
                 </h1>
 
-                <p class="hero-desc">
-                    GA Solar supplies genuine solar panels, inverters, battery storage and mounting
-                    solutions for residential, commercial and industrial projects across Malaysia and
-                    Southeast Asia.
+                <!-- Subtitle -->
+                <p class="page-hero-subtitle">
+                    We are a Malaysia-based solar supply company bridging top-tier China manufacturers with residential,
+                    commercial and industrial projects across Southeast Asia.
                 </p>
 
-                <div class="hero-buttons">
-                    <a href="#company-profile" class="btn-primary">Company Profile</a>
-                    <a href="#contact" class="btn-outline">Request Quote</a>
+                <!-- Feature Bullets -->
+                <div class="page-hero-features">
+                    <div class="page-hero-feature">Genuine Brand Products</div>
+                    <div class="page-hero-feature">Local Technical Support</div>
+                    <div class="page-hero-feature">Warranty Assistance</div>
                 </div>
 
-                <div class="hero-mini-stats">
-                    <div>
+                <!-- Buttons -->
+                <div class="page-hero-actions">
+                    <a href="#company-profile" class="btn-primary">Company Profile</a>
+                    <a href="#contact" class="btn-outline-white">Request Quote</a>
+                </div>
+
+                <!-- Mini Stats -->
+                <div class="page-hero-stats">
+                    <div class="page-hero-stat">
                         <strong>2,600+</strong>
                         <span>Partners</span>
                     </div>
-
-                    <div>
+                    <div class="page-hero-stat">
                         <strong>3,800</strong>
                         <span>Technical Teams</span>
                     </div>
-
-                    <div>
+                    <div class="page-hero-stat">
                         <strong>6</strong>
                         <span>SEA Countries</span>
                     </div>
-
-                    <div>
+                    <div class="page-hero-stat">
                         <strong>100%</strong>
                         <span>Genuine Brands</span>
                     </div>
@@ -199,8 +206,14 @@
 
             </div>
 
-        </section>
+            <!-- Bottom Wave Divider -->
+            <div class="page-hero-divider" aria-hidden="true">
+                <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,50 C360,100 720,0 1080,40 C1260,60 1380,80 1440,70 L1440,100 L0,100 Z" fill="#ffffff" />
+                </svg>
+            </div>
 
+        </section>
 
         <!-- ===================== ABOUT ===================== -->
         <section class="about-section" id="about">
@@ -271,275 +284,6 @@
             </div>
         </section>
 
-
-        <!-- ===================== OUR NETWORK — SEA COUNTRY SVG MAP ===================== -->
-        <section class="network-section" id="network">
-            <div class="container">
-
-                <div class="network-grid sea-network-grid">
-
-                    <!-- LEFT CONTENT -->
-                    <div class="network-left">
-
-                        <div class="network-badge">
-                            <i class="fa-solid fa-globe-asia"></i>
-                            <span>OUR REGIONAL NETWORK</span>
-                        </div>
-
-                        <h2 class="network-title">
-                            Supplying Solar Products Across
-                            <span>Southeast Asia</span>
-                        </h2>
-
-                        <p class="network-desc">
-                            Green Astronaut supplies premium China solar products across Malaysia and Southeast Asia
-                            with reliable local sales, technical support, after-sales service, and partner assistance.
-                        </p>
-
-                        <div class="network-support-pills">
-                            <span><i class="fa-solid fa-warehouse"></i> Local Warehouse</span>
-                            <span><i class="fa-solid fa-headset"></i> After-Sales Support</span>
-                            <span><i class="fa-solid fa-screwdriver-wrench"></i> Technical Service</span>
-                        </div>
-
-                        <!-- STATS -->
-                        <div class="network-stats-card improved-network-stats">
-                            <div class="network-stat-row">
-                                <div class="stat-icon">
-                                    <i class="fa-solid fa-handshake"></i>
-                                </div>
-                                <div>
-                                    <strong class="counter" data-target="2600">0</strong><em>+</em>
-                                    <span>Partners</span>
-                                </div>
-                            </div>
-
-                            <div class="network-stat-row">
-                                <div class="stat-icon blue-icon">
-                                    <i class="fa-solid fa-users-gear"></i>
-                                </div>
-                                <div>
-                                    <strong class="counter" data-target="3800">0</strong>
-                                    <span>Technical Service Teams</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- ACTIVE COUNTRY INFO -->
-                        <div class="active-country-panel">
-
-                            <div class="country-info active" data-country="malaysia">
-                                <div class="country-flag">🇲🇾</div>
-                                <div>
-                                    <h4>Malaysia</h4>
-                                    <p>Main local market with warehouse support, project supply, installer partners,
-                                        warranty assistance, and after-sales service.</p>
-                                </div>
-                            </div>
-
-                            <div class="country-info" data-country="singapore">
-                                <div class="country-flag">🇸🇬</div>
-                                <div>
-                                    <h4>Singapore</h4>
-                                    <p>Regional project supply support, commercial solar product sourcing, and technical
-                                        coordination for premium customers.</p>
-                                </div>
-                            </div>
-
-                            <div class="country-info" data-country="indonesia">
-                                <div class="country-flag">🇮🇩</div>
-                                <div>
-                                    <h4>Indonesia</h4>
-                                    <p>Solar product distribution network for residential, commercial, and industrial
-                                        renewable energy projects.</p>
-                                </div>
-                            </div>
-
-                            <div class="country-info" data-country="thailand">
-                                <div class="country-flag">🇹🇭</div>
-                                <div>
-                                    <h4>Thailand</h4>
-                                    <p>Regional partner support for solar panels, inverters, batteries, mounting
-                                        systems,
-                                        and after-sales coordination.</p>
-                                </div>
-                            </div>
-
-                            <div class="country-info" data-country="vietnam">
-                                <div class="country-flag">🇻🇳</div>
-                                <div>
-                                    <h4>Vietnam</h4>
-                                    <p>Solar equipment supply network for growing renewable energy demand in residential
-                                        and commercial sectors.</p>
-                                </div>
-                            </div>
-
-                            <div class="country-info" data-country="philippines">
-                                <div class="country-flag">🇵🇭</div>
-                                <div>
-                                    <h4>Philippines</h4>
-                                    <p>Dealer support, solar product supply, technical assistance, and after-sales
-                                        service
-                                        coverage for island-based markets.</p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- COUNTRY CHIPS -->
-                        <div class="sea-country-chips">
-
-                            <button type="button" class="sea-country-chip active" data-country="malaysia">
-                                <span>🇲🇾</span> Malaysia
-                            </button>
-
-                            <button type="button" class="sea-country-chip" data-country="singapore">
-                                <span>🇸🇬</span> Singapore
-                            </button>
-
-                            <button type="button" class="sea-country-chip" data-country="indonesia">
-                                <span>🇮🇩</span> Indonesia
-                            </button>
-
-                            <button type="button" class="sea-country-chip" data-country="thailand">
-                                <span>🇹🇭</span> Thailand
-                            </button>
-
-                            <button type="button" class="sea-country-chip" data-country="vietnam">
-                                <span>🇻🇳</span> Vietnam
-                            </button>
-
-                            <button type="button" class="sea-country-chip" data-country="philippines">
-                                <span>🇵🇭</span> Philippines
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                    <!-- RIGHT MAP -->
-                    <div class="sea-map-wrapper">
-
-                        <div class="sea-map-card">
-
-                            <svg class="sea-map-svg" viewBox="0 0 800 620" xmlns="http://www.w3.org/2000/svg"
-                                preserveAspectRatio="xMidYMid meet">
-
-                                <!-- Decorative lines -->
-                                <path class="sea-route" d="M250 355 C300 280, 345 190, 350 100" />
-                                <path class="sea-route" d="M250 355 C400 300, 560 230, 700 170" />
-                                <path class="sea-route" d="M250 355 C360 470, 520 530, 650 485" />
-
-                                <!-- THAILAND -->
-                                <g class="sea-country" id="sea-thailand" data-country="thailand" tabindex="0"
-                                    role="button" aria-label="Thailand">
-                                    <path d="M195,55 C210,40 240,42 255,55 C270,60 280,75 275,95
-                                C290,105 295,125 285,140 C295,150 298,170 288,185
-                                C282,200 268,205 255,200 C250,215 240,222 230,218
-                                L228,240 C226,265 224,290 220,315 L212,345
-                                C208,360 200,362 194,350 L190,320
-                                C193,295 196,270 198,245 L200,220
-                                C188,215 180,202 184,188 C175,175 176,158 186,148
-                                C178,135 180,115 192,105 C186,88 188,68 195,55 Z" />
-                                </g>
-
-                                <!-- VIETNAM -->
-                                <g class="sea-country" id="sea-vietnam" data-country="vietnam" tabindex="0"
-                                    role="button" aria-label="Vietnam">
-                                    <path d="M330,40 C345,32 362,36 370,50 C380,60 378,78 368,88
-                                C376,100 380,118 374,132 C380,148 386,166 392,182
-                                C400,200 408,218 412,238 C416,258 414,280 404,296
-                                C394,312 378,322 362,324 C352,326 344,318 348,308
-                                C360,300 370,290 376,276 C382,262 380,246 374,232
-                                C366,214 356,198 348,180 C340,163 334,146 330,128
-                                C322,116 318,100 324,86 C318,72 320,52 330,40 Z" />
-                                </g>
-
-                                <!-- PHILIPPINES -->
-                                <g class="sea-country" id="sea-philippines" data-country="philippines" tabindex="0"
-                                    role="button" aria-label="Philippines">
-                                    <path d="M672,70 C686,60 704,62 714,76 C722,88 720,106 710,118
-                                C716,130 714,146 704,154 C694,162 680,160 672,150
-                                C664,138 662,120 666,104 C662,90 664,78 672,70 Z" />
-                                    <circle cx="700" cy="180" r="10" />
-                                    <circle cx="727" cy="197" r="9" />
-                                    <circle cx="704" cy="213" r="9" />
-                                    <path d="M690,238 C706,228 726,230 738,242 C748,254 748,272 738,284
-                                C728,296 710,300 696,292 C684,284 678,268 682,254
-                                C684,247 686,242 690,238 Z" />
-                                </g>
-
-                                <!-- MALAYSIA -->
-                                <g class="sea-country active" id="sea-malaysia" data-country="malaysia" tabindex="0"
-                                    role="button" aria-label="Malaysia">
-                                    <!-- Peninsular Malaysia -->
-                                    <path d="M212,352 C222,346 236,348 244,358 C252,368 256,382 258,396
-                                C260,412 262,428 258,442 C254,452 244,458 234,454
-                                C224,450 216,440 212,428 C208,414 206,398 206,384
-                                C205,372 206,360 212,352 Z" />
-                                    <!-- East Malaysia -->
-                                    <path d="M440,392 C470,372 510,360 550,362 C580,364 606,376 618,396
-                                C610,404 596,406 584,402 C570,410 552,412 538,408
-                                C520,414 500,416 484,412 C466,416 448,410 440,392 Z" />
-                                </g>
-
-                                <!-- SINGAPORE -->
-                                <g class="sea-country" id="sea-singapore" data-country="singapore" tabindex="0"
-                                    role="button" aria-label="Singapore">
-                                    <circle cx="252" cy="468" r="10" />
-                                </g>
-
-                                <!-- INDONESIA -->
-                                <g class="sea-country" id="sea-indonesia" data-country="indonesia" tabindex="0"
-                                    role="button" aria-label="Indonesia">
-                                    <!-- Sumatra -->
-                                    <path d="M148,392 C160,382 174,386 184,398 C198,414 212,432 224,450
-                                C236,468 246,488 250,508 C252,522 246,534 234,536
-                                C222,538 212,528 204,516 C190,496 176,476 164,454
-                                C154,436 144,414 148,392 Z" />
-                                    <!-- Java -->
-                                    <path d="M262,540 C290,532 322,530 352,534 C382,538 410,540 436,548
-                                C444,552 442,562 432,564 C402,568 370,566 340,562
-                                C312,558 284,556 262,552 C254,550 254,543 262,540 Z" />
-                                    <!-- Kalimantan -->
-                                    <path d="M446,416 C470,420 494,422 518,420 C542,418 566,414 588,418
-                                C602,422 610,436 606,452 C602,470 590,486 574,496
-                                C556,506 534,510 514,506 C494,502 476,492 462,478
-                                C450,464 442,440 446,416 Z" />
-                                    <!-- Sulawesi -->
-                                    <path d="M628,440 C640,432 654,436 660,448 C666,460 662,474 668,486
-                                C674,498 686,504 684,516 C682,528 668,530 658,522
-                                C650,516 646,504 640,494 C632,502 626,514 616,518
-                                C606,520 600,510 606,500 C612,488 620,478 624,464
-                                C625,456 624,447 628,440 Z" />
-                                </g>
-
-                            </svg>
-
-                            <!-- Tooltips -->
-                            <div class="sea-tooltip malaysia active" data-country="malaysia">🇲🇾 Malaysia</div>
-                            <div class="sea-tooltip singapore" data-country="singapore">🇸🇬 Singapore</div>
-                            <div class="sea-tooltip indonesia" data-country="indonesia">🇮🇩 Indonesia</div>
-                            <div class="sea-tooltip thailand" data-country="thailand">🇹🇭 Thailand</div>
-                            <div class="sea-tooltip vietnam" data-country="vietnam">🇻🇳 Vietnam</div>
-                            <div class="sea-tooltip philippines" data-country="philippines">🇵🇭 Philippines</div>
-
-                        </div>
-
-                        <div class="sea-map-caption">
-                            <div>
-                                <strong>6 Countries Network</strong>
-                                <span>Malaysia • Singapore • Indonesia • Thailand • Vietnam • Philippines</span>
-                            </div>
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
 
         <!-- ===================== PARTNERSHIP COMMITMENT ===================== -->
         <section class="partnership-commit-section" id="partnership-commit">
@@ -900,8 +644,7 @@
                         </p>
                         <div class="solar-testimonial-divider"></div>
                         <div class="solar-testimonial-author">
-                            <img src="imagess/Avatar-1.webp" alt="Michael Reynolds"
-                                class="solar-testimonial-avatar">
+                            <img src="imagess/Avatar-1.webp" alt="Michael Reynolds" class="solar-testimonial-avatar">
                             <div class="solar-testimonial-author-info">
                                 <h4>Michael Reynolds</h4>
                                 <span>CEO, GreenTech Retail</span>
@@ -926,8 +669,7 @@
                         </p>
                         <div class="solar-testimonial-divider"></div>
                         <div class="solar-testimonial-author">
-                            <img src="imagess/Avatar-2.webp" alt="Sarah Jenkins"
-                                class="solar-testimonial-avatar">
+                            <img src="imagess/Avatar-2.webp" alt="Sarah Jenkins" class="solar-testimonial-avatar">
                             <div class="solar-testimonial-author-info">
                                 <h4>Sarah Jenkins</h4>
                                 <span>Operations Director, BuildRight Corp</span>
@@ -952,8 +694,7 @@
                         </p>
                         <div class="solar-testimonial-divider"></div>
                         <div class="solar-testimonial-author">
-                            <img src="imagess/Avatar-3.webp" alt="David Chen"
-                                class="solar-testimonial-avatar">
+                            <img src="imagess/Avatar-3.webp" alt="David Chen" class="solar-testimonial-avatar">
                             <div class="solar-testimonial-author-info">
                                 <h4>David Chen</h4>
                                 <span>Founder, Apex Innovations</span>
@@ -977,6 +718,13 @@
             </div>
         </section>
 
+           <!-- ===================== WHATSAPP ===================== -->
+
+        <a href="https://wa.link/7uze12" class="whatsapp-btn" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+            Need Solar Help?
+        </a>
+
     </main>
 
 
@@ -986,12 +734,12 @@
 
 
 
-    <!-- ===================== FOOTER ===================== -->
+   <!-- ===================== FOOTER ===================== -->
     <footer class="footer">
         <div class="container">
             <div class="footer-top">
                 <div class="footer-brand-block">
-                    <a href="#home" class="footer-brand">
+                    <a href="index.html" class="footer-brand">
                         <!-- Replace the text div with your image -->
                         <img src="imagess/GA Logo.png" alt="Green Astronaut Logo" class="footer-logo">
 
@@ -1009,7 +757,7 @@
                 <div class="footer-cta-box">
                     <h4>Need Wholesale Pricing?</h4>
                     <p>Talk to us for solar product recommendations, dealer partnership and quotation support.</p>
-                    <a href="#contact"><button class="btn-primary">Contact Us</button></a>
+                    <a href="contact.html"><button class="btn-primary">Contact Us</button></a>
                 </div>
             </div>
 
@@ -1017,11 +765,11 @@
                 <div class="footer-col">
                     <h6>Quick Links</h6>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -1036,15 +784,15 @@
                 <div class="footer-col">
                     <h6>Panel Brands</h6>
                     <ul>
-                        <li><a href="#brands">LONGi / Trina</a></li>
-                        <li><a href="#brands">Jinko </a></li>
+                        <li><a href="brands.html#brands">LONGi / Trina</a></li>
+                        <li><a href="brands.html#brands">Jinko </a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h6>Battery Brands</h6>
                     <ul>
-                        <li><a href="#brands">SolaX / JA Energy</a></li>
-                        <li><a href="#brands">Sunwe / JD Energy</a></li>
+                        <li><a href="brands.html#brands">SolaX / JA Energy</a></li>
+                        <li><a href="brands.html#brands">Sunwe / JD Energy</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -1075,36 +823,35 @@
     <!-- ===================== MOBILE MENU ===================== -->
     <div class="mobile-menu" id="mobile-menu">
         <div class="mobile-menu-header">
-            <a href="#home" class="mobile-brand">
+            <a href="index.html" class="mobile-brand">
                 <img src="imagess/GA Logo.png" alt="Green Astronaut Logo" class="mobile-logo">
             </a>
             <button id="mobile-menu-close"><i class="fa-solid fa-xmark"></i></button>
         </div>
         <nav class="mobile-nav">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
             <div class="mobile-dropdown">
                 <button class="mobile-dropdown-toggle" id="mobile-products-toggle">
                     Products <i class="fa-solid fa-chevron-down mobile-dropdown-arrow"></i>
                 </button>
                 <div class="mobile-dropdown-menu" id="mobile-products-menu">
-                    <a href="#products"><i class="fa-solid fa-solar-panel" style="color:#FF7100;"></i> Solar Panels</a>
-                    <a href="#products"><i class="fa-solid fa-plug-circle-bolt" style="color:#0284c7;"></i>
+                    <a href="products.html#products"><i class="fa-solid fa-solar-panel" style="color:#FF7100;"></i> Solar Panels</a>
+                    <a href="products.html#products"><i class="fa-solid fa-plug-circle-bolt" style="color:#0284c7;"></i>
                         Inverters</a>
-                    <a href="#products"><i class="fa-solid fa-battery-full" style="color:#16a34a;"></i> Battery
+                    <a href="products.html#products"><i class="fa-solid fa-battery-full" style="color:#16a34a;"></i> Battery
                         Storage</a>
-                    <a href="#products"><i class="fa-solid fa-screwdriver-wrench" style="color:#7c3aed;"></i> Mounting &
+                    <a href="products.html#products"><i class="fa-solid fa-screwdriver-wrench" style="color:#7c3aed;"></i> Mounting &
                         Controllers</a>
                 </div>
             </div>
-            <a href="#brands">Brands</a>
-            <a href="#network">Network</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="#contact"><button class="btn-primary full-width mobile-quote-btn">Request Quote</button></a>
+            <a href="brands.html">Brands</a>
+            <a href="network.html">Network</a>
+            <a href="projects.css">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html"><button class="btn-primary full-width mobile-quote-btn">Request Quote</button></a>
         </nav>
     </div>
-
 
     <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
