@@ -3,12 +3,14 @@
 .page-hero {
     position: relative;
     width: 100%;
-    min-height: 520px; /* taller */
+    min-height: 520px;
+    /* taller */
     display: flex;
     align-items: center;
     overflow: hidden;
     background: var(--navy-dark);
-    padding: 110px 0 150px; /* extra breathing room for divider */
+    padding: 110px 0 150px;
+    /* extra breathing room for divider */
 }
 
 /* ── Background ── */
@@ -30,12 +32,10 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        100deg,
-        rgba(10, 22, 40, 0.95) 0%,
-        rgba(10, 22, 40, 0.88) 45%,
-        rgba(10, 22, 40, 0.55) 100%
-    );
+    background: linear-gradient(100deg,
+            rgba(10, 22, 40, 0.95) 0%,
+            rgba(10, 22, 40, 0.88) 45%,
+            rgba(10, 22, 40, 0.55) 100%);
 }
 
 /* Green ambient glow (right side) */
@@ -292,5 +292,253 @@
     .btn-primary,
     .btn-outline-white {
         width: 100%;
+    }
+}
+
+
+
+/* ===================== GOOGLE MAP SECTION ===================== */
+.map-section {
+    background: #f8fafc;
+    padding: 80px 0;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.map-overlay-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 40px 20px 20px;
+    color: white;
+}
+
+.map-overlay-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.map-overlay-info p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* ===================== VISIT OFFICE SECTION ===================== */
+.visit-office {
+    background: #ffffff;
+    padding: 60px 0;
+}
+
+.office-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.office-card {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.office-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.office-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.office-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.office-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.office-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #16a34a;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.office-card a:hover {
+    text-decoration: underline;
+}
+
+/* ===================== CONNECT WITH US SECTION ===================== */
+.connect-section .section-header h2 {
+   
+    color: #ffffff;
+   
+}
+
+.connect-section {
+    background: var(--navy-dark);
+    padding: 60px 0;
+    color: white;
+}
+
+.connect-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.connect-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px 20px;
+    border-radius: 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.connect-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+.connect-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #22c55e;
+}
+
+.connect-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.connect-card a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.connect-card a:hover {
+    color: white;
+}
+
+/* ===================== QUICK CONTACT BAR ===================== */
+.quick-contact-bar {
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+    padding: 40px 0;
+    color: white;
+}
+
+.quick-contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.quick-contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.quick-contact-info p {
+    opacity: 0.9;
+    margin: 0;
+}
+
+.quick-contact-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-white {
+    background: white;
+    color: #16a34a;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-white:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-white {
+    background: transparent;
+    color: white;
+    padding: 12px 24px;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-outline-white:hover {
+    background: white;
+    color: #16a34a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .map-container {
+        height: 350px;
+    }
+
+    .quick-contact-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quick-contact-buttons {
+        justify-content: center;
     }
 }

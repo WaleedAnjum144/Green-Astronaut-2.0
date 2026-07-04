@@ -643,3 +643,180 @@ document.addEventListener('DOMContentLoaded', function () {
     updateTimeline();
 
 });
+
+
+/* ===================== COUNTER ANIMATION ===================== */
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    const counters = document.querySelectorAll('.counter');
+    let hasAnimated = false;
+
+    if (counters.length === 0) return;
+
+    function animateCounter(el) {
+        const target = parseInt(el.getAttribute('data-target'));
+        const duration = 2000; // 2 seconds
+        const startTime = performance.now();
+
+        function updateCount(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+
+            // Ease-out effect for smooth deceleration
+            const easeOut = 1 - Math.pow(1 - progress, 3);
+            const currentValue = Math.floor(easeOut * target);
+
+            el.textContent = currentValue.toLocaleString();
+
+            if (progress < 1) {
+                requestAnimationFrame(updateCount);
+            } else {
+                el.textContent = target.toLocaleString();
+            }
+        }
+
+        requestAnimationFrame(updateCount);
+    }
+
+    // Use Intersection Observer to trigger when visible
+    const statsSection = document.querySelector('.improved-network-stats');
+
+    if (!statsSection) return;
+
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting && !hasAnimated) {
+                hasAnimated = true;
+
+                counters.forEach(function (counter) {
+                    animateCounter(counter);
+                });
+
+                // Stop observing after animation
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.5 // Trigger when 50% of the section is visible
+    });
+
+    observer.observe(statsSection);
+
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    /* ===================== PROJECT PORTFOLIO FILTER ===================== */
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const portfolioCards = document.querySelectorAll('.portfolio-card');
+
+    if (filterBtns.length > 0 && portfolioCards.length > 0) {
+        filterBtns.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                filterBtns.forEach(function (b) { b.classList.remove('active'); });
+                btn.classList.add('active');
+                const filter = btn.getAttribute('data-filter');
+
+                portfolioCards.forEach(function (card, index) {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.classList.remove('hidden');
+                        card.style.animation = 'none';
+                        card.offsetHeight;
+                        card.style.animation = 'fadeInUp 0.5s ease forwards';
+                        card.style.animationDelay = (index * 0.05) + 's';
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    }
+
+    /* ===================== GALLERY LIGHTBOX ===================== */
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const portfolioZooms = document.querySelectorAll('.portfolio-zoom');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+
+    let currentImages = [];
+    let currentIndex = 0;
+
+    function collectGalleryImages() {
+        currentImages = [];
+        galleryItems.forEach(function (item) {
+            const src = item.getAttribute('data-img');
+            if (src) currentImages.push(src);
+        });
+    }
+
+    function openLightbox(src) {
+        collectGalleryImages();
+        currentIndex = currentImages.indexOf(src);
+        if (currentIndex === -1) currentIndex = 0;
+        lightboxImg.src = src;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+        lightboxImg.src = '';
+    }
+
+    function showPrev() {
+        currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+        lightboxImg.src = currentImages[currentIndex];
+    }
+
+    function showNext() {
+        currentIndex = (currentIndex + 1) % currentImages.length;
+        lightboxImg.src = currentImages[currentIndex];
+    }
+
+    galleryItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            const src = item.getAttribute('data-img');
+            if (src) openLightbox(src);
+        });
+    });
+
+    portfolioZooms.forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            const src = btn.getAttribute('data-img');
+            if (src) openLightbox(src);
+        });
+    });
+
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+    if (lightboxPrev) lightboxPrev.addEventListener('click', showPrev);
+    if (lightboxNext) lightboxNext.addEventListener('click', showNext);
+    if (lightbox) {
+        lightbox.addEventListener('click', function (e) {
+            if (e.target === lightbox) closeLightbox();
+        });
+    }
+    document.addEventListener('keydown', function (e) {
+        if (!lightbox || !lightbox.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') showPrev();
+        if (e.key === 'ArrowRight') showNext();
+    });
+
+    /* ===================== FAQ ACCORDION ===================== */
+    // const faqItems = document.querySelectorAll('.faq-item');
+    // faqItems.forEach(function (item) {
+    //     const question = item.querySelector('.faq-question');
+    //     question.addEventListener('click', function () {
+    //         const isActive = item.classList.contains('active');
+    //         faqItems.forEach(function (faq) { faq.classList.remove('active'); });
+    //         if (!isActive) item.classList.add('active');
+    //     });
+    // });
+});
