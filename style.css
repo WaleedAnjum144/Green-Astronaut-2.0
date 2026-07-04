@@ -1784,7 +1784,7 @@ a {
 /* Product image */
 .product-body img {
     width: 80%;
-    height: 165px;
+    height: 75%;
     object-fit: contain;
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
@@ -2012,7 +2012,7 @@ a {
     }
 
     .product-body img {
-        height: 140px;
+        height: 180px;
     }
 
     .product-img-wrap {

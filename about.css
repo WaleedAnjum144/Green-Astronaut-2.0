@@ -1252,7 +1252,7 @@
     object-fit: cover;
     border: 2px solid transparent;
     background: linear-gradient(135deg, #22c55e, #3b82f6) border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    /* -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0); */
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     flex-shrink: 0;
