@@ -3,13 +3,15 @@
 .page-hero {
     position: relative;
     width: 100%;
-    min-height: 520px; /* taller */
+    min-height: 520px;
+    /* taller */
     display: flex;
     align-items: center;
     overflow: hidden;
     background: var(--navy-dark);
-    padding: 110px 0 150px; /* extra breathing room for divider */
-    
+    padding: 110px 0 150px;
+    /* extra breathing room for divider */
+
 }
 
 /* ── Background ── */
@@ -31,12 +33,10 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        100deg,
-        rgba(10, 22, 40, 0.95) 0%,
-        rgba(10, 22, 40, 0.88) 45%,
-        rgba(10, 22, 40, 0.55) 100%
-    );
+    background: linear-gradient(100deg,
+            rgba(10, 22, 40, 0.95) 0%,
+            rgba(10, 22, 40, 0.88) 45%,
+            rgba(10, 22, 40, 0.55) 100%);
 }
 
 /* Green ambient glow (right side) */
@@ -297,6 +297,139 @@
 }
 
 
+.label-caps {
+    font-size: 15px !important;
+}
+
+
+/* ===================== ANIMATED LABEL Brand section top heading ===================== */
+
+.animated-label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 18px;
+
+    background: rgba(22, 163, 74, .08);
+    border: 1px solid rgba(22, 163, 74, .18);
+
+    border-radius: 50px;
+
+    color: var(--accent);
+
+    font-size: .82rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+
+    overflow: hidden;
+
+    animation: floatLabel 3s ease-in-out infinite;
+}
+
+/* Shimmer Effect */
+
+.animated-label::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 60%;
+    height: 100%;
+
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, .45),
+            transparent);
+
+    transform: skewX(-20deg);
+
+    animation: shimmerLabel 4s infinite;
+}
+
+/* Animated Star */
+
+.label-star {
+
+    display: inline-block;
+
+    animation: starGlow 2s ease-in-out infinite;
+
+}
+
+/* Floating */
+
+@keyframes floatLabel {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+
+}
+
+/* Shimmer */
+
+@keyframes shimmerLabel {
+
+    0% {
+        left: -120%;
+    }
+
+    100% {
+        left: 140%;
+    }
+
+}
+
+/* Star Pulse */
+
+@keyframes starGlow {
+
+    0%,
+    100% {
+
+        transform: scale(1);
+
+        filter: drop-shadow(0 0 0 rgba(255, 193, 7, 0));
+
+    }
+
+    50% {
+
+        transform: scale(1.2);
+
+        filter: drop-shadow(0 0 10px rgba(255, 193, 7, .8));
+
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+    .category-header {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 16px;
+    }
+
+    .section-header h2 {
+    
+        line-height: 40px;
+    }
+}
+
+/* ===================== ANIMATED LABEL Brand section top heading End ===================== */
 
 
 /* ===================== BRAND HISTORY TIMELINE ===================== */
@@ -314,7 +447,9 @@
 
 .brand-history .section-header h2 span {
     color: var(--accent);
+    size: 18px;
 }
+
 
 /* Timeline Wrapper */
 .history-timeline {
@@ -395,7 +530,7 @@
     border-color: var(--accent);
     color: #ffffff;
     box-shadow: 0 0 0 8px rgba(22, 163, 74, 0.15),
-                0 8px 25px rgba(22, 163, 74, 0.3);
+        0 8px 25px rgba(22, 163, 74, 0.3);
     transform: scale(1.15);
 }
 
@@ -414,6 +549,7 @@
         transform: scale(1);
         opacity: 0.6;
     }
+
     100% {
         transform: scale(1.5);
         opacity: 0;
@@ -577,6 +713,156 @@
         font-size: 0.85rem;
     }
 }
+
+
+
+/* ===================== PDF DOCUMENTS SECTION STYLING ===================== */
+.pdf-section {
+    background: #f8fafc;
+    padding-bottom: 80px;
+}
+
+.pdf-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pdf-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.pdf-card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pdf-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-icon {
+    font-size: 3.5rem;
+    color: #ef4444;
+    /* Red color for PDF icon */
+    margin-bottom: 15px;
+}
+
+.pdf-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    min-height: 40px;
+    /* Ensures all cards have same height for name */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pdf-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.pdf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.pdf-view {
+    background: #f1f5f9;
+    color: #475569;
+    border-color: #e2e8f0;
+}
+
+.pdf-view:hover {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+.pdf-download {
+    background: #dc2626;
+    color: white;
+}
+
+.pdf-download:hover {
+    background: #b91c1c;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+
+@media (max-width: 505px) {
+
+    .pdf-grid {
+        grid-template-columns: repeat(1, minmax(180px, 1fr));
+
+    }
+
+}
+
+
+
+@media (min-width: 506px) and (max-width:768px) {
+    .pdf-grid {
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .pdf-grid {
+        /* grid-template-columns: repeat(2, minmax(180px, 1fr)); */
+        gap: 15px;
+    }
+
+    .pdf-card {
+        padding: 20px 15px;
+    }
+
+    .pdf-icon {
+        font-size: 2.5rem;
+    }
+
+    .pdf-name {
+        font-size: 0.8rem;
+        min-height: 35px;
+    }
+
+    .pdf-btn {
+        padding: 6px 10px;
+        font-size: 0.75rem;
+    }
+}
+
+
 
 
 
