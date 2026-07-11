@@ -5414,193 +5414,188 @@ a {
     background: #f8fafc;
 }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
-.footer {
-    background: var(--footer-bg);
-    color: #cbd5e1;
+/* ===================== FOOTER (MINIMAL) ===================== */
+
+.footer{
+    background:var(--navy-dark);
+    color:rgba(255,255,255,.7);
+    padding:60px 0 25px;
 }
 
-.footer-top {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 28px;
-    align-items: center;
-    padding: 56px 0 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+.footer-minimal{
+    text-align:center;
 }
 
-.footer-brand {
-    display: inline-flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 18px;
+.footer-minimal-top{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
+
 }
 
-/* Style for the footer logo */
-.footer-logo {
-    height: 54px;
-    /* Matches your previous mark height */
-    width: auto;
-    object-fit: contain;
-    margin-right: 14px;
-    /* Space between logo and text */
+.footer-brand{
+
+    display:inline-flex;
+    align-items:center;
+    gap:14px;
+    text-decoration:none;
+
 }
 
-/* Ensure the container is aligned correctly */
-.footer-brand {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    text-decoration: none;
+.footer-logo{
+
+    height:50px;
+    width:auto;
+
 }
 
-.footer-brand-mark {
-    width: 54px;
-    height: 54px;
-    border-radius: 16px;
-    background: linear-gradient(135deg, var(--accent), #ff9448);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 900;
-    font-size: 20px;
+.footer-brand-text{
+
+    text-align:left;
+
 }
 
-.footer-brand-text strong {
-    display: block;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 900;
+.footer-brand-text strong{
+
+    color:#fff;
+    display:block;
+    font-size:1.1rem;
+    font-weight:800;
+
 }
 
-.footer-brand-text span {
-    font-size: 11px;
-    color: #16a34a;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
+.footer-brand-text span{
+
+    color:var(--accent-light);
+    font-size:.8rem;
+    text-transform:uppercase;
+    letter-spacing:.1em;
+
 }
 
-.footer-desc {
-    max-width: 500px;
-    font-size: 14px;
-    line-height: 1.8;
-    color: #94a3b8;
+.footer-address{
+
+    color:rgba(255,255,255,.6);
+    font-size:.92rem;
+    max-width:600px;
+    line-height:1.6;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+
 }
 
-.footer-cta-box {
-    background: linear-gradient(135deg, rgba(255, 113, 0, 0.16), rgba(255, 113, 0, 0.06));
-    border: 1px solid rgba(255, 113, 0, 0.22);
-    border-radius: 24px;
-    padding: 30px;
+.footer-address i{
+
+    color:var(--accent-light);
+
 }
 
-.footer-cta-box h4 {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 800;
-    margin-bottom: 8px;
+.footer-contact-list{
+
+    list-style:none;
+    padding:0;
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+
 }
 
-.footer-cta-box p {
-    color: #cbd5e1;
-    font-size: 14px;
-    margin-bottom: 18px;
-    line-height: 1.7;
+.footer-contact-list li{
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
 }
 
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 34px;
-    padding: 42px 0;
+.footer-contact-list i{
+
+    color:var(--accent-light);
+    font-size:1rem;
+
 }
 
-.footer-col h6 {
-    font-size: 12px;
-    color: #fff;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    margin-bottom: 18px;
+.footer-contact-list a{
+
+    color:rgba(255,255,255,.75);
+    text-decoration:none;
+    font-size:.92rem;
+    transition:.3s;
+
 }
 
-.footer-col h6::after {
-    content: "";
-    display: block;
-    width: 34px;
-    height: 2px;
-    background: var(--accent);
-    margin-top: 10px;
-    border-radius: 999px;
+.footer-contact-list a:hover{
+
+    color:var(--accent-light);
+
 }
 
-.footer-col ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+.footer-socials{
+
+    display:flex;
+    gap:12px;
+    margin-top:5px;
+
 }
 
-.footer-col ul li a,
-.footer-col ul li span {
-    font-size: 14px;
-    color: #94a3b8;
-    transition: color var(--transition);
+.footer-socials a{
+
+    width:40px;
+    height:40px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.1);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#fff;
+
+    transition:.3s;
+
 }
 
-.footer-col ul li a:hover {
-    color: #fff;
+.footer-socials a:hover{
+
+    background:var(--accent);
+    border-color:var(--accent);
+    transform:translateY(-3px);
+
 }
 
-.footer-contact-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
+.footer-minimal-bottom{
+
+    margin-top:40px;
+    padding-top:25px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
 }
 
-.footer-contact-list i {
-    color: var(--accent);
-    margin-top: 4px;
+.footer-minimal-bottom p{
+
+    color:rgba(255,255,255,.4);
+    font-size:.85rem;
+
 }
 
-.footer-bottom {
-    padding: 22px 0 28px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 18px;
-}
+@media(max-width:600px){
 
-.footer-bottom p {
-    font-size: 13px;
-    color: #64748b;
-}
+    .footer-contact-list{
+        flex-direction:column;
+        gap:14px;
+    }
 
-.footer-socials {
-    display: flex;
-    gap: 12px;
-}
-
-.footer-socials a {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #cbd5e1;
-    transition: all var(--transition);
-}
-
-.footer-socials a:hover {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: #fff;
 }
 
 /* ============================================================
