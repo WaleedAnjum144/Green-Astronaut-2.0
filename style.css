@@ -3744,18 +3744,42 @@ a {
     outline: none;
 }
 
-/* Pin Needle/Pole Styling */
+/* ================= PIN POLE — ANIMATED DASHED LINE ================= */
+
 .pin-pole {
     stroke: #b1bccc;
     stroke-width: 2.5;
-    stroke-dasharray: none;
+    stroke-linecap: round;
+
+    /* The dashes + the gap (period = 12) */
+    stroke-dasharray: 4 8;
+
+    /* Continuous flow toward the flag */
+    animation: poleFlow 0.9s linear infinite;
+
+    /* Only transition color & width — NOT dashoffset (keeps animation smooth) */
     transition: stroke 0.3s ease, stroke-width 0.3s ease;
 }
 
+/* Move dashes toward the flag (toward path start = 0,0) */
+@keyframes poleFlow {
+    from {
+        stroke-dashoffset: 0;
+    }
+
+    to {
+        stroke-dashoffset: 12;
+    }
+
+    /* 12 = dash + gap (4 + 8) */
+}
+
+/* Hover / Active — brighter, thicker, faster flow */
 .flag-marker:hover .pin-pole,
 .flag-marker.active .pin-pole {
     stroke: var(--accent-bright);
     stroke-width: 3.5;
+    animation-duration: 0.5s;
 }
 
 /* 3D Round Flag Head Container */

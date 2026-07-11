@@ -179,26 +179,17 @@ document.addEventListener('DOMContentLoaded', function () {
     /* ============================================================
        5. ACTIVE NAV LINK ON SCROLL
     ============================================================ */
-    const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-links a');
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
-    window.addEventListener('scroll', () => {
-        let currentSection = '';
+    navLinks.forEach(link => {
+        link.classList.remove('active');
 
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 120;
-            if (window.scrollY >= sectionTop &&
-                window.scrollY < sectionTop + section.clientHeight) {
-                currentSection = section.getAttribute('id');
-            }
-        });
+        const linkPage = link.getAttribute('href').split('#')[0];
 
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${currentSection}`) {
-                link.classList.add('active');
-            }
-        });
+        if (linkPage === currentPage) {
+            link.classList.add('active');
+        }
     });
 
 
