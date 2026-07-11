@@ -5441,6 +5441,8 @@ a {
     align-items:center;
     gap:14px;
     text-decoration:none;
+    flex-wrap: wrap;
+    justify-content:center
 
 }
 
