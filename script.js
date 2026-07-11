@@ -463,6 +463,65 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     /* ============================================================
+   9. SEA COUNTRY SVG MAP — GEOGRAPHIC MUTUAL INTERACTION ENGINE
+============================================================ */
+    (function initSeaMap() {
+        const wrapper = document.querySelector('.sea-map-wrapper');
+        if (!wrapper) return;
+
+        const countries = wrapper.querySelectorAll('.sea-country');
+        const chips = wrapper.querySelectorAll('.sea-country-chip');
+        const markers = wrapper.querySelectorAll('.flag-marker');
+
+        function activateCountry(countryId) {
+            // 1. Sync Detailed SVG Map Shapes
+            countries.forEach(item => {
+                item.classList.toggle('active', item.getAttribute('data-country') === countryId);
+            });
+
+            // 2. Sync Floating 3D Flag Markers
+            markers.forEach(marker => {
+                marker.classList.toggle('active', marker.getAttribute('data-country') === countryId);
+            });
+
+            // 3. Sync HTML Bottom Selection Chips
+            chips.forEach(chip => {
+                chip.classList.toggle('active', chip.getAttribute('data-country') === countryId);
+            });
+        }
+
+        // Bind event handlers
+        function bindInteractions(elements) {
+            elements.forEach(el => {
+                const countryId = el.getAttribute('data-country');
+                if (!countryId) return;
+
+                // Click Interaction
+                el.addEventListener('click', () => activateCountry(countryId));
+
+                // Instant hover sync
+                el.addEventListener('mouseenter', () => activateCountry(countryId));
+
+                // Accessibility keyboard navigation
+                el.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        activateCountry(countryId);
+                    }
+                });
+            });
+        }
+
+        bindInteractions(countries);
+        bindInteractions(markers);
+        bindInteractions(chips);
+
+        // Boot default country
+        activateCountry('malaysia');
+    })();
+
+
+    /* ============================================================
        10. IMAGE FALLBACK — SINGLE UNIFIED SYSTEM
        (FIXED: was two conflicting blocks — merged into one)
     ============================================================ */
