@@ -4659,7 +4659,6 @@ a {
 }
 
 .cta-heading-accent {
-    display: block;
     background: linear-gradient(135deg, #FF7100, #ffaa44, #FF7100);
     background-size: 200% auto;
     -webkit-background-clip: text;
