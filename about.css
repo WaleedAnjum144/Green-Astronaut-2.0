@@ -3,15 +3,12 @@
 .page-hero {
     position: relative;
     width: 100%;
-    min-height: 520px;
-    /* taller */
+    min-height: 560px;
     display: flex;
     align-items: center;
     overflow: hidden;
     background: var(--navy-dark);
     padding: 110px 0 150px;
-    /* extra breathing room for divider */
-
 }
 
 /* ── Background ── */
@@ -52,47 +49,162 @@
     pointer-events: none;
 }
 
-
-
-/* ── Content ── */
+/* ── Content Layout ── */
 .page-hero-content {
     position: relative;
     z-index: 2;
     display: flex;
-    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 45px;
-    /* max-width: 780px; */
-    width: 100%;
-}
-
-.hero-left,
-.hero-right {
     width: 100%;
 }
 
 .hero-left {
+    flex: 1.05;
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+    min-width: 0;
+}
+
+.hero-right {
+    flex: 0.95;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    min-width: 0;
+}
+
+/* ── Entrance Animations (staggered) ── */
+.hero-left > * {
+    animation: heroFadeUp 0.7s ease both;
+}
+.hero-left > *:nth-child(1) { animation-delay: 0.05s; }
+.hero-left > *:nth-child(2) { animation-delay: 0.15s; }
+.hero-left > *:nth-child(3) { animation-delay: 0.25s; }
+.hero-left > *:nth-child(4) { animation-delay: 0.35s; }
+.hero-left > *:nth-child(5) { animation-delay: 0.45s; }
+.hero-left > *:nth-child(6) { animation-delay: 0.55s; }
+
+.hero-right {
+    animation: heroFadeIn 0.9s ease 0.35s both;
+}
+
+@keyframes heroFadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes heroFadeIn {
+    from { opacity: 0; transform: translateX(30px); }
+    to   { opacity: 1; transform: translateX(0); }
 }
 
 /* ============================================================
-   RESPONSIVE
-   ============================================================ */
+   HERO RIGHT — MAP CARD (NEW)
+=========================================================== */
 
-@media (max-width: 1100px) {
-
-    .page-hero-content {
-        flex-wrap: wrap;
-    }
-
-
+.hero-map-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    animation: heroMapFloat 6s ease-in-out 1s infinite;
+    will-change: transform;
 }
 
+/* Soft green glow behind map */
+.hero-map-wrap::before {
+    content: '';
+    position: absolute;
+    top: 12%;
+    left: 8%;
+    right: 8%;
+    bottom: 12%;
+    background: radial-gradient(ellipse at center, rgba(74, 222, 128, 0.25) 0%, transparent 70%);
+    filter: blur(40px);
+    z-index: 0;
+}
 
+/* Decorative dotted grid (top-right corner) */
+.hero-map-wrap::after {
+    content: '';
+    position: absolute;
+    top: -28px;
+    right: -20px;
+    width: 130px;
+    height: 130px;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.22) 1.5px, transparent 1.6px);
+    background-size: 16px 16px;
+    z-index: 0;
+    pointer-events: none;
+}
 
-/* Breadcrumb */
+/* The map image itself */
+.hero-map-img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.50);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.hero-map-wrap:hover .hero-map-img {
+    transform: scale(1.025);
+    box-shadow: 0 35px 70px -15px rgba(0, 0, 0, 0.60);
+}
+
+/* Glass badge on map */
+.hero-map-badge {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 16px;
+    background: rgba(10, 22, 40, 0.68);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 100px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.30);
+    pointer-events: none;
+}
+
+.hero-map-badge-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-light);
+    flex-shrink: 0;
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.5);
+    animation: badgePulse 2s infinite;
+}
+
+@keyframes badgePulse {
+    70%  { box-shadow: 0 0 0 8px rgba(74, 222, 128, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0); }
+}
+
+@keyframes heroMapFloat {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-10px); }
+}
+
+/* ============================================================
+   BREADCRUMB
+=========================================================== */
+
 .page-hero-breadcrumb {
     display: flex;
     align-items: center;
@@ -125,7 +237,10 @@
     font-weight: 600;
 }
 
-/* Title */
+/* ============================================================
+   TITLE / SUBTITLE
+=========================================================== */
+
 .page-hero-title {
     font-size: clamp(2.2rem, 5vw, 3.6rem);
     font-weight: 800;
@@ -139,7 +254,6 @@
     color: var(--accent-light);
 }
 
-/* Subtitle */
 .page-hero-subtitle {
     font-size: 1.05rem;
     color: rgba(255, 255, 255, 0.70);
@@ -149,7 +263,10 @@
     font-weight: 400;
 }
 
-/* ── Feature Bullets ── */
+/* ============================================================
+   FEATURE BULLETS
+=========================================================== */
+
 .page-hero-features {
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +298,10 @@
     flex-shrink: 0;
 }
 
-/* ── Buttons ── */
+/* ============================================================
+   BUTTONS
+=========================================================== */
+
 .page-hero-actions {
     display: flex;
     flex-wrap: wrap;
@@ -235,7 +355,10 @@
     border-color: rgba(255, 255, 255, 0.60);
 }
 
-/* ── Mini Stats Row ── */
+/* ============================================================
+   MINI STATS
+=========================================================== */
+
 .page-hero-stats {
     display: flex;
     flex-wrap: wrap;
@@ -266,7 +389,10 @@
     font-weight: 500;
 }
 
-/* ── Bottom Shape Divider ── */
+/* ============================================================
+   BOTTOM DIVIDER
+=========================================================== */
+
 .page-hero-divider {
     position: absolute;
     bottom: -1px;
@@ -284,7 +410,27 @@
     min-height: 90px;
 }
 
-/* ── Responsive ── */
+/* ============================================================
+   RESPONSIVE
+=========================================================== */
+
+@media (max-width: 1100px) {
+    .page-hero-content {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .hero-left,
+    .hero-right {
+        flex: 1 1 100%;
+    }
+
+    .hero-map-wrap {
+        max-width: 520px;
+        /* margin: 0 auto; */
+    }
+}
+
 @media (max-width: 768px) {
     .page-hero {
         min-height: 440px;
@@ -306,6 +452,18 @@
     .page-hero-stats {
         gap: 24px;
     }
+
+    /* Stop floating on mobile (cleaner) */
+    .hero-map-wrap {
+        animation: none;
+    }
+
+    .hero-map-badge {
+        font-size: 0.65rem;
+        padding: 7px 13px;
+        bottom: 12px;
+        left: 12px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -325,6 +483,15 @@
     }
 }
 
+/* Accessibility: stop all motion for reduced-motion users */
+@media (prefers-reduced-motion: reduce) {
+    .hero-left > *,
+    .hero-right,
+    .hero-map-wrap,
+    .hero-map-badge-dot {
+        animation: none !important;
+    }
+}
 
 
 /* ============================================================
