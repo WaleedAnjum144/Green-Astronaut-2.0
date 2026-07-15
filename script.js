@@ -233,6 +233,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // ✅ APPLY DEFAULT FILTER ON PAGE LOAD
+    applyFilter('panels');
+
 
     /* ============================================================
        7. PROJECTS SWIPER
