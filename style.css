@@ -5711,8 +5711,8 @@ a {
     .about-shell,
     .footer-top,
     .contact-grid,
-    .network-grid {
-        grid-template-columns: 1fr;
+    .network-grid, .page-hero-content {
+        grid-template-columns: 1fr !important;
     }
 
     .products-grid {
