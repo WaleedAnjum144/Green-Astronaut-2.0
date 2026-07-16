@@ -63,7 +63,7 @@
                         aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                  
+
                 </div>
             </div>
         </div>
@@ -237,7 +237,6 @@
 
                         <!-- STATS -->
                         <div class="network-stats-card improved-network-stats">
-
                             <div class="network-stat-row">
                                 <div class="stat-icon">
                                     <i class="fa-solid fa-handshake"></i>
@@ -257,7 +256,6 @@
                                     <span>Technical Service Teams</span>
                                 </div>
                             </div>
-
                         </div>
 
                         <!-- ACTIVE COUNTRY INFO -->
@@ -322,10 +320,11 @@
                         </div>
 
                         <!-- COUNTRY CHIPS -->
-                        <div class="sea-country-chips">
+                        <!-- <div class="sea-country-chips">
 
                             <button type="button" class="sea-country-chip active" data-country="malaysia">
                                 <span>🇲🇾</span> Malaysia
+
                             </button>
 
                             <button type="button" class="sea-country-chip" data-country="singapore">
@@ -348,288 +347,19 @@
                                 <span>🇵🇭</span> Philippines
                             </button>
 
-                        </div>
+                        </div> -->
 
                     </div>
 
                     <!-- RIGHT MAP -->
                     <div class="sea-map-wrapper">
-                        <div class="sea-map-card">
-                            <svg class="sea-map-svg" viewBox="0 0 1000 580" xmlns="http://www.w3.org/2000/svg"
-                                preserveAspectRatio="xMidYMid meet">
-
-                                <defs>
-                                    <!-- Premium Drop Shadows -->
-                                    <filter id="map-shadow" x="-10%" y="-10%" width="130%" height="130%">
-                                        <feDropShadow dx="3" dy="8" stdDeviation="6" flood-color="#1e293b"
-                                            flood-opacity="0.18" />
-                                    </filter>
-                                    <filter id="pin-shadow" x="-30%" y="-30%" width="160%" height="160%">
-                                        <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#0f172a"
-                                            flood-opacity="0.25" />
-                                    </filter>
-
-                                    <!-- Soft Metallic Gradients for 3D Pin Caps -->
-                                    <linearGradient id="pin-border" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="0%" stop-color="#ffffff" />
-                                        <stop offset="100%" stop-color="#cbd5e1" />
-                                    </linearGradient>
-
-                                    <linearGradient id="globe-gloss" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6" />
-                                        <stop offset="40%" stop-color="#ffffff" stop-opacity="0.1" />
-                                        <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
-                                    </linearGradient>
-
-                                    <linearGradient id="wave-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
-                                        <stop offset="0%" stop-color="#22c55e" stop-opacity="0.15" />
-                                        <stop offset="50%" stop-color="#10b981" stop-opacity="0.05" />
-                                        <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
-                                    </linearGradient>
-
-                                    <!-- Clip Paths for Circular Flag Badges -->
-                                    <clipPath id="circle-clip">
-                                        <circle cx="0" cy="0" r="22" />
-                                    </clipPath>
-                                </defs>
-
-                                <!-- ================= BACKGROUND ABSTRACT ART (Matching Image 1) ================= -->
-                                <g class="map-bg-waves" pointer-events="none">
-                                    <path d="M-100,600 C300,500 500,550 750,400 C950,280 900,100 1100,50 L1100,600 Z"
-                                        fill="url(#wave-gradient)" />
-                                    <path d="M-50,620 C250,450 600,480 800,300 C950,160 900,50 1150,-50 L1150,620 Z"
-                                        fill="url(#wave-gradient)" opacity="0.6" />
-
-                                    <!-- Half-tone dotted matrix on the left/right edges -->
-                                    <pattern id="dot-matrix" x="0" y="0" width="20" height="20"
-                                        patternUnits="userSpaceOnUse">
-                                        <circle cx="3" cy="3" r="1.5" fill="#22c55e" opacity="0.15" />
-                                    </pattern>
-                                    <rect x="0" y="400" width="180" height="180" fill="url(#dot-matrix)" />
-                                    <rect x="850" y="50" width="150" height="300" fill="url(#dot-matrix)" />
-                                </g>
-
-                                <!-- ================= UNLABELED NEIGHBOR COUNTRIES (Muted Elegant Style) ================= -->
-                                <g class="sea-neighbors" fill="#e2e8f0" stroke="#f1f5f9" stroke-width="1"
-                                    stroke-linejoin="round">
-                                    <!-- Myanmar (Burma) -->
-                                    <path
-                                        d="M110,65 L118,60 L125,72 L128,88 L142,92 L145,108 L155,115 L148,138 L154,162 L154,188 L170,215 L175,232 L155,238 L142,215 L144,180 L132,158 L125,152 L112,130 L108,110 L102,95 L95,85 Z" />
-                                    <!-- Laos -->
-                                    <path
-                                        d="M228,82 L245,95 L252,112 L274,120 L275,135 L288,144 L288,162 L275,178 L262,175 L254,188 L244,175 L235,162 L234,142 L225,130 L212,122 L211,105 L218,92 Z" />
-                                    <!-- Cambodia -->
-                                    <path
-                                        d="M248,189 L262,180 L276,182 L285,195 L292,210 L288,225 L272,234 L255,235 L242,228 L238,212 L242,198 Z" />
-                                    <!-- Brunei -->
-                                    <path d="M515,362 L524,360 L524,365 L518,368 Z" />
-                                    <!-- Papua New Guinea -->
-                                    <path d="M898,460 L940,460 L960,500 L930,550 L898,530 Z" />
-                                    <!-- Hainan (China) -->
-                                    <path d="M362,105 L382,108 L390,122 L378,135 L358,130 L354,118 Z" opacity="0.6" />
-                                </g>
-
-                                <!-- ================= ACTIVE NETWORK COUNTRIES (Accurate Geographic Paths) ================= -->
-                                <g class="sea-countries" stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round"
-                                    filter="url(#map-shadow)">
-
-                                    <!-- THAILAND -->
-                                    <g class="sea-country" id="sea-thailand" data-country="thailand" tabindex="0"
-                                        role="button" aria-label="Thailand">
-                                        <path
-                                            d="M178,139 L190,140 L200,128 L212,125 L210,105 L218,92 L228,82 L230,95 L224,115 L228,130 L235,142 L234,162 L244,175 L254,188 L245,192 L230,190 L212,175 L210,192 L202,212 L210,230 L212,255 L208,285 L202,315 L195,340 L191,335 L196,305 L192,282 L198,255 L198,228 L191,218 L192,198 L184,188 L188,170 L178,162 Z" />
-                                    </g>
-
-                                    <!-- VIETNAM -->
-                                    <g class="sea-country" id="sea-vietnam" data-country="vietnam" tabindex="0"
-                                        role="button" aria-label="Vietnam">
-                                        <path
-                                            d="M272,82 L285,80 L302,88 L318,85 L328,95 L324,108 L310,118 L302,130 L308,145 L315,160 L328,175 L338,192 L350,215 L354,238 L348,255 L332,268 L320,268 L312,258 L322,248 L324,232 L315,225 L300,224 L292,210 L285,195 L276,182 L262,180 L275,178 L288,162 L288,144 L275,135 L274,120 L252,112 L258,95 Z" />
-                                    </g>
-
-                                    <!-- PHILIPPINES -->
-                                    <g class="sea-country" id="sea-philippines" data-country="philippines" tabindex="0"
-                                        role="button" aria-label="Philippines">
-                                        <!-- Luzon (North) -->
-                                        <path
-                                            d="M645,100 L660,95 L675,105 L685,128 L678,155 L692,170 L685,188 L670,185 L658,162 L648,160 L635,145 L638,120 L642,108 Z" />
-                                        <!-- Palawan (Left strip) -->
-                                        <path d="M565,248 L585,228 L605,208 L608,212 L588,235 L568,255 Z" />
-                                        <!-- Mindoro -->
-                                        <path d="M625,180 L638,180 L635,195 L622,195 Z" />
-                                        <!-- Visayas (Center Cluster) -->
-                                        <path d="M660,200 L675,198 L680,212 L670,220 L658,215 Z" />
-                                        <path d="M685,200 L698,205 L692,225 L678,225 Z" />
-                                        <path d="M642,215 L652,210 L655,225 L645,230 Z" />
-                                        <!-- Mindanao (South) -->
-                                        <path
-                                            d="M670,238 L695,235 L712,248 L715,275 L698,292 L680,290 L678,272 L662,265 L655,248 L668,245 Z" />
-                                    </g>
-
-                                    <!-- MALAYSIA -->
-                                    <g class="sea-country" id="sea-malaysia" data-country="malaysia" tabindex="0"
-                                        role="button" aria-label="Malaysia">
-                                        <!-- Peninsular Malaysia -->
-                                        <path
-                                            d="M195,340 L202,315 L208,285 L215,310 L228,328 L244,342 L256,355 L268,375 L265,385 L252,382 L235,372 L218,360 L202,348 Z" />
-                                        <!-- East Malaysia (Sarawak & Sabah on Borneo) -->
-                                        <path
-                                            d="M428,382 L450,368 L475,355 L510,345 L515,362 L524,360 L532,340 L558,320 L575,325 L580,345 L562,370 L545,380 L528,372 L508,390 L480,398 L454,402 Z" />
-                                    </g>
-
-                                    <!-- SINGAPORE -->
-                                    <g class="sea-country" id="sea-singapore" data-country="singapore" tabindex="0"
-                                        role="button" aria-label="Singapore">
-                                        <ellipse cx="267" cy="389" rx="6" ry="4" />
-                                    </g>
-
-                                    <!-- INDONESIA -->
-                                    <g class="sea-country" id="sea-indonesia" data-country="indonesia" tabindex="0"
-                                        role="button" aria-label="Indonesia">
-                                        <!-- Sumatra -->
-                                        <path
-                                            d="M125,360 L145,342 L175,348 L202,370 L218,395 L235,420 L258,445 L285,475 L280,485 L260,480 L240,465 L210,440 L185,415 L155,392 L132,375 Z" />
-                                        <!-- Java -->
-                                        <path
-                                            d="M285,492 L320,490 L360,495 L405,502 L445,512 L468,520 L465,528 L430,525 L385,518 L340,510 L300,502 L282,498 Z" />
-                                        <!-- Kalimantan (Borneo - Southern side) -->
-                                        <path
-                                            d="M428,382 L454,402 L480,398 L508,390 L528,372 L545,380 L562,370 L568,388 L555,415 L560,438 L542,465 L522,482 L498,485 L472,475 L452,458 L435,438 L422,410 Z" />
-                                        <!-- Sulawesi -->
-                                        <path
-                                            d="M585,382 L605,372 L622,380 L618,395 L638,395 L652,410 L635,420 L625,412 L618,435 L632,455 L625,462 L610,452 L602,425 L588,418 L572,410 Z" />
-                                        <!-- Lesser Sunda Islands (Bali, Lombok, Flores, Timor) -->
-                                        <path
-                                            d="M475,522 L490,520 L505,525 L495,530 Z M512,525 L530,525 L545,532 L525,535 Z M555,530 L590,535 L605,548 L580,550 L550,542 Z" />
-                                        <!-- West Papua (Irian Jaya) -->
-                                        <path
-                                            d="M740,442 L770,422 L810,418 L840,425 L868,435 L898,460 L898,530 L870,522 L845,508 L815,505 L795,482 L770,485 L762,465 L738,458 Z" />
-                                        <!-- Maluku Islands (Spices Group) -->
-                                        <path
-                                            d="M670,405 L685,400 L685,412 L672,415 Z M692,428 L710,425 L705,445 L690,440 Z M660,445 L675,445 L670,465 L655,455 Z" />
-                                    </g>
-                                </g>
-
-                                <!-- ================= DOTTED TARGET RINGS & RADAR GLOWS ================= -->
-                                <g class="radar-anchors" pointer-events="none">
-                                    <!-- THAILAND: Bangkok -->
-                                    <g class="radar-target" id="radar-thailand">
-                                        <circle cx="212" cy="180" r="5" fill="#22c55e" />
-                                        <circle class="radar-pulse" cx="212" cy="180" r="15" />
-                                    </g>
-                                    <!-- VIETNAM: Da Nang -->
-                                    <g class="radar-target" id="radar-vietnam">
-                                        <circle cx="320" cy="170" r="5" fill="#22c55e" />
-                                        <circle class="radar-pulse" cx="320" cy="170" r="15" />
-                                    </g>
-                                    <!-- PHILIPPINES: Manila -->
-                                    <g class="radar-target" id="radar-philippines">
-                                        <circle cx="660" cy="140" r="5" fill="#22c55e" />
-                                        <circle class="radar-pulse" cx="660" cy="140" r="15" />
-                                    </g>
-                                    <!-- MALAYSIA: Kuala Lumpur -->
-                                    <g class="radar-target" id="radar-malaysia">
-                                        <circle cx="248" cy="358" r="5" fill="#22c55e" />
-                                        <circle class="radar-pulse" cx="248" cy="358" r="15" />
-                                    </g>
-                                    <!-- SINGAPORE: SG Island -->
-                                    <g class="radar-target" id="radar-singapore">
-                                        <circle cx="267" cy="389" r="5" fill="#22c55e" />
-                                        <circle class="radar-pulse" cx="267" cy="389" r="15" />
-                                    </g>
-                                    <!-- INDONESIA: central Kalimantan -->
-                                    <g class="radar-target" id="radar-indonesia">
-                                        <circle cx="485" cy="430" r="5" fill="#22c55e" />
-                                        <circle class="radar-pulse" cx="485" cy="430" r="15" />
-                                    </g>
-                                </g>
-
-                                <!-- ================= 3D FLAGS & SHADOWED PINS (Positions match Image 1) ================= -->
-
-                                <!-- THAILAND -->
-                                <g class="flag-marker" data-country="thailand" transform="translate(100, 110)">
-                                    <!-- Anchor Pin Pole -->
-                                    <line class="pin-pole" x1="0" y1="0" x2="112" y2="70" />
-                                    <g class="pin-head" filter="url(#pin-shadow)">
-                                        <!-- Outer 3D Silver-White Border Circle -->
-                                        <circle cx="0" cy="0" r="25" fill="url(#pin-border)" stroke="#cbd5e1"
-                                            stroke-width="1" />
-                                        <!-- Flag Graphic -->
-                                        <image href="https://cdn.jsdelivr.net/npm/flag-icons/flags/1x1/th.svg" x="-22"
-                                            y="-22" width="44" height="44" clip-path="url(#circle-clip)" />
-                                        <!-- Gloss Glass Cap Overlay -->
-                                        <circle cx="0" cy="0" r="22" fill="url(#globe-gloss)" />
-                                        <!-- Floating Text Bubble -->
-                                        <text class="pin-label" x="0" y="38">THAILAND</text>
-                                    </g>
-                                </g>
-
-                                <!-- VIETNAM -->
-                                <g class="flag-marker" data-country="vietnam" transform="translate(365, 80)">
-                                    <line class="pin-pole" x1="0" y1="0" x2="-45" y2="90" />
-                                    <g class="pin-head" filter="url(#pin-shadow)">
-                                        <circle cx="0" cy="0" r="25" fill="url(#pin-border)" stroke="#cbd5e1"
-                                            stroke-width="1" />
-                                        <image href="https://cdn.jsdelivr.net/npm/flag-icons/flags/1x1/vn.svg" x="-22"
-                                            y="-22" width="44" height="44" clip-path="url(#circle-clip)" />
-                                        <circle cx="0" cy="0" r="22" fill="url(#globe-gloss)" />
-                                        <text class="pin-label" x="0" y="38">VIETNAM</text>
-                                    </g>
-                                </g>
-
-                                <!-- PHILIPPINES -->
-                                <g class="flag-marker" data-country="philippines" transform="translate(710, 120)">
-                                    <line class="pin-pole" x1="0" y1="0" x2="-50" y2="20" />
-                                    <g class="pin-head" filter="url(#pin-shadow)">
-                                        <circle cx="0" cy="0" r="25" fill="url(#pin-border)" stroke="#cbd5e1"
-                                            stroke-width="1" />
-                                        <image href="https://cdn.jsdelivr.net/npm/flag-icons/flags/1x1/ph.svg" x="-22"
-                                            y="-22" width="44" height="44" clip-path="url(#circle-clip)" />
-                                        <circle cx="0" cy="0" r="22" fill="url(#globe-gloss)" />
-                                        <text class="pin-label" x="0" y="38">PHILIPPINES</text>
-                                    </g>
-                                </g>
-
-                                <!-- MALAYSIA -->
-                                <g class="flag-marker" data-country="malaysia" transform="translate(125, 275)">
-                                    <line class="pin-pole" x1="0" y1="0" x2="123" y2="83" />
-                                    <g class="pin-head" filter="url(#pin-shadow)">
-                                        <circle cx="0" cy="0" r="25" fill="url(#pin-border)" stroke="#cbd5e1"
-                                            stroke-width="1" />
-                                        <image href="https://cdn.jsdelivr.net/npm/flag-icons/flags/1x1/my.svg" x="-22"
-                                            y="-22" width="44" height="44" clip-path="url(#circle-clip)" />
-                                        <circle cx="0" cy="0" r="22" fill="url(#globe-gloss)" />
-                                        <text class="pin-label" x="0" y="38">MALAYSIA</text>
-                                    </g>
-                                </g>
-
-                                <!-- SINGAPORE -->
-                                <g class="flag-marker" data-country="singapore" transform="translate(150, 460)">
-                                    <line class="pin-pole" x1="0" y1="0" x2="117" y2="-71" />
-                                    <g class="pin-head" filter="url(#pin-shadow)">
-                                        <circle cx="0" cy="0" r="25" fill="url(#pin-border)" stroke="#cbd5e1"
-                                            stroke-width="1" />
-                                        <image href="https://cdn.jsdelivr.net/npm/flag-icons/flags/1x1/sg.svg" x="-22"
-                                            y="-22" width="44" height="44" clip-path="url(#circle-clip)" />
-                                        <circle cx="0" cy="0" r="22" fill="url(#globe-gloss)" />
-                                        <text class="pin-label" x="0" y="38">SINGAPORE</text>
-                                    </g>
-                                </g>
-
-                                <!-- INDONESIA -->
-                                <g class="flag-marker" data-country="indonesia" transform="translate(485, 260)">
-                                    <line class="pin-pole" x1="0" y1="0" x2="0" y2="170" />
-                                    <g class="pin-head" filter="url(#pin-shadow)">
-                                        <circle cx="0" cy="0" r="25" fill="url(#pin-border)" stroke="#cbd5e1"
-                                            stroke-width="1" />
-                                        <image href="https://cdn.jsdelivr.net/npm/flag-icons/flags/1x1/id.svg" x="-22"
-                                            y="-22" width="44" height="44" clip-path="url(#circle-clip)" />
-                                        <circle cx="0" cy="0" r="22" fill="url(#globe-gloss)" />
-                                        <text class="pin-label" x="0" y="38">INDONESIA</text>
-                                    </g>
-                                </g>
-
-                            </svg>
+                        <div class="hero-map-wrap">
+                            <img src="imagess/map image.jpeg" class="hero-map-img"
+                                alt="GA Solar distribution network across Thailand, Vietnam, Philippines, Indonesia, Malaysia and Singapore">
+                            <div class="hero-map-badge">
+                                <span class="hero-map-badge-dot"></span>
+                                Active in 6 SEA Countries
+                            </div>
                         </div>
 
                         <!-- Bottom Caption Card -->
@@ -1042,7 +772,7 @@
             <button id="mobile-menu-close"><i class="fa-solid fa-xmark"></i></button>
         </div>
         <nav class="mobile-nav">
-            <a href="index.html" >Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <div class="mobile-dropdown">
                 <button class="mobile-dropdown-toggle" id="mobile-products-toggle">

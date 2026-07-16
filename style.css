@@ -2855,6 +2855,15 @@ a {
         height: 80px;
         padding: 10px;
     }
+
+       .category-header {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+
 }
 
 
@@ -3708,155 +3717,105 @@ a {
     height: auto;
 }
 
-/* ================= DETAILED MAP LAYERS ================= */
+/* ============================================================
+   HERO RIGHT — MAP CARD (NEW)
+=========================================================== */
 
-/* Non-interactive Neighbors */
-.sea-neighbors path {
-    fill: #dce6cf;
-    /* Muted gray-green that sits beautifully in background */
-    stroke: #ffffff;
-    stroke-width: 1.2;
-    opacity: 0.65;
+.hero-map-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    animation: heroMapFloat 6s ease-in-out 1s infinite;
+    will-change: transform;
+}
+
+/* Soft green glow behind map */
+.hero-map-wrap::before {
+    content: '';
+    position: absolute;
+    top: 12%;
+    left: 8%;
+    right: 8%;
+    bottom: 12%;
+    background: radial-gradient(ellipse at center, rgba(74, 222, 128, 0.25) 0%, transparent 70%);
+    filter: blur(40px);
+    z-index: 0;
+}
+
+/* Decorative dotted grid (top-right corner) */
+.hero-map-wrap::after {
+    content: '';
+    position: absolute;
+    top: -28px;
+    right: -20px;
+    width: 130px;
+    height: 130px;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.22) 1.5px, transparent 1.6px);
+    background-size: 16px 16px;
+    z-index: 0;
     pointer-events: none;
 }
 
-/* Core Network Countries */
-.sea-country {
-    cursor: pointer;
-    outline: none;
+/* The map image itself */
+.hero-map-img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.50);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-.sea-country path {
-    fill: var(--accent-green);
-    stroke: #ffffff;
-    stroke-width: 1.5;
-    transition: fill 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+.hero-map-wrap:hover .hero-map-img {
+    transform: scale(1.025);
+    box-shadow: 0 35px 70px -15px rgba(0, 0, 0, 0.60);
 }
 
-/* Hover & Active States matching Premium Theme */
-.sea-country:hover path {
-    fill: #61ab24;
+/* Glass badge on map */
+.hero-map-badge {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 16px;
+    background: rgba(10, 22, 40, 0.68);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 100px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.30);
+    pointer-events: none;
 }
 
-.sea-country.active path {
-    fill: var(--accent-bright);
-    filter: drop-shadow(0 0 12px rgba(34, 197, 94, 0.4));
+.hero-map-badge-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-light);
+    flex-shrink: 0;
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.5);
+    animation: badgePulse 2s infinite;
 }
 
-/* ================= 3D FLAGS & ANCHOR LINES ================= */
-
-.flag-marker {
-    cursor: pointer;
-    outline: none;
+@keyframes badgePulse {
+    70%  { box-shadow: 0 0 0 8px rgba(74, 222, 128, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0); }
 }
 
-/* ================= PIN POLE — ANIMATED DASHED LINE ================= */
-
-.pin-pole {
-    stroke: #b1bccc;
-    stroke-width: 2.5;
-    stroke-linecap: round;
-
-    /* The dashes + the gap (period = 12) */
-    stroke-dasharray: 4 8;
-
-    /* Continuous flow toward the flag */
-    animation: poleFlow 0.9s linear infinite;
-
-    /* Only transition color & width — NOT dashoffset (keeps animation smooth) */
-    transition: stroke 0.3s ease, stroke-width 0.3s ease;
-}
-
-/* Move dashes toward the flag (toward path start = 0,0) */
-@keyframes poleFlow {
-    from {
-        stroke-dashoffset: 0;
-    }
-
-    to {
-        stroke-dashoffset: 12;
-    }
-
-    /* 12 = dash + gap (4 + 8) */
-}
-
-/* Hover / Active — brighter, thicker, faster flow */
-.flag-marker:hover .pin-pole,
-.flag-marker.active .pin-pole {
-    stroke: var(--accent-bright);
-    stroke-width: 3.5;
-    animation-duration: 0.5s;
-}
-
-/* 3D Round Flag Head Container */
-.pin-head {
-    transform-origin: 0px 0px;
-    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.flag-marker:hover .pin-head,
-.flag-marker.active .pin-head {
-    transform: scale(1.15);
-}
-
-/* Base Flag Circle */
-.pin-head circle {
-    stroke-width: 1.5;
-}
-
-.flag-marker.active .pin-head circle {
-    stroke: var(--accent-bright);
-    stroke-width: 2.5;
-}
-
-/* Flag labels */
-.pin-label {
-    fill: #334155;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    text-anchor: middle;
-    paint-order: stroke;
-    stroke: #ffffff;
-    stroke-width: 4;
-    stroke-linejoin: round;
-    transition: fill 0.3s ease;
-}
-
-.flag-marker:hover .pin-label,
-.flag-marker.active .pin-label {
-    fill: #15803d;
-}
-
-/* Active Radar Base Targets */
-.radar-pulse {
-    fill: none;
-    stroke: var(--accent-bright);
-    stroke-width: 1.5;
-    opacity: 0;
-    transform-origin: center;
-}
-
-.flag-marker.active~.radar-anchors #radar-thailand .radar-pulse,
-.flag-marker.active~.radar-anchors #radar-vietnam .radar-pulse,
-.flag-marker.active~.radar-anchors #radar-philippines .radar-pulse,
-.flag-marker.active~.radar-anchors #radar-malaysia .radar-pulse,
-.flag-marker.active~.radar-anchors #radar-singapore .radar-pulse,
-.flag-marker.active~.radar-anchors #radar-indonesia .radar-pulse {
-    animation: anchorPulse 2s infinite ease-out;
-}
-
-@keyframes anchorPulse {
-    0% {
-        r: 10px;
-        opacity: 0.8;
-    }
-
-    100% {
-        r: 30px;
-        opacity: 0;
-    }
+@keyframes heroMapFloat {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-10px); }
 }
 
 /* ================= MODERN PILLS / CHIPS ================= */
